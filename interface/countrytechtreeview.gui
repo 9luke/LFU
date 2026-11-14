@@ -1108,7 +1108,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "armour_subtitle_heavy"
-					position = { x = 275k  y = 50 }
+					position = { x = 275k  y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1124,7 +1124,7 @@ guiTypes = {
 					position = { x = 150 y = 230 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
+					borderSize = {x = 0 y = 40}
 					text = "ARMOUR_TITLE_MEDIUM"
 					maxWidth = 200
 					maxHeight = 62
@@ -1146,10 +1146,10 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "armour_subtitle_amphibious"
-					position = { x = -350 y = 305 }
+					position = { x = -350 y = 80 }
 					textureFile = ""
 					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
+					borderSize = {x = 10 y = -20}
 					text = "ARMOUR_TITLE_AMPH"
 					maxWidth = 200
 					maxHeight = 62
@@ -1161,14 +1161,6 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "gwtank_chassis_tree"
-				position = { x= 750 y = 40 }
-				size = { width = 80% height = 80% }
-				slotsize = { width = 70 height = 70 }
-				format = "UPPER_LEFT"
-			}
-
-			gridboxtype = {
-				name = "amphibious_tank_chassis_tree"
 				position = { x= 750 y = 40 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
@@ -1193,7 +1185,15 @@ guiTypes = {
 			#juggle 
 			gridboxtype = {
 				name = "Juggle_5_tree"
-				position = { x = 334 y = 72 }
+				position = { x = 230 y = 72 }
+				size = { width = 72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			# radio
+			gridboxtype = {
+				name = "tank_radio_tree"
+				position = { x = 750 y = -30 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
