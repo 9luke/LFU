@@ -19,10 +19,7 @@ armor_HUN = {
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = main_battle_tank
 		}
 
 		modifier = {
@@ -215,44 +212,7 @@ armor_HUN = {
 		}
 	}
 
-	modern_armor_default_HUN = {
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 6
-				OR = {
-					has_tech = main_battle_tank
-					has_tech = main_battle_tank_chassis
-				}
-			}
-		}
-
-		division_names_group = HUN_ARM_01
-
-		target_template = {
-
-			support = {
-				engineer = 1
-				mot_recon = 1
-				maintenance_company = 1
-				logistics_company = 1
-				signal_company = 1
-			}
-
-			regimental_support = {
-				medium_sp_anti_air_support = 2
-				mot_fire_support = 1
-			}
-
-			regiments = {
-				modern_armor = 3
-				mechanized = 6
-				medium_sp_artillery_brigade = 2
-			}
-		}
-	}
+	
 }
 
 garrison_HUN = {
@@ -364,7 +324,6 @@ infantry_HUN = {
 				fire_support = 1
 				anti_air = 1
 			}
-
 
 			regiments = {
 				infantry = 9
@@ -585,8 +544,6 @@ mobile_HUN = {
 	}
 }
 
-
-
 # Non-complete list of sub-units
 
 # REGIMENTS:
@@ -623,7 +580,6 @@ mobile_HUN = {
 # - logistics_company
 # - military_police
 # - rocket_artillery
-
 
 # SUPPORT (REGIMENTAL):
 # - anti_air

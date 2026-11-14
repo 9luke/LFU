@@ -19,10 +19,7 @@ armored_SOV = {
 
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = main_battle_tank
 		}
 	}
 
@@ -79,7 +76,6 @@ armored_SOV = {
 		}
 	}
 
-
 	medium_armor_early_SOV = {
 
 		upgrade_prio = {
@@ -106,7 +102,6 @@ armored_SOV = {
 			regimental_support = {
 				anti_air_battery = 1
 			}
-
 
 			regiments = {
 				medium_armor = 2
@@ -143,7 +138,6 @@ armored_SOV = {
 			regimental_support = {
 				anti_air_battery = 2
 			}
-
 
 			regiments = {
 				medium_armor = 4
@@ -191,46 +185,8 @@ armored_SOV = {
 		}
 	}
 
-	modern_armor_default_SOV = {
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 7
-				OR = {
-					has_tech = main_battle_tank
-					has_tech = main_battle_tank_chassis
-				}
-			}
-		}
-
-		target_template = {
-
-			support = {
-				engineer = 1
-				mot_recon = 1
-				logistics_company = 1
-				signal_company = 1
-				maintenance_company = 1
-			}
-
-			regimental_support = {
-				anti_air_battery = 2
-				medium_tank_destroyer_support = 1
-				mot_fire_support = 1
-			}
-
-			regiments = {
-				modern_armor = 4
-				mechanized = 7
-				medium_sp_artillery_brigade = 2
-				motorized_rocket_brigade = 2
-			}
-		}
-	}
+	
 }
-
 
 breakthrough_armor_SOV = {
 
@@ -378,7 +334,6 @@ breakthrough_armor_SOV = {
 		}
 	}
 
-
 	heavy_armor_mid_late_SOV_no_gtd = {
 		division_names_group = SOV_GTC_01
 		upgrade_prio = {
@@ -467,7 +422,6 @@ breakthrough_armor_SOV = {
 	}
 }
 
-
 garrison_SOV = {
 
 	available_for = {
@@ -484,7 +438,6 @@ garrison_SOV = {
 			NOT = { ai_has_role_template = garrison }
 		}
 	}
-
 
 	garrison_SOV = {
 		reinforce_prio = 0
@@ -565,7 +518,6 @@ infantry_SOV = {
 				date < 1940.6.1
 			}
 		}
-
 
 		target_template = {
 
@@ -768,7 +720,6 @@ paratroopers_SOV = {
 	}
 }
 
-
 anti_armor_SOV = {
 	# This is relatively similar to the anti_armor_GER in Germany's file
 
@@ -843,7 +794,6 @@ anti_armor_SOV = {
 		}
 	}
 }
-
 
 # Non-complete list of sub-units
 

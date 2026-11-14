@@ -19,10 +19,7 @@ armor_JAP = {
 		
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = main_battle_tank
 		}
 	}
 
@@ -63,7 +60,6 @@ armor_JAP = {
 		replace_with = medium_armor_default_JAP
 		target_min_match = 0.5
 	}
-
 
 #	heavy_armor_default_JAP = {
 #
@@ -171,44 +167,10 @@ armor_JAP = {
 		}
 		
 		replace_at_match = 0.8
-		replace_with = modern_armor_default_JAP
-		target_min_match = 0.5
+target_min_match = 0.5
 	}
 
-
-	modern_armor_default_JAP = {
 	
-		upgrade_prio = {
-			factor = 2
-
-			modifier = {
-				factor = 1
-			}
-		}
-
-		target_template = {
-			
-			support = {
-				engineer = 1
-				light_tank_recon = 1
-				maintenance_company = 1
-				signal_company = 1
-				logistics_company = 1
-			}
-
-			regimental_support = {
-				anti_tank_battery = 1
-				mot_fire_support = 1
-			}
-			
-			regiments = {
-				modern_armor = 4
-				mechanized = 5
-				medium_sp_artillery_brigade = 1
-				medium_sp_anti_air_brigade = 1
-			}
-		}
-	}
 }
 
 infantry_JAP = {
@@ -505,7 +467,6 @@ paratrooper_JAP = {
 	}
 }
 
-
 garrison_JAP = {
 
 	available_for = {
@@ -522,7 +483,6 @@ garrison_JAP = {
 			date < "1939.1.1"
 		}
 	}
-
 
 	garrison_JAP = {
 	

@@ -424,43 +424,6 @@ GER_super_boost_light_for_med_armor = {
 	}
 }
 
-GER_super_boost_light_for_modern_armor = {
-	allowed = {
-		original_tag = GER
-	}
-	enable = {
-		OR = {
-			has_tech = main_battle_tank
-			has_tech = main_battle_tank_chassis
-		}
-		NOT = { has_template_ai_majority_unit = modern_armor }
-	}
-
-	abort = {
-		has_template_ai_majority_unit = modern_armor
-	}
-
-	# lets do changes more often during this period too
-	ai_strategy = {
-		type = land_xp_spend_priority
-		id = division_template
-		value = 100
-	}
-
-	# this is gateway
-	ai_strategy = {
-		type = template_prio
-		id = medium_armor
-		value = 100
-	}
-
-	ai_strategy = {
-		type = template_prio
-		id = modern_armor
-		value = 150
-	}
-}
-
 GER_how_about_some_more_transport_planes = {
 	allowed = {
 		original_tag = GER
@@ -639,7 +602,6 @@ GER_war_with_soviets = {
 	abort = {
 		NOT = { country_exists = SOV }
 	}
-
 
 	ai_strategy = {
 		type = antagonize
@@ -2225,7 +2187,6 @@ GER_my_precisioussss = {
 	}
 
 	abort_when_not_enabled = yes
-
 
 	ai_strategy = {
 		type = send_lend_lease_desire
@@ -3828,8 +3789,6 @@ GER_sweden_was_a_puppet_and_broke_free_so_now_we_are_angry = {
 		value = 200
 	}
 }
-
-
 
 GER_dont_DOW_benelux = { #Don't try to bypass Around the Maginot!
 	allowed = {

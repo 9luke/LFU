@@ -19,10 +19,7 @@ armored_ITA = {
 		
 		modifier = {
 			factor = 2
-			OR = {
-				has_tech = main_battle_tank
-				has_tech = main_battle_tank_chassis
-			}
+			has_tech = main_battle_tank
 		}
 	}
 
@@ -264,45 +261,8 @@ armored_ITA = {
 		}
 	}
 
-	modern_armor_default_ITA = {
-
-		upgrade_prio = {
-			base = 1
-
-			modifier = {
-				factor = 7
-				OR = {
-					has_tech = main_battle_tank
-					has_tech = main_battle_tank_chassis
-				}
-				has_tech = mechanised_infantry
-			}
-		}
-
-		target_template = {
-			
-			support = {
-				engineer = 1
-				armored_car_recon = 1
-				maintenance_company = 1
-				signal_company = 1
-			}
-
-			regimental_support = {
-				anti_air_battery = 1
-				mot_fire_support = 1
-			}
-			
-			regiments = {
-				modern_armor = 3
-				motorized = 2
-				mechanized = 3
-				medium_sp_artillery_brigade = 1
-			}
-		}
-	}
+	
 }
-
 
 garrison_ITA = {
 
@@ -320,7 +280,6 @@ garrison_ITA = {
 			NOT = { ai_has_role_template = garrison }
 		}
 	}
-
 
 	garrison_ITA = {
 	
@@ -522,7 +481,6 @@ marines_ITA = {
 	}
 }
 
-
 paratroopers_ITA = {
 
 	available_for = {
@@ -570,7 +528,6 @@ paratroopers_ITA = {
 	}
 }
 
-
 militia_ITA = {
 
 	available_for = {
@@ -606,8 +563,6 @@ militia_ITA = {
 		}
 	}
 }
-
-
 
 # Non-complete list of sub-units
 
