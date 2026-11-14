@@ -1139,25 +1139,12 @@
         search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
 				add_tech_bonus = {
 					name = SAF_establish_the_atomics_energy_board
 					bonus = 0.5
 					uses = 1
 					category = nuclear
 				}
-			}
-			else = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.75
-				}
-			}
 		}
 	}
 

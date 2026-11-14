@@ -2189,19 +2189,7 @@ focus_tree = {
 			set_major = yes
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			random_owned_controlled_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					land_facility < 1
-					air_facility < 1
-					nuclear_facility < 1
-					naval_facility < 1
-				}
-				prioritize = { 285 }
-				construct_building_in_random_province = {
-					naval_facility = 1
-				}
-			}
+
 		}
 
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
@@ -7383,9 +7371,9 @@ focus = {
 	
 		completion_reward = {
 			AST_add_or_modify_forging_australias_future = yes
-			add_to_variable = { AST_forging_australias_future_spirit_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
-			add_to_variable = { AST_forging_australias_future_spirit_special_project_speed_factor = 0.10 tooltip = special_project_speed_factor_tt }
-			add_to_variable = { AST_forging_australias_future_spirit_production_speed_facility_factor = 0.10 tooltip = production_speed_facility_factor_tt }
+			#add_to_variable = { AST_forging_australias_future_spirit_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
+			#add_to_variable = { AST_forging_australias_future_spirit_special_project_speed_factor = 0.10 tooltip = special_project_speed_factor_tt }
+			#add_to_variable = { AST_forging_australias_future_spirit_production_speed_facility_factor = 0.10 tooltip = production_speed_facility_factor_tt }
 
 		}
 
@@ -8140,10 +8128,6 @@ focus = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.25
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -8292,11 +8276,6 @@ focus = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
 
 			add_tech_bonus = {
 				name = radar_focus
@@ -9847,23 +9826,7 @@ focus = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			if = { ## If don't have a land facility, then grant it, otherwise give tech bonuses 
-				limit = {
-					any_owned_state = {
-						is_core_of = AST
-						is_fully_controlled_by = AST
-						can_construct_building = land_facility
-					}
-				}
-				random_owned_controlled_state = { 	
-					prioritize = { 285 517 519 } #Sydney, Melbourne, Adelaide 
-					construct_building_in_random_province = {
-						land_facility = 1
-					}
-				}		
-			}	
 
-			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			add_tech_bonus = {
 				name = AST_army_inventions_directorate_taog 
@@ -10116,7 +10079,7 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+					always = yes
 				}
 				air_experience = 25
 				add_tech_bonus = {
@@ -10353,7 +10316,7 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+					always = yes
 				}
 				add_tech_bonus = {
 					name = AST_the_gathering_storm
@@ -10544,7 +10507,7 @@ focus = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+					always = yes
 				}
 				add_tech_bonus = {
 					name = AST_hear_the_thunder

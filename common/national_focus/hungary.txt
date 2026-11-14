@@ -3910,9 +3910,7 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
+					always = yes
 				}
 				NOT = {
 					has_tech = fighter3
@@ -4005,9 +4003,7 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
+					always = yes
 				}
 				NOT = {
 					has_tech = CAS3

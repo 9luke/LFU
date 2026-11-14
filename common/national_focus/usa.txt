@@ -1100,7 +1100,7 @@ focus_tree = {
 							NOT = { is_core_of = ITA }
 						}
 						OR = {
-							NOT = { has_dlc = "By Blood Alone" }
+							always = yes
 							NOT = {
 								has_completed_focus = ITA_abolish_the_colonies
 								has_completed_focus = ITA_new_colonial_policies
@@ -1818,31 +1818,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 
-			IF = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
 				add_tech_bonus = {
 					name = USA_manhattan_project
 					bonus = 0.5
 					uses = 1
 					category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
+
 				add_ideas = USA_manhattan_project_ns
-			}
-			ELSE = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 1
-				}
-				add_ideas = USA_manhattan_project_ns
-			}
 		}
 	}
 
@@ -5140,10 +5123,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 			add_tech_bonus = {
 				name = USA_tank_experiments
 				uses = 1
@@ -5812,10 +5792,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.25
-			}
+
 			add_tech_bonus = {
 				name = USA_battleship_primacy
 				bonus = 1.0
@@ -5922,10 +5899,7 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.25
-			}
+
 			add_tech_bonus = {
 				name = USA_carrier_primacy
 				bonus = 1.0
@@ -6008,14 +5982,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.25
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
+
 
 			add_tech_bonus = {
 				name = USA_naval_radar
@@ -6131,10 +6098,7 @@ focus_tree = {
 				category = ss_tech
 			}
 
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.25
-			}
+
 
 			IF = {
 				limit = {

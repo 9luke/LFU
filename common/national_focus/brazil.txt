@@ -2882,7 +2882,7 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				add_equipment_to_stockpile = { 
 					type = small_plane_airframe_1
@@ -2899,7 +2899,7 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					has_dlc = "Arms Against Tyranny"
+					always = no
 				}
 				add_equipment_subsidy = {
 					cic = 500
@@ -3382,10 +3382,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.5
-			}
 		}
 
 	}
@@ -4033,7 +4029,7 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				add_equipment_to_stockpile = { 
 					type = small_plane_airframe_1
@@ -6370,7 +6366,7 @@ allow_branch = {
 
 			IF = {
 				limit = { 
-					has_dlc = "By Blood Alone" 
+					always = no
 					has_dlc = "La Resistance"
 				}
 				set_technology = { photo_reconnaisance = 1 }

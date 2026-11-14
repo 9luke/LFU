@@ -450,10 +450,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
 				bonus = 1.0
@@ -739,10 +736,6 @@
 
 		complete_tooltip = {
 			air_experience = 25
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
 			random_state = {				
 				limit = {
 					has_state_flag = AST_expand_the_raaf_AB
@@ -763,10 +756,7 @@
 
 		completion_reward = {
 			air_experience = 25
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
+
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -821,7 +811,7 @@
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+					always = yes
 				}
 				add_tech_bonus = {
 					name = AST_cac_boomerang
@@ -956,9 +946,7 @@
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
+					always = yes
 				}
 				add_tech_bonus = {
 					name = AST_cac_woomera
@@ -2474,16 +2462,9 @@
 					uses = 1
 					category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.15
-				}
 			}
 			else = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.75
-				}
+
 			}
 			custom_effect_tooltip = CHL_skip_one_line_tt
 			add_tech_bonus = {

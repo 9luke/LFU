@@ -1516,7 +1516,7 @@ allow_branch = {
 		completion_reward = {
 			if = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+					always = yes
 				}
 				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
 				hidden_effect = { set_technology = { suicide_craft = 1 } }
@@ -1844,10 +1844,7 @@ allow_branch = {
 		completion_reward = {
 			air_experience = 25
 			MAN = {
-				add_breakthrough_progress = {
-					specialization = specialization_air
-					value = 0.5
-				}
+
 				add_tech_bonus = {
 					name = JAP_create_a_manchurian_imperial_air_force
 					bonus = 1.0
@@ -3081,10 +3078,7 @@ allow_branch = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 1
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -6332,10 +6326,7 @@ allow_branch = {
 
 			air_experience = 50
 				
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 1.5
-			}
+
 
 			add_tech_bonus = {
 				name = JAP_to_reach_princess_kaguya
@@ -6445,10 +6436,7 @@ allow_branch = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 1
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -7562,35 +7550,7 @@ allow_branch = {
 			add_research_slot = 1
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			IF = {
-				limit = {
-					532 = { #Nagoya/Tokai
-						is_fully_controlled_by = ROOT
-						can_construct_building = air_facility
-					}
-				}
-				532 = {
-					# Mitsubishi Arnsenals 
-					add_building_construction = {
-						type = air_facility
-						level = 1
-						instant_build = yes
-						province = 10125
-					}
-				}
-			}
-			ELSE = {
-				random_core_state = {
-					limit = {
-						can_construct_building = air_facility
-						is_owned_and_controlled_by = ROOT
-					}
-					construct_building_in_random_province = {
-						air_facility = 1
-					}
-				}
-			}
+
 			
 		}
 	}
@@ -13704,10 +13664,7 @@ allow_branch = {
 			
 			MAN = {
 				air_experience = 25
-				add_breakthrough_progress = {
-					specialization = specialization_air
-					value = 0.5
-				}
+
 
 				custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -23078,10 +23035,7 @@ allow_branch = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.75
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -23752,41 +23706,6 @@ allow_branch = {
 				}
 				custom_effect_tooltip = JAP_fund_the_riken_institute_tt
 				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-			ELSE_IF = {
-				limit = {
-					JAP_zaibatsu_faction_is_at_least_influential = yes
-				}
-				IF = {
-					limit = {
-						282 = { # Saitama/Kanto
-							is_fully_controlled_by = ROOT
-							can_construct_building = nuclear_facility
-						}
-					}
-					282 = {
-						# RIKEN Institute
-						add_building_construction = {
-							type = nuclear_facility
-							level = 1
-							instant_build = yes
-							province = 1097 # Saitama
-						}
-					}
-					custom_effect_tooltip = generic_skip_one_line_tt
-				}
-				ELSE = {
-					random_core_state = {
-						limit = {
-							can_construct_building = nuclear_facility
-							is_owned_and_controlled_by = ROOT
-						}
-						construct_building_in_random_province = {
-							nuclear_facility = 1
-						}
-					}
-					custom_effect_tooltip = generic_skip_one_line_tt
-				}
 			}
 
 			custom_effect_tooltip = available_political_advisor
@@ -25007,10 +24926,6 @@ allow_branch = {
 							instant_build = yes
 						}
 					}
-					add_breakthrough_progress = {
-						specialization = specialization_air
-						value = 0.15
-					}
 				}
 			}
 			else = {
@@ -25031,10 +24946,7 @@ allow_branch = {
 						instant_build = yes
 					}
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_air
-					value = 0.15
-				}
+
 			}
 		}
 	}
@@ -26386,10 +26298,7 @@ allow_branch = {
 				uses = 2
 				category = armor
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 
 			IF = {
 				limit = {
@@ -26460,10 +26369,7 @@ allow_branch = {
 				uses = 1
 				category = armor
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.25
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
@@ -26521,10 +26427,7 @@ allow_branch = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.25
-			}
+
 
 			add_tech_bonus = {
 				name = JAP_the_ultimate_tank
@@ -26852,10 +26755,7 @@ allow_branch = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -26940,10 +26840,6 @@ allow_branch = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.25
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -27007,10 +26903,6 @@ allow_branch = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -27429,70 +27321,49 @@ allow_branch = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_IMPERIAL_INFLUENCE FOCUS_FILTER_HISTORICAL }
 
 		completion_reward = {			
-			
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.25
-			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			JAP_add_or_modify_advanced_weapon_projects = yes
-			add_to_variable = { JAP_advanced_weapons_production_speed_land_facility_factor = 0.1 tooltip = production_speed_land_facility_factor_tt }
-			add_to_variable = { JAP_advanced_weapons_sp_tag_tank_speed_factor = 0.05 tooltip = sp_tag_tank_speed_factor_tt }
-			add_to_variable = { JAP_advanced_weapons_sp_tag_artillery_speed_factor = 0.05 tooltip = sp_tag_artillery_speed_factor_tt }
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
+			random_core_state = {
 				limit = {
+					is_fully_controlled_by = ROOT
 					NOT = {
-						JAP_army_faction_is_at_least_influential = yes
+						has_state_category = small_island
+						has_state_category = tiny_island
+					}
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
 					}
 				}
-				custom_effect_tooltip = JAP_army_weapons_administration_headquarters_tt
-				custom_effect_tooltip = generic_skip_one_line_tt
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
 			}
-			ELSE_IF = {
+			random_core_state = {
 				limit = {
-					JAP_army_faction_is_at_least_influential = yes
-				}
-				IF = {
-					limit = {
-						534 = { # Nagano/Koshintetsu 
-							is_fully_controlled_by = ROOT
-							can_construct_building = land_facility
-						}
+					is_fully_controlled_by = ROOT
+					NOT = {
+						has_state_category = small_island
+						has_state_category = tiny_island
 					}
-					534 = {
-						# Underground Weapons Testing Arsenal 
-						add_building_construction = {
-							type = land_facility
-							level = 1
-							instant_build = yes
-							province = 10015 # Nagano
-						}
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
 					}
-					custom_effect_tooltip = generic_skip_one_line_tt
 				}
-				ELSE = {
-					random_core_state = {
-						limit = {
-							can_construct_building = land_facility
-							is_owned_and_controlled_by = ROOT
-						}
-						construct_building_in_random_province = {
-							land_facility = 1
-						}
-					}
-					custom_effect_tooltip = generic_skip_one_line_tt
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
 				}
-			}
-
+			}					
 			JAP_small_army_faction_gain = yes
-
 		}
-
 	}
 
 	focus = {
@@ -27693,38 +27564,12 @@ allow_branch = {
 
 		completion_reward = {
 
-			IF = {
-				limit = {
-					NOT = { has_completed_focus = JAP_f_go_nuclear_project}
-				}
-				add_tech_bonus = {
-					name = JAP_ni_go_nuclear_project
-					bonus = 0.25
-					uses = 1
-					category = nuclear
-				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.15
-				}
-			}
-			ELSE = {
 				add_tech_bonus = {
 					name = JAP_ni_go_nuclear_project
 					bonus = 1
 					uses = 1
 					category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
-			}
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			JAP_add_or_modify_advanced_weapon_projects = yes
-			add_to_variable = { JAP_advanced_weapons_sp_nuclear_bomb_speed_factor = 0.05 tooltip = sp_nuclear_bomb_speed_factor_tt }
 		}
 	}
 
@@ -27872,18 +27717,12 @@ allow_branch = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
+					always = yes
 				}
 				set_technology = { cv_fighter2 = 1 } 
 			}
@@ -28071,10 +27910,7 @@ allow_branch = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			JAP_add_or_modify_army_and_naval_air_services = yes
@@ -28118,11 +27954,7 @@ allow_branch = {
 		search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 
 		completion_reward = {
-			
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.15
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -28405,45 +28237,6 @@ allow_branch = {
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
-
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			IF = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				custom_effect_tooltip = GER_unlocks_statue_of_liberty_raid_tt
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-				
-				JAP_add_or_modify_advanced_weapon_projects = yes
-				IF = {
-					limit = {
-						NOT = { is_special_project_completed = sp_air_intercontinental_bomber }
-					}
-					add_to_variable = { 
-						JAP_advanced_weapons_sp_air_intercontinental_bomber_speed_factor = 0.25 #This is the focus of this focus, so extra speed
-						tooltip = sp_air_intercontinental_bomber_speed_factor_tt
-					}
-				}
-				IF = {
-					limit = {
-						NOT = { is_special_project_completed = sp_air_mothership_aircraft }
-					}
-					add_to_variable = { 
-						JAP_advanced_weapons_sp_air_mothership_aircraft_speed_factor = 0.15
-						tooltip = sp_air_mothership_aircraft_speed_factor_tt
-					}
-				}
-				add_to_variable = { JAP_advanced_weapons_production_speed_air_facility_factor = 0.1 tooltip = production_speed_air_facility_factor_tt }
-				
-			}
-			ELSE = {
 				add_tech_bonus = {
 					name = JAP_project_z_bomber_project
 					bonus = 1
@@ -28451,9 +28244,6 @@ allow_branch = {
 					category = transport_planes_cat
 					category = cat_strategic_bomber
 				}
-				JAP_add_or_modify_advanced_weapon_projects = yes
-				add_to_variable = { JAP_advanced_weapons_production_speed_air_facility_factor = 0.1 tooltip = production_speed_air_facility_factor_tt }
-			}
 
 		}
 
@@ -28591,10 +28381,6 @@ allow_branch = {
 				remove_ideas = JAP_separate_air_services
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			JAP_add_or_modify_advanced_weapon_projects = yes
-			add_to_variable = { JAP_advanced_weapons_production_speed_air_facility_factor = 0.1 tooltip = production_speed_air_facility_factor_tt }
 
 			custom_effect_tooltip = generic_skip_one_line_tt 
 
@@ -28822,11 +28608,6 @@ allow_branch = {
 		search_filters = { FOCUS_FILTER_HISTORICAL FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 1
-			}
 
 			add_tech_bonus = {
 				name = JAP_sea_jet_prototypes
@@ -28885,16 +28666,13 @@ allow_branch = {
 				uses = 1
 				category = rocketry
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			IF = {
 				limit = {
-					NOT = { has_dlc = "By Blood Alone" }
+					always = yes
 				}
 				custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
 				hidden_effect = { set_technology = { suicide_craft = 1 } }
@@ -29055,11 +28833,6 @@ allow_branch = {
 				bonus = 0.5
 				uses = 1
 				category = naval_equipment
-			}
-
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.5
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -29358,10 +29131,6 @@ allow_branch = {
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.15
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
@@ -29941,10 +29710,7 @@ allow_branch = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.25
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -30241,10 +30007,6 @@ allow_branch = {
 
 		completion_reward = {
 			
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.75
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -30613,10 +30375,7 @@ allow_branch = {
 					uses = 1
 					category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.15
-				}
+
 			}
 			ELSE = {
 				add_tech_bonus = {
@@ -30625,10 +30384,7 @@ allow_branch = {
 					uses = 1
 					category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
+
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -30680,10 +30436,7 @@ allow_branch = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 1
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 

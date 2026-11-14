@@ -5226,7 +5226,7 @@ focus_tree = {
                 add_ideas = idea_RAJ_japanese_army_advisors
                 if = {
                     limit = {
-                        has_dlc = "By Blood Alone"
+                        always = no
                     }
 
                     create_equipment_variant = {
@@ -8552,10 +8552,7 @@ focus_tree = {
                 technology  = atomic_research # optional
             }
 
-           add_breakthrough_points = {
-                specialization = specialization_nuclear 
-                value = 1
-            }
+
 
             add_country_leader_trait = destroyer_of_worlds
         }
@@ -8867,21 +8864,6 @@ focus_tree = {
         }
 
         completion_reward = {
-            random_owned_controlled_state = {
-                limit = {
-                    can_construct_building = air_facility
-                }
-                prioritize = { 439 }
-                construct_building_in_random_province = {
-                    air_facility = 1
-                }
-            }
-
-            add_breakthrough_points = {
-                specialization = specialization_air 
-                value = 1
-            }
-
             add_tech_bonus = {
                 bonus = 1
                 uses = 2
@@ -11085,49 +11067,13 @@ focus = {
 		add_research_slot = 1
 
 		custom_effect_tooltip = generic_skip_one_line_tt
-
-		if = {
-			limit = {
-				NOT = {
-					has_tech = atomic_research
-				}
-			}
 			add_tech_bonus = {
 				name = RAJ_institute_of_fundamental_research
 				bonus = 1.0
 				uses = 1
 				category = nuclear
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.25
-			}
-		}
-		else = {
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.75
-			}
-		}
 
-		custom_effect_tooltip = generic_skip_one_line_tt
-
-		if = {
-			limit = {
-				RAJ_homi_j_bhabha = {
-					has_scientist_level = {
-						specialization = specialization_nuclear
-						level < 5
-					}
-				}
-			}
-			RAJ_homi_j_bhabha = {
-				add_scientist_level = {
-					specialization = specialization_nuclear
-					level = 1
-				}
-			}
-		}
 	}
 }
 
@@ -11184,27 +11130,6 @@ focus = {
 		}
 		else = {
 			add_ideas = RAJ_war_industry_no_aat
-		}
-
-		custom_effect_tooltip = generic_skip_one_line_tt
-
-		random_owned_controlled_state = {
-			limit = {
-				is_fully_controlled_by = ROOT
-				land_facility < 1
-				air_facility < 1
-				nuclear_facility < 1
-				naval_facility < 1
-			}
-			prioritize = { 439 }
-			construct_building_in_random_province = {
-				land_facility = 1
-			}
-		}
-
-		add_breakthrough_points = {
-			specialization = specialization_land
-			value = 1
 		}
 
 		custom_effect_tooltip = generic_skip_one_line_tt
@@ -16782,7 +16707,7 @@ focus = {
 
             if = {
                 limit = {
-                    has_dlc = "By Blood Alone"
+                    always = no
                 }
                 add_tech_bonus = {
                     name = RAJ_douglas_dakota
@@ -16835,7 +16760,7 @@ focus = {
         completion_reward = {
             if = {
                 limit = {
-                    has_dlc = "By Blood Alone"
+                    always = no
                 }
 
                 add_tech_bonus = {
@@ -17283,29 +17208,12 @@ focus = {
         search_filters = {FOCUS_FILTER_RESEARCH}
 
         completion_reward = {
-            if = {
-                limit = {
-                    NOT = {
-                        has_tech = atomic_research
-                    }
-                }
                 add_tech_bonus = {
                     name = RAJ_the_smiling_buddha
                     bonus = 3.0
                     uses = 1
                     category = nuclear
                 }
-                add_breakthrough_progress = {
-                    specialization = specialization_nuclear
-                    value = 0.5
-                }
-            }
-            else = {
-                add_breakthrough_progress = {
-                    specialization = specialization_nuclear
-                    value = 1
-                }
-            }
 
         }
     }

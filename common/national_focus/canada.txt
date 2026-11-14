@@ -1635,29 +1635,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			IF = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
 				add_tech_bonus = {
 					name = CAN_uranium_mining
 					bonus = 0.5
 					uses = 1
 					category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.25
-				}
-			}
-			ELSE = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.75
-				}
-			}
+
 		}
 	}
 
@@ -2136,10 +2120,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.15
-			}
+
 			add_tech_bonus = {
 				name = CAN_royal_regiment_of_canadian_artillery
 				bonus = 1.0
@@ -2373,10 +2354,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
@@ -3158,10 +3136,6 @@ focus_tree = {
 
 		complete_tooltip = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
 
 			add_tech_bonus = {
 				name = CAN_the_pacific_coast_air_defence_radar_system
@@ -3203,10 +3177,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
 
 			add_tech_bonus = {
 				name = CAN_the_pacific_coast_air_defence_radar_system
@@ -3563,10 +3533,6 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
 
 			add_tech_bonus = {
 				name = CAN_the_sabre_project
@@ -3825,10 +3791,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.15
-			}
+
 			if = {
 				limit = {
 					has_doctrine = convoy_escort
@@ -3889,10 +3852,7 @@ focus_tree = {
 
 		completion_reward = {
 			navy_experience = 25
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.15
-			}
+
 			add_mastery_bonus = {
 				name = CAN_fleet_in_being
 				bonus = 0.1

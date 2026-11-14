@@ -3021,23 +3021,12 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 1
-			}
 
 			add_tech_bonus = {
 				name = ITA_thermojet_research
-				bonus = 1
+				bonus = 2
 				uses = 1
 				category = air_equipment
-			}
-			add_tech_bonus = {
-				name = ITA_thermojet_research
-				ahead_reduction = 1
-				bonus = 1.0
-				category = jet_technology
-				category = rocketry
 			}
 
 		}
@@ -4256,38 +4245,6 @@ focus_tree = {
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 			}
-
-			custom_effect_tooltip = ITA_citta_dell_aria_tt
-			hidden_effect = {
-				IF = {
-					limit = { 
-						2 = {
-							is_fully_controlled_by = ROOT
-							air_facility < 1
-							land_facility < 1
-							naval_facility < 1
-							nuclear_facility < 1
-						}
-					}
-
-					2 = {
-						add_building_construction = {
-							type = air_facility
-							level = 1
-							instant_build = yes
-							province = 11751 # North of Rome
-						}
-					}
-				}
-			}
-
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-				ITA_add_citta_dell_aria_templates = yes
-			}
 		}
 	}
 
@@ -4385,7 +4342,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				ITA_add_reggianes_exports_templates = yes
 			}
@@ -4477,7 +4434,7 @@ focus_tree = {
 		available = {
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				has_tech = improved_small_airframe
 				has_tech = improved_medium_airframe
@@ -4669,7 +4626,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				ITA_add_long_range_aircraft_templates = yes
 			}
@@ -4712,7 +4669,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				ITA_add_bomber_designs_templates = yes
 			}
@@ -4755,7 +4712,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				ITA_add_fighter_designs_templates = yes
 			}
@@ -4802,7 +4759,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				ITA_add_multirole_aircraft_templates = yes
 			}
@@ -4850,7 +4807,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				ITA_add_supremacy_in_the_skies_templates = yes
 			}
@@ -5870,7 +5827,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				ITA_naval_air_coordination_templates = yes
 			}
@@ -11302,29 +11259,12 @@ focus_tree = {
 				ITA_create_edgardo_sogno_operative = yes
 			}
 			
-			IF = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
 				add_tech_bonus = {
 					name = ITA_meritocracy
 					bonus = 0.75 # was 1
 					uses = 1
 					category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.25
-				}
-			}
-			ELSE = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
-			}
 			ITA_bop_very_low_increase_grandi_side_effect = yes
 		}
 	}
@@ -12080,10 +12020,7 @@ focus_tree = {
 				days = 1095
 			}
 			
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 1
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -12949,10 +12886,6 @@ focus_tree = {
 				#technology = ship_hull_super_heavy
 			#}
 
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.75
-			}
 
 			if = {
 				limit = {
@@ -13125,7 +13058,7 @@ focus_tree = {
 			has_full_control_of_state = 2
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				has_tech = advanced_large_airframe
 				has_tech = engines_4
@@ -13173,10 +13106,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
 
 			if = {
 				limit = {
@@ -13288,10 +13217,7 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 			if = {
 				limit = {
 					has_dlc = "Gotterdammerung"
@@ -13447,11 +13373,7 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.5
-			}
+
 
 			if = {
 				limit = {
@@ -19670,14 +19592,6 @@ allow_branch = {
 		completion_reward = {
 			add_political_power = 70
 
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.25
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.25
-			}
 
 			add_tech_bonus = {
 				name = ITA_bring_back_exiled_intellectuals

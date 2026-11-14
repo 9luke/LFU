@@ -3104,7 +3104,7 @@ initial_show_position = {
 			else = {
 				if = {
 					limit = {
-						NOT = { has_dlc = "By Blood Alone" }
+						always = yes
 					}
 					add_equipment_to_stockpile = {
 						type = fighter_equipment_1
@@ -3165,7 +3165,7 @@ initial_show_position = {
 			else = {
 				if = {
 					limit = {
-						NOT = { has_dlc = "By Blood Alone" }
+						always = yes
 					}
 					add_equipment_to_stockpile = {
 						type = fighter_equipment_1

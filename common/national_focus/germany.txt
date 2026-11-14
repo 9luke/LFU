@@ -3219,10 +3219,7 @@ focus_tree = {
 				category = infantry_weapons
 			}
 
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 
 			if = {
 				limit = {
@@ -4278,23 +4275,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = { has_tech = atomic_research }
-				}
+
 				add_tech_bonus = {
 					name = GER_uranverein
 					bonus = 1.0
 					uses = 1
 					category = nuclear
 				}
-			}
-			else = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -4641,10 +4628,7 @@ focus_tree = {
 				uses = 1
 				category = cat_medium_armor
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.5
-			}
+
 
 			
 			if = {
@@ -4966,10 +4950,7 @@ focus_tree = {
 				uses = 2
 				category = air_equipment
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
+
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
@@ -5054,7 +5035,7 @@ focus_tree = {
 			# On historical, this focus is completed mid-late 1939
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5200,7 +5181,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5344,7 +5325,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5463,10 +5444,7 @@ focus_tree = {
 				category = rocketry
 			}
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.75
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -5598,7 +5576,7 @@ focus_tree = {
 			#This one is not really needed, first 'FW 190'
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -5776,10 +5754,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
+
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -6100,7 +6075,7 @@ focus_tree = {
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				custom_effect_tooltip = generic_skip_one_line_tt
 				create_equipment_variant = { 
@@ -6244,16 +6219,12 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			add_breakthrough_progress = {
-				specialization = specialization_air
-				value = 0.5
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 				}
 				create_equipment_variant = { 
 					name = "Me 262" 
@@ -9234,7 +9205,7 @@ focus_tree = {
 				}
 				if = {
 					limit = {
-						has_dlc = "By Blood Alone"
+						always = no
 					}
 					random_country_division = {
 						limit = {
@@ -9383,18 +9354,6 @@ focus_tree = {
 				category = artillery
 				category = naval_equipment
 				category = air_equipment
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_special_project_speed_factor = 0.05
-				tooltip = special_project_speed_factor_tt
-			}
-			add_to_variable = { 
-				GER_wunderwaffen_production_speed_facility_factor = 0.05
-				tooltip = production_speed_facility_factor_tt
 			}
 		}
 	}
@@ -14487,19 +14446,6 @@ focus_tree = {
 						category = armor
 					}
 				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
-
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 1
-			}
-
-			SOV = {
-				add_breakthrough_progress = {
-					specialization = specialization_land
-					value = 1
-				}
 			}
 		}
 	}
@@ -18458,15 +18404,6 @@ focus_tree = {
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_special_project_speed_factor = 0.05
-				tooltip = special_project_speed_factor_tt
-			}
-			add_to_variable = { 
-				GER_wunderwaffen_production_speed_facility_factor = 0.1
-				tooltip = production_speed_facility_factor_tt
-			}
 		}
 	}
 
@@ -25522,22 +25459,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.5
-			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_production_speed_nuclear_facility_factor = 0.15
-				tooltip = production_speed_nuclear_facility_factor_tt
-			}
-			add_to_variable = { 
-				GER_wunderwaffen_production_speed_nuclear_reactor_factor = 0.1
-				tooltip = production_speed_nuclear_reactor_factor_tt
-			}
 			if = {
 				limit = {
 					NOT = { is_special_project_completed = sp:sp_nuclear_reactor }
@@ -26071,28 +25993,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			add_breakthrough_progress = {
-				specialization = specialization_land
-				value = 0.25
-			}
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.25
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			
-			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_special_project_speed_factor = 0.05
-				tooltip = special_project_speed_factor_tt
-			}
-			add_to_variable = { 
-				GER_wunderwaffen_production_speed_facility_factor = 0.1
-				tooltip = production_speed_facility_factor_tt
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = GER_walter_dornberger
 
@@ -32481,13 +32381,6 @@ focus_tree = {
 				category = bb_tech
 			}
 
-			add_breakthrough_progress = {
-				specialization = specialization_naval
-				value = 0.5
-			}
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
-
 			add_ideas = GER_rebuild_the_high_seas_fleet
 
 		}
@@ -36388,10 +36281,7 @@ allow_branch = {
 				limit = {
 					NOT = { is_special_project_completed = sp:sp_nuclear_reactor }
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.75
-				}
+
 			}
 			else_if = {
 				limit = {
@@ -36409,10 +36299,7 @@ allow_branch = {
 						instant_build = yes
 					}
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
+
 			}
 			else = {
 				random_owned_controlled_state = {
@@ -36427,10 +36314,7 @@ allow_branch = {
 						instant_build = yes
 					}
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.5
-				}
+
 			}			
 		}
 	}

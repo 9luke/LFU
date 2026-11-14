@@ -1185,10 +1185,7 @@ shared_focus = {
 
 	completion_reward = {
 
-		add_breakthrough_progress = {
-			specialization = specialization_air
-			value = 0.75
-		}
+
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -1231,12 +1228,6 @@ shared_focus = {
 
 	completion_reward = {
 
-		if = {
-			limit = {
-				NOT = {
-					has_tech = atomic_research
-				}
-			}
 			add_tech_bonus = {
 				name = JUNO_nuclear_initiative
 				ahead_reduction = 2
@@ -1244,17 +1235,7 @@ shared_focus = {
 				uses = 1
 				category = nuclear
 			}
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.25
-			}
-		}
-		else = {
-			add_breakthrough_progress = {
-				specialization = specialization_nuclear
-				value = 0.75
-			}
-		}
+
 
 	}   
 }  
@@ -2789,10 +2770,7 @@ shared_focus = {
 			add_to_variable = { JUNO_airforce_modifier_air_agility_factor = 0.05 tooltip = air_agility_factor_tt }
 			add_to_variable = { JUNO_airforce_modifier_air_defence_factor = 0.1 tooltip = air_defence_factor_tt }
 		}
-		add_breakthrough_progress = {
-			specialization = specialization_air
-			value = 0.25
-		}
+
 		add_tech_bonus = {
 			name = SMB_jet_tech_bonus
 			bonus = 0.5
@@ -2862,10 +2840,7 @@ shared_focus = {
 
 	completion_reward = {
 		navy_experience = 15
-		add_breakthrough_progress = {
-			specialization = specialization_naval
-			value = 0.5
-		}
+
 		add_tech_bonus = {
 			name = SMB_aircraft_carriers
 			bonus = 1
@@ -3790,10 +3765,7 @@ shared_focus = {
 			category = ss_tech
 		}
 
-		add_breakthrough_progress = {
-			specialization = specialization_naval
-			value = 0.25
-		}
+
 
 		IF = {
 			limit = {
@@ -3841,10 +3813,7 @@ shared_focus = {
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
-		add_breakthrough_progress = {
-			specialization = specialization_naval
-			value = 0.25
-		}
+
 
 		custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -3918,10 +3887,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		add_breakthrough_progress = {
-			specialization = specialization_naval
-			value = 0.5
-		}
+
 		custom_effect_tooltip = generic_skip_one_line_tt
 		IF = {
 			limit = {

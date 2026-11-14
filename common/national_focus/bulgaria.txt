@@ -648,29 +648,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			
-			IF = {
-				limit = {
-					NOT = {
-						has_tech = atomic_research
-					}
-				}
+
 				add_tech_bonus = {
 					name = BUL_uranium_prospecting
 				    bonus = 1.0
 				    uses = 1 # was 2
 				    category = nuclear
 				}
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 0.8
-				}
-			}
-			ELSE = {
-				add_breakthrough_progress = {
-					specialization = specialization_nuclear
-					value = 1
-				}
-			}
+
 
 			add_ideas = BUL_buhovo_uranium_mines
 
