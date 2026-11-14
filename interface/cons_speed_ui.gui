@@ -217,49 +217,6 @@ guiTypes = {
 
 		# ===============================================
 
-		instantTextBoxType = {
-			name = "naval_facility_speed"   
-			position = { x = 396 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_naval_facility_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "nuclear_facility_speed"   
-			position = { x = 442 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_facility_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "air_facility_speed"   
-			position = { x = 488 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_air_facility_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "land_facility_speed"   
-			position = { x = 534 y = 340 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_land_facility_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes	
-		}
 		
 		instantTextBoxType = {
 			name = "naval_headquarters_speed"   

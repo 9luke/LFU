@@ -10,7 +10,7 @@ state = {
 	history = {
 
 		owner = JAP
-		add_core_of = SIA
+		#add_core_of = SIA
 
 		buildings = {
 			infrastructure = 2

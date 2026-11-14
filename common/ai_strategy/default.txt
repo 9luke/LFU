@@ -621,7 +621,7 @@ default_major_SF_marines = {
 
 build_patrol_bombers = {
 	enable = {
-		has_dlc = "By Blood Alone"
+		always = no
 		has_navy_size = {
 			size > 1
 		}

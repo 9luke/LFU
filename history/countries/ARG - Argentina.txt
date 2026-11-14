@@ -10,7 +10,7 @@ IF = {
 	}
 }
 IF = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { always = no }
 		#ZHM-REVIEW oob file missing: set_air_oob = "ARG_1936_air_bba"
 		set_technology = {
 			iw_small_airframe = 1
@@ -85,6 +85,7 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 	tech_trucks = 1
+	motorbike = 1 
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -256,7 +257,7 @@ set_country_flag = monroe_doctrine
 		}
 	}
 	IF = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { always = no }
 			set_air_oob = "ARG_1939_air_bba"
 			set_technology = {
 				iw_medium_airframe = 1
@@ -367,7 +368,7 @@ set_popularities = {
 # 1936 Start #
 IF = {
 	limit = {
-		has_dlc = "By Blood Alone"
+		always = no
 	}
 	create_equipment_variant = {
 		name = "FMA D.21" #

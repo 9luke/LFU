@@ -368,7 +368,7 @@ ENG_bba_air_prod_2 = {
 ENG_build_more_patrol_bombers = {
 
 	enable = {
-		has_dlc = "By Blood Alone"
+		always = no
 		has_navy_size = {
 			size > 1
 		}

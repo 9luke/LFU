@@ -95,4 +95,20 @@ technologies = {
 			factor = -100
 		}
 	}
+	Juggle_7 = {
+		research_cost = 0
+		folder = {
+			name = air_techs_folder
+			position = { x = 1 y = 0 }
+		}
+		on_research_complete = {
+			set_technology = {
+				Juggle_7 = 0
+			}
+		}
+
+		ai_will_do = {
+			factor = -100
+		}
+	}
 }

@@ -12,7 +12,7 @@ state={
 			infrastructure = 1
 		}
 		add_claim_by = RAJ
-		add_core_of = WST
+		#add_core_of = WST
 
 		victory_points = {
 			12754 2

@@ -22,7 +22,7 @@ if = {
 	}
 }
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { always = no }
 		set_air_oob = "CAN_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
@@ -97,6 +97,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_recon = 1
 	tech_trucks = 1
+	motorbike = 1 
 	gw_artillery = 1
 	basic_train = 1
 }
@@ -106,7 +107,7 @@ set_grand_doctrine = new_fleet_in_being
 
 if = {
 	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
+		NOT = { always = no }
 	}
 	set_technology = {
 		early_fighter = 1
@@ -217,7 +218,7 @@ if = {
 		}
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { always = no }
 			set_air_oob = "CAN_1939_air_bba"
 			set_technology = {
 				iw_small_airframe = 1

@@ -475,7 +475,7 @@ build_patrol_bombers = {
 		tag = USA
 	}
 	enable = {
-		has_dlc = "By Blood Alone"
+		always = no
 		has_navy_size = {
 			size > 1
 		}

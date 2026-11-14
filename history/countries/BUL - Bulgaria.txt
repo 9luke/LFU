@@ -3,7 +3,7 @@
 #TROOPS
 oob = "BUL_1936" #VANILLA & DLC
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { always = no }
 		set_air_oob = "BUL_1936_air_bba"
 	else = {
 		set_air_oob = "BUL_1936_air_legacy"
@@ -329,6 +329,7 @@ set_technology = { #VANILLA & DLC
 	tech_support = 1		
 	tech_engineers = 1
 	tech_trucks = 1
+	motorbike = 1 
 	motorised_infantry = 1
 	fuel_silos = 1
 	basic_train = 1
@@ -338,7 +339,7 @@ set_technology = { #VANILLA & DLC
 if = {
 	limit = {
 		NOT = {
-			has_dlc = "By Blood Alone"
+			always = no
 		}
 	}
 	set_technology = {
@@ -502,7 +503,7 @@ set_grand_doctrine = new_operational_integrity
 		set_oob = "BUL_1939_nsb"
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { always = no }
 			set_air_oob = "BUL_1939_air_bba"
 			set_technology = {
 				bba_early_transport_plane = 1

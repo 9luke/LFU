@@ -7,8 +7,8 @@ state = {
 
 	history = {
 
-		owner = ARG
-		add_core_of = ARG
+		owner = WST
+		add_core_of = WST
 
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -20,7 +20,6 @@ state = {
 				naval_base = 7
 				bunker = 1
 				coastal_bunker = 1
-				land_facility = 1
 			}
 			7621 = {
 				naval_base = 2

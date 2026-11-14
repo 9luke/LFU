@@ -2709,7 +2709,7 @@ focus_tree = {
 							}
 						}
 					}
-					add_core_of = CZE
+					add_core_of = WST
 				}
 				ELSE = {
 					every_state = {

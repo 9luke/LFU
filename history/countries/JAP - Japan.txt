@@ -438,6 +438,7 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	tech_trucks = 1
+	motorbike = 1 
 	motorised_infantry = 1
 	marines  = 1
 	paratroopers = 1
@@ -561,7 +562,7 @@ IF = {
 
 IF = {
 	limit = { 
-		has_dlc = "By Blood Alone" 
+		always = no 
 	}
 	set_air_oob = "JAP_1936_air_bba"
 	set_technology = {
@@ -1128,7 +1129,7 @@ add_mastery = {
 		}
 	}
 	IF = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { always = no }
 			set_air_oob = "JAP_1939_air_bba"
 			set_technology = {
 				basic_medium_airframe = 1
@@ -1296,7 +1297,7 @@ IF = {
 IF = {
 
 	limit = {
-		has_dlc = "By Blood Alone"
+		always = no
 	}
 
 	create_equipment_variant = {
@@ -2114,7 +2115,7 @@ create_equipment_variant = {
 
 	IF = {
 		limit = {
-			has_dlc = "By Blood Alone"
+			always = no
 		}
 		create_equipment_variant = {
 			name = "Ki-27"

@@ -199,23 +199,11 @@ sp_land_land_cruiser = {
 	project_tags = sp_tag_tank
 
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		always = no
 	}
 
 	available = {
-		if = {
-			limit = {
-				has_dlc = "No Step Back"
-			}
-			FROM = {
-				has_tech = super_heavy_tank_chassis
-			}
-		}
-		else = {
-			FROM = {
-				has_tech = super_heavy_tank
-			}
-		}
+		always = no
 	}
 	
 	prototype_time = sp_time.prototype.medium

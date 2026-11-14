@@ -9,7 +9,7 @@ state = {
 
 		owner = GER
 		add_core_of = GER
-		add_core_of = WST
+		#add_core_of = WST
 
 		victory_points = {
 			241 5 # Wilhelmshaven
@@ -44,9 +44,6 @@ state = {
 			buildings = {
 				industrial_complex = 4
 				dockyard = 3
-				241 = {
-					naval_facility = 1 # Wilhelmshaven Naval Dockyards
-				}
 			}
 		}
 	}

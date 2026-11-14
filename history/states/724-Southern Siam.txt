@@ -34,7 +34,7 @@ state={
 		victory_points = {
 			12230 1 
 		}
-		add_core_of = SIA
+		#add_core_of = SIA
 		1936.1.1.14 = {
 			owner = WST
 			controller = WST

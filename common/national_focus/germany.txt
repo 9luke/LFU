@@ -27201,7 +27201,7 @@ focus_tree = {
 									is_core_of = AUS
 								}
 							}
-							add_core_of = AUS
+							add_core_of = WST
 						}
 					}
 					else_if = {
@@ -27424,7 +27424,7 @@ focus_tree = {
 										}
 									}
 									transfer_state_to = AUS
-									add_core_of = AUS
+									add_core_of = WST
 								}
 							}
 						}

@@ -28,7 +28,7 @@ if = {
 }
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { always = no }
 		set_air_oob = "FRA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
@@ -96,6 +96,7 @@ set_technology = {
 	tech_recon = 1
 	tech_mountaineers = 1
 	tech_trucks = 1
+	motorbike = 1 
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
@@ -245,7 +246,7 @@ if = {
 		}
 	}
 	if = {
-		limit = { has_dlc = "By Blood Alone" }
+		limit = { always = no }
 			set_air_oob = "FRA_1939_air_bba"
 			set_technology = {
 				basic_small_airframe = 1
@@ -596,7 +597,7 @@ if = {
 }
 if = {
 	limit = {
-		has_dlc = "By Blood Alone"
+		always = no
 	}
 	create_equipment_variant = {
 		name = "Br. 19" #
@@ -1136,7 +1137,7 @@ if = {
 1939.1.1 = {
 	if = {
 		limit = {
-			has_dlc = "By Blood Alone"
+			always = no
 		}
 		create_equipment_variant = {
 			name = "M.S. 406" #

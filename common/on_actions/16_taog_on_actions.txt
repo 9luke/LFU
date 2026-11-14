@@ -93,7 +93,7 @@
 						random_owned_controlled_state = {
 							create_unit = {
 								division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.5"
-								owner = IRE
+								owner = WST
 							}
 						}
 					}

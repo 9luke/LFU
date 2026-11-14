@@ -1884,7 +1884,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				create_unit = {
 					division = "division_template = \"Camel Corps\" start_experience_factor = 0.05 start_equipment_factor = 1"
-					owner = IRQ
+					owner = WST
 					count = 2
 				}
 			}
@@ -2409,7 +2409,7 @@ focus_tree = {
 
 				create_unit = {
 					division = "division_template = \"Al-Mechanikiyah\" start_experience_factor = 0.05 start_equipment_factor = 1"
-					owner = IRQ
+					owner = WST
 					count = 1
 				}
 			}
@@ -4099,7 +4099,7 @@ focus_tree = {
 			random_owned_controlled_state = {
 				create_unit = {
 					division = "division_template = \"RAF Levy\" start_experience_factor = 0.05 start_equipment_factor = 1"
-					owner = IRQ
+					owner = WST
 					count = 3
 				}
 			}

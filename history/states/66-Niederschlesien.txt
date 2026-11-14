@@ -15,7 +15,7 @@ state = {
 
 		owner = GER
 		add_core_of = GER
-		add_core_of = WST
+		#add_core_of = WST
 
 		victory_points = {
 			9570 10 # Breslau

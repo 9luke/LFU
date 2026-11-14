@@ -7,7 +7,6 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 
-		filters = { new_content continent }
 		# filters can also contain 'label'
 		# in that case the countries below can have 'label = { label_1 }' or 'label = { label_1 label_2 }'
 		# all these labels will be gathered and displayed as filter buttons

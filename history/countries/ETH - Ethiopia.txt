@@ -2,7 +2,7 @@ capital = 271
 
 IF = {
 	limit = {
-		has_dlc = "By Blood Alone"
+		always = no
 	}
 	ETH_set_up_lon_arms_resolution_effect = yes 
 	set_war_support = 0.30 # People are beginning to lose heart a bit
@@ -117,7 +117,7 @@ IF = {
 }
 IF = {
 	limit = {
-		NOT = { has_dlc = "By Blood Alone" }
+		NOT = { always = no }
 	}
 	set_oob = "ETH_1936"
 	set_variable = { ETH_war_escalation_level = 0 }
@@ -132,6 +132,7 @@ set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
 	tech_trucks = 1
+	motorbike = 1 
 	basic_train = 1
 }
 recruit_character = ETH_haile_selassie
@@ -150,7 +151,7 @@ set_politics = {
 	elections_allowed = no
 }
 IF = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { always = no }
 	set_popularities = {
 		neutrality = 70
 		fascism = 20 
@@ -159,7 +160,7 @@ IF = {
 	}
 }
 IF = {
-	limit = { NOT = { has_dlc = "By Blood Alone" } }
+	limit = { NOT = { always = no } }
 	set_popularities = {
 		neutrality = 100
 	}

@@ -24,4 +24,8 @@ spriteTypes = {
 		name = "GFX_Juggle_6_medium"
 		texturefile = "gfx/interface/industry/Juggle_1.dds"
 	}
+	SpriteType = {
+		name = "GFX_Juggle_7_medium"
+		texturefile = "gfx/interface/industry/Juggle_1.dds"
+	}
 }

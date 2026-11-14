@@ -11,20 +11,6 @@ on_actions = {
 					add_ideas = { Spies_no_capture }
 				}
 				if = {
-					limit = { is_playable_country = yes }
-					if = {
-						limit = { NOT = { has_idea = peace_training } }
-						add_ideas = { peace_training }
-					}
-					if = {
-						limit = {
-							NOT = { tag = SPR }
-							NOT = { has_idea = novols }
-						}
-						add_ideas = { novols }
-					}
-				}
-				if = {
 					limit = {
 						OR = {
 							ai_conquer = yes
@@ -185,28 +171,6 @@ on_actions = {
 	}
 	on_monthly = {
 		effect = {
-			
-			every_country = {
-				limit = {
-					is_playable_country = yes
-					NOT = {
-						OR = {
-							has_war = yes
-							has_idea = peace_training
-							AND = {
-								tag = SPR
-								any_country = {
-									has_volunteers_amount_from = {
-										tag = SPR
-										count > 0
-									} 
-								}	
-							}
-						}
-					}
-				}
-				add_ideas = peace_training
-			}
 			if = {
 				limit = {
 					can_grind_generals = no
@@ -858,16 +822,6 @@ on_actions = {
 						set_compliance = 80
 					}
 				}
-			}
-		}
-	}
-
-	on_weekly = {
-		effect = {
-			add_daily_mastery = {
-				amount = 1
-				days = 7
-				name = Mastery
 			}
 		}
 	}

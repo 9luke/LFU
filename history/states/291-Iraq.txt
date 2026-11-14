@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = IRQ
-		add_core_of = IRQ
+		owner = WST
+		add_core_of = WST
 
 		victory_points = {
 			2097 10 # Baghdad

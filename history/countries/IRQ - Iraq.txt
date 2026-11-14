@@ -3,7 +3,7 @@
 oob = "IRQ_1936"
 
 if = {
-	limit = { has_dlc = "By Blood Alone" }
+	limit = { always = no }
 		set_air_oob = "IRQ_1936_air_bba"
 	else = {
 		set_air_oob = "IRQ_1936_air_legacy"
@@ -20,6 +20,7 @@ set_technology = {
 	infantry_weapons1 = 1
 	#tech_mountaineers = 1
 	tech_trucks = 1
+	motorbike = 1 
 	gw_artillery = 1
 	fuel_silos = 1
 }

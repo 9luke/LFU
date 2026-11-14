@@ -1,0 +1,28 @@
+ideas = {
+		hidden_ideas = {
+		no_market = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			rule = {
+				can_access_market = no
+			}
+		}
+		no_volunteers = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			rule = {
+				can_send_volunteers = no
+			}
+		}
+	}
+}

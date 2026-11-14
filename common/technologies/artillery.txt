@@ -39,18 +39,6 @@ technologies = {
 			secondary_turret_small_cannon
 		}
 
-		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_land_super_heavy_howitzer
-				}
-			}
-		}
-
 		research_cost = 1.5
 
 		folder = {
@@ -63,7 +51,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 2
@@ -128,7 +116,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 2
@@ -183,15 +171,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_artillery_rocket_assisted_projectiles_tech
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = sp_artillery_purpose_built_gun_motor_carriages_tech
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1
 
@@ -207,7 +186,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 2
@@ -253,9 +232,15 @@ technologies = {
 		}
 
 		path = {
+			leads_to_tech = super_heavy_artillery
+			research_cost_coeff = 1
+		}
+
+		path = {
 			leads_to_tech = rocket_artillery
 			research_cost_coeff = 1
 		}
+
 
 		research_cost = 1
 
@@ -271,7 +256,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 2
@@ -333,7 +318,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 2
@@ -383,7 +368,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 2
@@ -442,7 +427,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 2
@@ -486,6 +471,39 @@ technologies = {
 				movement = 0.15 #If you change this - Change the custom tooltip too: mountain_guns_tt ROM_modern_at_guns_tech_tt
 			}
 		}
+	}
+
+	super_heavy_artillery = {
+
+		enable_subunits = {
+			super_heavy_artillery
+			self_propelled_super_heavy_artillery
+		}
+
+		enable_equipments = {
+			super_heavy_artillery_equipment_1
+			self_propelled_super_heavy_artillery_equipment_1
+		}
+
+		research_cost = 2
+
+		start_year = 1940
+
+		folder = {
+			name = artillery_folder
+			position = { x = -3 y = 6 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
+		}
+		# special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			always = no
+	}
 	}
 
 	rocket_artillery = {
@@ -538,7 +556,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		# special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery2 = {
@@ -578,7 +596,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		# special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery3 = {
@@ -617,7 +635,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		# special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery4 = {
@@ -653,7 +671,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		# special_project_specialization = { specialization_air }
 	}
 
 	interwar_antiair = {
@@ -720,7 +738,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		# special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair1 = {
@@ -783,7 +801,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		# special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair2 = {
@@ -808,10 +826,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = sp_shock_hardening_techniques
-			research_cost_coeff = 1
-		}
 
 		research_cost = 1
 
@@ -844,7 +858,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		# special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair3 = {
@@ -912,7 +926,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		# special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair4 = {
@@ -976,7 +990,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		# special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair5 = {
@@ -1028,7 +1042,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		# special_project_specialization = { specialization_land specialization_air }
 	}
 
 	interwar_antitank = {
@@ -1050,19 +1064,6 @@ technologies = {
 			anti_tank_battery
 		}
 
-		#Pfot
-		on_research_complete = {
-			if = {
-				limit = {
-					has_dlc = "Peace For Our Time"
-				}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_land_large_caliber_kinetic_energy_sabot
-				}
-			}
-		}
-		#End Pfot
 
 		path = {
 			leads_to_tech = antitank1
@@ -1127,7 +1128,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 	}
 
 	antitank1 = {
@@ -1204,7 +1205,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 	}
 
 	antitank2 = {
@@ -1285,7 +1286,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 	}
 
 	antitank3 = {
@@ -1331,7 +1332,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 		}
 
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 1
@@ -1448,7 +1449,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 	}
 
 	antitank5 = {
@@ -1519,7 +1520,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		# special_project_specialization = { specialization_land }
 	}
 
 	SWE_bofors_antitank_gun = {
@@ -1584,196 +1585,6 @@ technologies = {
 
 
 	### SPECIAL PROJECTS ###
-
-	sp_artillery_rocket_assisted_projectiles_tech = {
-
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_land_super_heavy_howitzer
-				has_tech = experimental_rockets
-			}
-		}
-
-		is_special_project_tech = yes
-
-		super_heavy_artillery = {
-			soft_attack = 0.1
-		}
-
-		self_propelled_super_heavy_artillery = {
-			soft_attack = 0.1
-		}
-
-		research_cost = 1.5
-
-		start_year = 1940
-
-		folder = {
-			name = artillery_folder
-			position = { x = -2 y = 6 }
-		}
-
-		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
-		}
-		special_project_specialization = { specialization_land }
-
-		ai_will_do = {
-			base = 5
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
-	}
-
-
-	sp_artillery_purpose_built_gun_motor_carriages_tech = {
-		
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_land_self_propelled_super_heavy_howitzer
-			}
-		}
-
-		is_special_project_tech = yes
-
-		super_heavy_artillery = {
-			reliability = 0.07
-			supply_consumption = -0.1
-		}
-
-		self_propelled_super_heavy_artillery = {
-			reliability = 0.07
-			supply_consumption = -0.1
-		}
-
-		research_cost = 1.5
-
-		start_year = 1940
-
-		folder = {
-			name = artillery_folder
-			position = { x = -4 y = 6 }
-		}
-
-		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
-		}
-		special_project_specialization = { specialization_land }
-
-		ai_will_do = {
-			base = 5
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				factor = 2
-				date > "1942.1.1"
-			}
-		}
-	}
-
-	sp_shock_hardening_techniques = {
-		
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_proximity_fuze
-			}
-		}
-
-		static_anti_air_damage_factor = 0.15
-		static_anti_air_hit_chance_factor = 0.3 
-
-		path = {
-			leads_to_tech = sp_variable_time_fuze_shells
-			research_cost_coeff = 1
-		}
-        
-        force_use_small_tech_layout = yes		
-		is_special_project_tech = yes	
-		research_cost = 1.5
-		start_year = 1941
-		folder = {
-			name = artillery_folder
-			position = { x = -9 y = 8 }
-		}
-
-		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
-			mio_cat_artillery
-		}
-
-		special_project_specialization = { specialization_land specialization_air }
-	}
-
-	sp_variable_time_fuze_shells = {
-		allow_branch = {
-			 has_dlc = "Gotterdammerung"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_naval_proximity_fuze
-			}
-		}
-		
-		artillery = {
-			soft_attack = 0.1
-		}
-		artillery_brigade = {
-			soft_attack = 0.2
-		}
-		mot_artillery_brigade = {
-			soft_attack = 0.2
-		}
-		category_self_propelled_artillery = {
-			soft_attack = 0.05
-		}
-		field_guns = {
-			soft_attack = 0.05
-		}
-
-		force_use_small_tech_layout = yes
-		research_cost = 1.5
-		start_year = 1942
-		is_special_project_tech = yes
-			
-		folder = {
-			name = artillery_folder
-			position = { x = -9 y = 10 }
-		}
-
-		categories = {
-			artillery
-			mio_cat_all_artillery_equipment
-			mio_cat_artillery
-		}
-
-		special_project_specialization = { specialization_land specialization_air }
-	}
 
 	#TAOG
 	the_thunder_at_our_gates_artillery = {
@@ -1882,64 +1693,6 @@ technologies = {
 		
 		allow = {
 			always = no
-		}
-	}
-
-	sp_advance_sabot_shells = { 
-		allow_branch = {
-			has_dlc = "Peace For Our Time"
-		}
-
-		allow = {
-	 		ROOT = {
-				is_special_project_completed = sp:sp_land_large_caliber_kinetic_energy_sabot
-			}
-		}
-
-		static_anti_air_hit_chance_factor = 0.15
-
-		anti_tank = {
-			ap_attack = 0.15
-		}
-		anti_tank_brigade = {
-			ap_attack = 0.15
-		}
-		mot_anti_tank_brigade = {
-			ap_attack = 0.15
-		}
-		anti_tank_battery = {
-			ap_attack = 0.15
-		}
-		category_tank_destroyers = {
-			ap_attack = 0.05
-		}
-		category_tank_destroyer_regimental_support = {
-			ap_attack = 0.05
-		}
-
-		force_use_small_tech_layout = yes
-		research_cost = 1.5
-		start_year = 1942
-		is_special_project_tech = yes
-			
-		folder = {
-			name = artillery_folder
-			position = { x = 5 y = 10 }
-		}
-
-		categories = {
-			artillery
-			cat_anti_tank
-			mio_cat_all_artillery_equipment
-		}
-
-		special_project_specialization = { specialization_land }
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
 		}
 	}
 	#End Pfot

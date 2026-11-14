@@ -7,8 +7,8 @@ state = {
 	state_category = large_town
 	
 	history = {
-		owner = FIN
-		add_core_of = FIN
+		owner = WST
+		add_core_of = WST
 		victory_points = { #Helsinki
 			11105 15 
 		}
@@ -31,9 +31,7 @@ state = {
 				coastal_bunker = 2
 			}
 
-			6009 = { 
-				land_facility = 1
-			}
+
 
 		}
 		1936.1.1.13 = {

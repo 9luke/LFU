@@ -1,0 +1,52 @@
+on_actions = {
+	on_startup = {
+		effect = {	
+			every_country = {
+				add_ideas = no_market
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						original_tag = SPR
+					}
+				}
+				add_ideas = no_volunteers
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+					has_war = no
+				}
+				add_ideas = peace_training
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					has_war = no
+					NOT = {
+						has_idea = peace_training
+					}
+				}
+				add_ideas = peace_training
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			if = {
+				limit = { 
+					has_idea = peace_training
+				 }
+			}
+			add_daily_mastery = {
+				amount = 1
+				days = 7
+				name = Mastery
+			}
+		}
+	}
+}

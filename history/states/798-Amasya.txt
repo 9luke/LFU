@@ -9,7 +9,7 @@ state={
 	state_category = wasteland
 
 	history= {
-		owner = TUR
+		owner = WST
 		victory_points = {
 			3862 3
 		}
@@ -19,7 +19,7 @@ state={
 		buildings = { 
 			
 		}
-		add_core_of = TUR
+		add_core_of = WST
 	}
 
 	local_supplies=0.0 

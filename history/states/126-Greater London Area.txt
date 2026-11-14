@@ -36,9 +36,7 @@ state={
 			        level = 1
 			    }
 			}
-			9239 = { 
-				land_facility = 1
-			}
+
 		}
 		add_core_of = ENG
 		1939.1.1 = {
