@@ -26,3 +26,17 @@
  antiair_armament2_desc: "More effective against planes, giving more air attack."
  antiair_armament3: "Advanced Anti-Air Armament"
  antiair_armament3_desc: "The best armament against planes, offering the most air attack."
+ tank_radio: "Basic Tank Radio"
+ tank_radio2: "Improved Tank Radio"
+ tank_radio3: "Advanced Tank Radio"
+
+ #Industry
+ rubber_processing: "Rubber Processing I"
+ improved_rubber_processing: "Rubber Processing II"
+ advanced_rubber_processing: "Rubber Processing III"
+ modern_rubber_processing: "Rubber Processing IV"
+
+ oil_processing: "Oil Processing I"
+ improved_oil_processing: "Oil Processing II"
+ advanced_oil_processing: "Oil Processing III"
+ modern_oil_processing: "Oil Processing IV"

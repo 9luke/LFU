@@ -1396,58 +1396,6 @@ technologies = {
 		# special_project_specialization = { specialization_land }
 	}
 
-	armor_tech_4 = {
-
-		research_cost = 1
-		start_year = 1944
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 3 y = @1944 }
-		}
-
-		on_research_complete = {
-			custom_effect_tooltip = armor_tech_4_tt
-		}
-		show_effect_as_desc = yes
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1945.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1946.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		# special_project_specialization = { specialization_land }
-	}
-
 	engine_tech_1 = {
 
 
@@ -1605,56 +1553,6 @@ technologies = {
 			modifier = {
 				factor = 2
 				date > "1943.1.1"
-			}
-		}
-
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			mio_cat_tech_light_armor_and_modules
-			mio_cat_tech_medium_armor_and_modules
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		# special_project_specialization = { specialization_land }
-	}
-
-	engine_tech_4 = {
-
-		research_cost = 1
-		start_year = 1944
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1944 }
-		}
-		on_research_complete = {
-			custom_effect_tooltip = engine_tech_4_tt
-		}
-		show_effect_as_desc = yes
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-			modifier = {
-				has_war = yes
-				factor = 2
-			}
-
-			modifier = {
-				factor = 1.1
-				date > "1944.1.1"
-			}
-
-			modifier = {
-				factor = 1.5
-				date > "1945.1.1"
-			}
-
-			modifier = {
-				factor = 2
-				date > "1946.1.1"
 			}
 		}
 
