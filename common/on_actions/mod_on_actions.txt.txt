@@ -12,6 +12,9 @@ on_actions = {
 				}
 				add_ideas = no_volunteers
 			}
+			SPR = {
+				add_ideas = volunteers_only
+			}
 			every_country = {
 				limit = {
 					is_ai = no

@@ -1438,12 +1438,12 @@ focus_tree = {
 				value = 0.5
 			}
 
-			add_tech_bonus = {
-				name = POR_jet_research
-			    bonus = 1.0
-			    uses = 1
-			    category = jet_technology
-			}
+			#add_tech_bonus = {
+			#	name = POR_jet_research
+			#    bonus = 1.0
+			#    uses = 1
+			#    category = jet_technology
+			#}
 
 		}
 	}

@@ -84,9 +84,9 @@ ideas = {
 				cat_battlefield_support_cost_factor = -0.075
 			}
 			
-			research_bonus = {
-				jet_technology = 0.10
-			}
+			#research_bonus = {
+			#	jet_technology = 0.10
+			#}
 
 		}	
 

@@ -1518,6 +1518,8 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = { always = no }
+
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {

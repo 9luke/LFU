@@ -1280,7 +1280,7 @@ improving_our_army_category = {
 				}
 				IF = {
 					limit = {
-						NOT = { has_dlc = "By Blood Alone" }
+						always = no
 					}
 					add_equipment_to_stockpile = {
 						producer = USA
@@ -1336,7 +1336,7 @@ improving_our_army_category = {
 				IF = {
 					limit = {
 						NOT = {
-							has_dlc = "By Blood Alone"
+							always = no
 						}
 					}
 					add_equipment_to_stockpile = {

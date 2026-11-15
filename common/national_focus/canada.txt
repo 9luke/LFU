@@ -3518,6 +3518,8 @@ focus_tree = {
 			factor = 25
 		}
 
+		allow_branch = { always = no }
+
 		available = {
 
 		}

@@ -1583,9 +1583,6 @@ MAN_war_preparations = {
 			}
 			IF = {
 				limit = {
-					NOT = {
-						has_dlc = "By Blood Alone"
-					}
 					check_variable = { var = MAN_seize_arms_prep value = 50 compare = greater_than_or_equals }
 				}
 				add_equipment_to_stockpile = { type = fighter_equipment_0 amount = 50 producer = JAP }
@@ -1601,7 +1598,7 @@ MAN_war_preparations = {
 			}
 			ELSE_IF = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					always = no
 					check_variable = { var = MAN_seize_arms_prep value = 50 compare = greater_than_or_equals }
 				}
 				add_equipment_to_stockpile = { type = small_plane_airframe_0 amount = 100 producer = JAP variant_name = "Ki-10" }

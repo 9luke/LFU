@@ -2771,12 +2771,12 @@ shared_focus = {
 			add_to_variable = { JUNO_airforce_modifier_air_defence_factor = 0.1 tooltip = air_defence_factor_tt }
 		}
 
-		add_tech_bonus = {
-			name = SMB_jet_tech_bonus
-			bonus = 0.5
-			uses = 1
-			category = jet_technology
-		} 
+		#add_tech_bonus = {
+		#	name = SMB_jet_tech_bonus
+		#	bonus = 0.5
+		#	uses = 1
+		#	category = jet_technology
+		#} 
 	}
 }
 

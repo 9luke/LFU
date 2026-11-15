@@ -16453,24 +16453,11 @@ SPR_foreign_arms_purchases = {
 						factor = 0
 						has_war_with = ENG
 					}
-					if = {
-						limit = {
-							NOT = { has_dlc = "By Blood Alone" }
-						}
 						add_equipment_to_stockpile = {
 						    type = fighter_equipment_0
 						    amount = 25
 						    producer = ENG
 						}
-					}
-					else = {
-						add_equipment_to_stockpile = {
-						    type = small_plane_airframe_0
-						    amount = 25
-						    producer = ENG
-						    variant_name = "Gloster Gladiator"
-						}	
-					}
 				}
 				10 = {
 					modifier = {
@@ -16487,7 +16474,7 @@ SPR_foreign_arms_purchases = {
 					}
 					if = {
 						limit = {
-							NOT = { has_dlc = "By Blood Alone" }
+							always = yes
 						}
 						add_equipment_to_stockpile = {
 						    type = fighter_equipment_0
@@ -16515,7 +16502,7 @@ SPR_foreign_arms_purchases = {
 					}
 					if = {
 						limit = {
-							NOT = { has_dlc = "By Blood Alone" }
+							always = yes
 						}
 						add_equipment_to_stockpile = {
 						    type = fighter_equipment_0
@@ -16543,7 +16530,7 @@ SPR_foreign_arms_purchases = {
 					}
 					if = {
 						limit = {
-							NOT = { has_dlc = "By Blood Alone" }
+							always = yes
 						}
 						add_equipment_to_stockpile = {
 						    type = fighter_equipment_0
@@ -16571,7 +16558,7 @@ SPR_foreign_arms_purchases = {
 					}
 					if = {
 						limit = {
-							NOT = { has_dlc = "By Blood Alone" }
+							always = yes
 						}
 						add_equipment_to_stockpile = {
 						    type = fighter_equipment_0
@@ -16599,7 +16586,7 @@ SPR_foreign_arms_purchases = {
 					}
 					if = {
 						limit = {
-							NOT = { has_dlc = "By Blood Alone" }
+							always = yes
 						}
 						add_equipment_to_stockpile = {
 						    type = fighter_equipment_0
@@ -16627,7 +16614,7 @@ SPR_foreign_arms_purchases = {
 					}
 					if = {
 						limit = {
-							NOT = { has_dlc = "By Blood Alone" }
+							always = yes
 						}
 						add_equipment_to_stockpile = {
 						    type = fighter_equipment_0
@@ -16648,7 +16635,7 @@ SPR_foreign_arms_purchases = {
 			effect_tooltip = {
 				if = {
 					limit = {
-						NOT = { has_dlc = "By Blood Alone" }
+						always = yes
 					}
 					add_equipment_to_stockpile = {
 					    type = fighter_equipment_0
