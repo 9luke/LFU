@@ -30,11 +30,6 @@ guiTypes = {
 		Orientation = UPPER_LEFT
 		clipping=yes
 		moveable = yes
-		background = {
-			name = "Background"
-			spriteType = "GFX_button_transparent2"
-			alwaystransparent=no
-		}
 
 			containerWindowType = {
 				name = "aluminium_container"

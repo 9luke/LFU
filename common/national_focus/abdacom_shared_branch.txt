@@ -47,6 +47,7 @@
 
 	allow_branch = {
 		has_dlc = "Thunder at Our Gates"
+		country_exists = JAP
 		OR = {
 			original_tag = AST
 			original_tag = ENG

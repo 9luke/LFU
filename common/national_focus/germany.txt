@@ -9281,7 +9281,6 @@ focus_tree = {
 				category = armor
 				category = artillery
 				category = naval_equipment
-				category = air_equipment
 			}
 		}
 	}

@@ -4267,6 +4267,14 @@ focus_tree = {
 	focus = {
 		id = uk_asia_focus 
 		prerequisite = { focus = uk_colonial_focus }
+
+		allow_branch = {
+    		country_exists = JAP
+		}
+
+		available = {
+			country_exists = JAP
+		}
 		
 		available = {
 			336 = {
@@ -8313,6 +8321,10 @@ focus_tree = {
 					is_subject_of = ROOT 
 				}
 			}
+		}
+
+		allow_branch = {
+			always = no
 		}
 		
 		will_lead_to_war_with = IRQ

@@ -3,9 +3,6 @@ state={
 	id=342
 	name="STATE_342" # Antalya
 	manpower = 1
-	resources={
-		chromium=46 # was: 46
-	}
 	state_category = wasteland
 
 	history={

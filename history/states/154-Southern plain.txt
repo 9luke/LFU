@@ -3,6 +3,10 @@ state = {
 	name = "STATE_154"
 	manpower = 2155383 #was 2735383
 
+	resources = {
+		rubber = 24
+	}
+
 	state_category = city
 
 	history = {

@@ -1,6 +1,6 @@
 soviet_ll_rule = {
 	name = "Soviet Lend Lease Rule"
-	group = "HMM Rules"
+	group = "LFU Rules"
 	icon = "GFX_decision_SWI_support_humanitarian_efforts"
     option = {
 		name = allowed
@@ -21,7 +21,7 @@ soviet_ll_rule = {
 
 japan_ll_rule = {
 	name = "Japan Lend Lease Rule"
-	group = "HMM Rules"
+	group = "LFU Rules"
 	icon = "GFX_decision_SWI_support_humanitarian_efforts"
     option = {
 		name = allowed
@@ -47,7 +47,7 @@ japan_ll_rule = {
 
 finland_ll_rule = {
 	name = "Finland Lend Lease Rule"
-	group = "HMM Rules"
+	group = "LFU Rules"
 	icon = "GFX_decision_SWI_support_humanitarian_efforts"
     default = {
 		name = allowed
@@ -68,7 +68,7 @@ finland_ll_rule = {
 
 noob_nation_ll_rule = {
 	name = "Noob Nation Lend Lease Rule"
-	group = "HMM Rules"
+	group = "LFU Rules"
 	icon = "GFX_decision_SWI_support_humanitarian_efforts"
     option = {
 		name = allowed
