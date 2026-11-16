@@ -12,6 +12,7 @@ state = {
 	history = {
 
 		owner = JAP
+		add_core_of = WST
 		#add_core_of = CHI
 		
 
@@ -41,11 +42,7 @@ state = {
 		victory_points = {
 			1052 1 # Tangshan
 		}
-		1936.1.1.14 = {
-			owner = WST
-			controller = WST
-			add_core_of = WST
-		}
+
 	}
 
 	provinces = {

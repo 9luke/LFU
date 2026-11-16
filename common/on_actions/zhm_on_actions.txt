@@ -593,24 +593,6 @@ on_actions = {
 				}
 				set_state_category = wasteland
 			}
-			if = { # IRAQ SLOTS REMOVED IF THERES NO PLAYER ON IT
-				limit = { 
-					IRQ = { 
-						is_ai = yes
-					}
-				}
-				every_state = { 
-					limit = {
-						AND = { 
-							is_core_of = IRQ
-							NOT = {
-								has_state_category = wasteland
-							}
-						} 
-					}
-					set_state_category = wasteland
-				}
-			}
 			HOL = { # France gets some oil!! [:
 				give_resource_rights = { 
 					receiver = FRA

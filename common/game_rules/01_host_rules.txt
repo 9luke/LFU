@@ -491,22 +491,6 @@ usa_boost = {
 	}
 }
 
-ethiopia_hold = {
-	name = "Ethiopia Hold"
-	group = "HMM Rules"
-	icon = "GFX_decision_generic_orginization_of_african_unity"
-	default = {
-		name = banned
-		text = "Banned"
-		desc = "Ethiopia is demilitarized and any Axis armies in Ethiopia will be teleported before WW2"
-	}
-	option = {
-		name = allowed
-		text = "Allowed"
-		desc = "Axis are allowed to have divisions in Ethiopia"
-	}
-}
-
 strat_bombing = {
 	name = "Strategic Bombing"
 	group = "HMM Rules"

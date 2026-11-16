@@ -440,23 +440,6 @@ IF = {
 	add_ideas = { HUN_gyula_gombos_de_jakfa }
 }
 
-add_breakthrough_progress = {
-	specialization = specialization_land
-	value = 0.2 # Due to Straussler
-}
-
-add_breakthrough_progress = {
-	specialization = specialization_air
-	value = 0.2 # Due to Azboth Oskar
-}
-
-
-# SETUP THE 1939 SCENARIO
-1936.1.1.13 = { 
-
-	set_cosmetic_tag = united_HUN_ROM_kingdom
-
-}
 
 
 

@@ -7,7 +7,6 @@
  pre_grind_desc:0 "No Grinding Pregrinded Generals"
  tank_pre_grind:0 "Tank Pregrind" 
  sov_inf_gen:0 "Infantry General"
- last_stand_gen:0 "Last Stand General"
  sov_inf_gen_desc:0 "Capable Commander to lead our vast Army"
  no_leader_promotion_trait:0 "No Leader Promotion"
  no_leader_promotion_trait_desc:0 "Trait exists only on FALS Generals"
@@ -62,8 +61,6 @@
   zhm.6.b:0 ""
   zhm.7.b:0 ""
   zhm.8.b:0 ""
-  zhm.9.b:0 "Half of USA is annexed to you and Heavy Fighter Lend Lease Starts"
-  zhm.10.b:0 "When it's Danzig or War, half of USA will be annexed to you and Fighter Lend Lease will begin"
 
  ## HMM'S ALTERNED VANILLA TOOLTIPS
 
