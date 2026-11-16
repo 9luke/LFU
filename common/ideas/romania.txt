@@ -548,7 +548,6 @@ ideas = {
 			}
 			
 			modifier = {
-				production_speed_nuclear_reactor_factor = 0.25
 			}
 		}
 

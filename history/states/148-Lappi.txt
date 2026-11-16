@@ -1,14 +1,10 @@
 state = {
 	id = 148
 	name = "STATE_148" #LAPPI
-	manpower = 121737
+	manpower = 1
 	
 	state_category = rural
 	
-	resources = {
-		steel = 7 # was: 8
-		chromium = 2 # was: 2
-	}
 
 	history = {
 
@@ -30,14 +26,6 @@ state = {
 
 		victory_points = { 
 			6142 1 # Inari
-		}
-
-		buildings = {
-			infrastructure = 1
-
-			# Kemijoki
-			#11164 = { dam = 1 }
-			
 		}
 
 	}

@@ -221,11 +221,10 @@ ideas = {
 				always = no
 			}
 
-			modifier = {
-				sp_tag_nuclear_warfare_speed_factor = 0.10
-				production_speed_nuclear_reactor_factor = 0.25
-				nuclear_production_factor = 0.10
-			}
+			#modifier = {
+			#	sp_tag_nuclear_warfare_speed_factor = 0.10
+			#	nuclear_production_factor = 0.10
+			#}
 		}
 
 		PHI_cobalt_supremacy_idea = {
@@ -238,11 +237,10 @@ ideas = {
 				always = no
 			}
 
-			modifier = {
-				sp_tag_nuclear_warfare_speed_factor = 0.10
-				production_speed_nuclear_reactor_factor = 0.50
-				nuclear_production_factor = 0.25
-			}
+			#modifier = {
+			#	sp_tag_nuclear_warfare_speed_factor = 0.10
+			#	nuclear_production_factor = 0.25
+			#}
 		}
 
 

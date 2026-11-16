@@ -1,0 +1,211 @@
+operations = {
+    GER_chromium1 = {
+        icon = generic_operation
+        allowed = {
+            tag = GER
+        }
+        fire_only_once = yes
+        cost = 0
+        ai_will_do = {
+            factor = 0
+        }
+        available = {
+            date > 1938.1.1
+        }
+        complete_effect = {
+            custom_effect_tooltip = ger_chromium_tt1
+            hidden_effect = {
+                give_resource_rights = { 
+                    receiver = GER
+                    state = 340
+                }   
+
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                } 
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }    
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }              
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }    
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }
+            }    
+        }
+    }
+    GER_chromium2 = {
+        icon = generic_operation
+        allowed = {
+            tag = GER
+        }
+        fire_only_once = yes
+        cost = 0
+        ai_will_do = {
+            factor = 0
+        }
+        available = {
+            date > 1938.1.1
+        }
+        complete_effect = {
+            custom_effect_tooltip = ger_chromium_tt2
+            hidden_effect = {
+                give_resource_rights = { 
+                    receiver = GER
+                    state = 339
+                }
+
+
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                } 
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }    
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }              
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }    
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }
+            }    
+        }
+    }
+    GER_chromium3 = {
+        icon = generic_operation
+        allowed = {
+            tag = GER
+        }
+        fire_only_once = yes
+        cost = 0
+        ai_will_do = {
+            factor = 0
+        }
+        available = {
+            date > 1938.1.1
+        }
+        complete_effect = {
+            custom_effect_tooltip = ger_chromium_tt3
+            hidden_effect = {
+
+                give_resource_rights = { 
+                    receiver = GER
+                    state = 342
+                }
+
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                } 
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }    
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }              
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }    
+                random_owned_controlled_state = {
+                    limit = {
+                        industrial_complex > 0
+                    }
+                    remove_building = {
+                        type = industrial_complex
+                        level = 1
+                    }   
+                }
+            }    
+        }
+    }
+}

@@ -1,7 +1,7 @@
 state = {
 	id = 1042
 	name = "STATE_1042"
-	manpower = 380000
+	manpower = 1
 	state_category = wasteland
 
 	history = {
@@ -9,9 +9,6 @@ state = {
 		owner = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 1
-		}
 
 		victory_points = {
 			4973 3 # Hotan

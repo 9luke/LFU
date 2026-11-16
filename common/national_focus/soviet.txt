@@ -2373,7 +2373,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						always = false 
+						always = no
 					}
 					create_equipment_variant = {
 						name = "U-2" #
@@ -4058,7 +4058,6 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				add_potential_special_forces_tree = yes
 				add_doctrine_cost_reduction = {
 					name = SOV_naval_infantry
 					cost_reduction = 0.25
@@ -4897,7 +4896,10 @@ focus_tree = {
 			}
 			is_subject = no
 		}
+
 		
+		allow_branch = { always = no }
+	
 		search_filters = {FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
@@ -13333,18 +13335,15 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 
 		completion_reward = {
+			army_experience = 200
+			custom_effect_tooltip = generic_skip_one_line_tt
 			transfer_state = 146
 			146 = {
 				add_core_of = SOV
 			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			146 ={
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
+			transfer_state = 147
+			147 = {
+				add_core_of = SOV
 			}
 		}
 	}

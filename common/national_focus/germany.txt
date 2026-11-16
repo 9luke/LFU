@@ -4269,50 +4269,6 @@ focus_tree = {
 					category = nuclear
 				}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			if = {
-				limit = {
-					OR = {
-						NOT = { is_special_project_completed = sp:sp_nuclear_reactor }
-						NOT = { is_special_project_completed = sp:sp_nuclear_bomb }
-						AND = {
-							has_dlc = "Gotterdammerung"
-							NOT = { is_special_project_completed = sp:sp_nuclear_warheads }
-						}
-					}
-				}
-				GER_add_or_modify_wunderwaffen = yes
-			}
-			if = {
-				limit = {
-					NOT = { is_special_project_completed = sp:sp_nuclear_reactor }
-				}
-				add_to_variable = { 
-					GER_wunderwaffen_sp_nuclear_reactor_speed_factor = GER_wunderwaffe_research_speed_bonus
-					tooltip = sp_nuclear_reactor_speed_factor_tt
-				}
-			}
-
-			if = {
-				limit = {
-					NOT = { is_special_project_completed = sp:sp_nuclear_bomb }
-				}
-				add_to_variable = { 
-					GER_wunderwaffen_sp_nuclear_bomb_speed_factor = GER_wunderwaffe_research_speed_bonus
-					tooltip = sp_nuclear_bomb_speed_factor_tt
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-					NOT = { is_special_project_completed = sp:sp_nuclear_warheads }
-				}
-				add_to_variable = { 
-					GER_wunderwaffen_sp_nuclear_warheads_speed_factor = GER_wunderwaffe_research_speed_bonus
-					tooltip = sp_nuclear_warheads_speed_factor_tt
-				}
-			}
 		}
 	}
 	
@@ -4664,13 +4620,6 @@ focus_tree = {
 				}
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_sp_tag_tank_speed_factor = GER_wunderwaffe_research_speed_bonus
-				tooltip = sp_tag_tank_speed_factor_tt
-			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -5413,6 +5362,8 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_dive_bombers focus = GER_tactical_bombers focus = GER_uralbomber_program }
 
+		allow_branch = {always = no}
+
 		x = 2
 		y = 3
 		relative_position_id = GER_dive_bombers
@@ -5477,7 +5428,7 @@ focus_tree = {
 					limit = {
 						NOT = { has_completed_focus = GER_marinestosstrupp }
 					}
-					add_potential_special_forces_tree = yes
+
 				}
 				add_doctrine_cost_reduction = {
 					name = GER_fallschirmjager
@@ -5872,7 +5823,6 @@ focus_tree = {
 		cost = 5
 		available = {
 			has_war_with_major = yes
-			is_special_project_completed = sp:sp_air_radar
 			custom_trigger_tooltip = {
 				tooltip = GER_controls_atlantic_coast_brittany_finnmark_tt
 				OR = {
@@ -6164,7 +6114,6 @@ focus_tree = {
 		id = GER_aerodynamic_research_institute
 		icon = GFX_focus_generic_aircraft_production
 		prerequisite = { focus = GER_solve_the_logistical_bottlenecks focus = GER_construct_the_kammhuber_line focus = GER_establish_night_fighter_squadrons}
-		prerequisite = { focus = GER_rocketry_innovations }
 
 		x = 0
 		y = 2
@@ -7298,7 +7247,7 @@ focus_tree = {
 					limit = {
 						NOT = { has_completed_focus = GER_fallschirmjager }
 					}
-					add_potential_special_forces_tree = yes
+
 				}
 				add_doctrine_cost_reduction = {
 					name = GER_marinestosstrupp
@@ -7969,13 +7918,6 @@ focus_tree = {
 				}
 			}
 
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_sp_tag_submarine_speed_factor = GER_wunderwaffe_research_speed_bonus
-				tooltip = sp_tag_submarine_speed_factor_tt
-			}
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -18331,67 +18273,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_MILITARY_CHARACTER FOCUS_FILTER_RESEARCH }
 
-		completion_reward = {
-			random_scientist = {
-				limit = {
-					has_scientist_level = {
-						specialization = specialization_air
-						level > 0
-					}
-				}
-				add_scientist_level = {
-					specialization = specialization_air
-					level = 1
-				}
-			}
-
-			random_scientist = {
-				limit = {
-					has_scientist_level = {
-						specialization = specialization_nuclear
-						level > 0
-					}
-				}
-				add_scientist_level = {
-					specialization = specialization_nuclear
-					level = 1
-				}
-			}
-			
-			random_scientist = {
-				limit = {
-					has_scientist_level = {
-						specialization = specialization_land
-						level > 0
-					}
-				}
-				add_scientist_level = {
-					specialization = specialization_land
-					level = 1
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = GER_walter_dornberger
-			custom_effect_tooltip = generic_skip_one_line_tt
-			custom_effect_tooltip = GER_wunderwaffe_dornberger_trait_tt
-			hidden_effect = {
-				remove_trait = {
-					character = GER_walter_dornberger
-					slot = high_command
-					trait = GER_head_of_the_missile_department
-				}
-				add_trait = {
-					character = GER_walter_dornberger
-					slot = high_command
-					trait = GER_head_of_experimental_weapons
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
+		completion_reward = {	
+			add_ideas = mod_wunderwaffe
 		}
 	}
 
@@ -25329,14 +25212,6 @@ focus_tree = {
 				GER_industrial_research_speed_factor = 0.05
 				tooltip = research_speed_factor_tt 
 			}
-			
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_special_project_speed_factor = 0.05
-				tooltip = special_project_speed_factor_tt
-			}
 		}
 	}
 
@@ -25446,26 +25321,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-
-
-			if = {
-				limit = {
-					NOT = { is_special_project_completed = sp:sp_nuclear_reactor }
-				}
-				add_to_variable = { 
-					GER_wunderwaffen_sp_nuclear_reactor_speed_factor = 0.1
-					tooltip = sp_nuclear_reactor_speed_factor_tt
-				}
-			}
-			if = {
-				limit = {
-					NOT = { is_special_project_completed = sp:sp_commercial_nuclear_reactor }
-				}
-				add_to_variable = { 
-					GER_wunderwaffen_sp_commercial_nuclear_reactor_speed_factor = 0.1
-					tooltip = sp_commercial_nuclear_reactor_speed_factor_tt
-				}
-			}
 		}
 	}
 
@@ -36271,39 +36126,6 @@ allow_branch = {
 				}
 
 			}
-			else_if = {
-				limit = {
-					has_tech = nuclear_reactor
-				}
-				random_owned_controlled_state = {
-					limit = {
-						nuclear_reactor < 1
-					}
-
-					prioritize = { 55 }
-					add_building_construction = {
-						type = nuclear_reactor
-						level = 1
-						instant_build = yes
-					}
-				}
-
-			}
-			else = {
-				random_owned_controlled_state = {
-					limit = {
-						nuclear_reactor_heavy_water < 1
-					}
-
-					prioritize = { 55 }
-					add_building_construction = {
-						type = nuclear_reactor_heavy_water
-						level = 1
-						instant_build = yes
-					}
-				}
-
-			}			
 		}
 	}
 

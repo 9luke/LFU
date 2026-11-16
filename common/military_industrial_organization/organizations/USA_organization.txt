@@ -1129,7 +1129,7 @@ USA_grumman_organization = {
 	icon = GFX_idea_grumman
 	
 	allowed = {	 
-		tag = USA 
+		always = no
 	}
 	
 	add_trait = {

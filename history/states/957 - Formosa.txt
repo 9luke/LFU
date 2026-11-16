@@ -1,23 +1,15 @@
 state = {
 	id = 957
 	name = "STATE_957"
-	manpower = 500000
+	manpower = 1
 	
 	state_category = pastoral
 	
-	resources = {
-		tungsten = 5
-		steel = 2
-	}
-
 	history = {
 
 		owner = WST
 		add_core_of = WST
 
-		buildings = {
-			infrastructure = 1
-		}
 
 		victory_points = {
 			12922 1 

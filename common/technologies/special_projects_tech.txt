@@ -26,10 +26,6 @@ technologies = {
 		}
 
 		start_year = 1936
-		enable_building = {
-			building = mega_gun_emplacement
-			level = 1
-		}
 	}
 
 	commercial_nuclear_reactor_tech = {
@@ -38,11 +34,33 @@ technologies = {
 		}
 
 		start_year = 1936
-		enable_building = {
-			building = commercial_nuclear_reactor
-			level = 1
-		}
 	}
+
+	# Non-researchable identifiers retained for legacy scripted references.
+	main_battle_tank_chassis = { allow = { always = no } start_year = 1936 }
+	super_heavy_tank_chassis = { allow = { always = no } start_year = 1936 }
+	armor_tech_4 = { allow = { always = no } start_year = 1936 }
+	engine_tech_4 = { allow = { always = no } start_year = 1936 }
+	experimental_rockets = { allow = { always = no } start_year = 1936 }
+	jet_engines = { allow = { always = no } start_year = 1936 }
+	jet_fighter1 = { allow = { always = no } start_year = 1936 }
+	jet_tactical_bomber1 = { allow = { always = no } start_year = 1936 }
+	nuclear_reactor = { allow = { always = no } start_year = 1936 }
+	nuclear_reactor_heavy_water = { allow = { always = no } start_year = 1936 }
+	nukes = { allow = { always = no } start_year = 1936 }
+	photo_reconnaisance = { allow = { always = no } start_year = 1936 }
+	bba_strategic_airlifter = { allow = { always = no } start_year = 1936 }
+	strategic_airlifter = { allow = { always = no } start_year = 1936 }
+	suicide_charge = { allow = { always = no } start_year = 1936 }
+	sp_naval_underway_replenishment_pick_a = { allow = { always = no } start_year = 1936 }
+	sp_naval_underway_replenishment_pick_b = { allow = { always = no } start_year = 1936 }
+	sp_naval_proximity_fuze_tech = { allow = { always = no } start_year = 1936 }
+	sp_naval_support_ships_pick_a = { allow = { always = no } start_year = 1936 }
+	sp_naval_support_ships_pick_b = { allow = { always = no } start_year = 1936 }
+	sp_naval_support_ships_pick_c = { allow = { always = no } start_year = 1936 }
+	sp_naval_repair_ships_pick_a = { allow = { always = no } start_year = 1936 }
+	sp_naval_repair_ships_pick_b = { allow = { always = no } start_year = 1936 }
+	sp_naval_repair_ships_pick_c = { allow = { always = no } start_year = 1936 }
 
 	stronghold_network_tech = {
 		allow = {

@@ -22,6 +22,20 @@ on_actions = {
 				}
 				add_ideas = peace_training
 			}
+			WST = {
+				give_resource_rights = { 
+					receiver = ENG
+					state = 291
+				}
+				give_resource_rights = { 
+					receiver = ENG
+					state = 676
+				}
+				give_resource_rights = { 
+					receiver = ENG
+					state = 1010
+				}
+			}
 		}
 	}
 	on_monthly = {

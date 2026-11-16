@@ -500,8 +500,8 @@ technologies = {
 		# special_project_specialization = { specialization_land }
 
 		ai_will_do = {
-			always = no
-	}
+			factor = 0
+		}
 	}
 
 	rocket_artillery = {

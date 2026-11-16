@@ -63,6 +63,7 @@ set_technology = {
 	tech_engineers = 1
 	tech_trucks = 1
 	motorbike = 1 
+	tank_armament = 1 
 	motorised_infantry = 1
 	fuel_silos = 1
 	fuel_refining = 1

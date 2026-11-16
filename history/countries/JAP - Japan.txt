@@ -172,8 +172,6 @@ set_variable = { JAP_industry_special_project_speed_factor = 0 }
 set_variable = { JAP_industry_line_change_production_efficiency_factor = 0 }
 
 #ADVANCED WEAPON PROJECTS
-set_variable = { JAP_advanced_weapons_production_speed_land_facility_factor = 0 }
-set_variable = { JAP_advanced_weapons_production_speed_air_facility_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_tag_jet_speed_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_tag_rocket_speed_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_tag_tank_speed_factor = 0 }
@@ -182,7 +180,6 @@ set_variable = { JAP_advanced_weapons_sp_tag_surface_ship_speed_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_commercial_nuclear_reactor_speed_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_nuclear_warheads_speed_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_nuclear_bomb_speed_factor = 0 }
-set_variable = { JAP_advanced_weapons_production_speed_nuclear_reactor_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_air_intercontinental_bomber_speed_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_air_intercontinental_bomber_speed_factor = 0 }
 set_variable = { JAP_advanced_weapons_sp_air_mothership_aircraft_speed_factor = 0 }
@@ -486,7 +483,7 @@ IF = {
 	}
 	set_technology = {
 		gwtank = 1
-		basic_light_tank = 1
+			basic_light_tank = 1
 		improved_light_tank = 1
 	}
 	set_oob = "JAP_1936"

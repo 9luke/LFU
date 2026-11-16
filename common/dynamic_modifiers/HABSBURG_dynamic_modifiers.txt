@@ -86,7 +86,6 @@ HABSBURG_economy_dynamic_modifier = { #NATIONAL SPIRIT
 	economy_cost_factor = global.HABSBURG_economy_economy_cost_factor
 	license_purchase_cost = global.HABSBURG_economy_license_purchase_cost
 	license_production_speed = global.HABSBURG_economy_license_production_speed
-	special_project_speed_factor = global.HABSBURG_economy_special_project_speed_factor
 
 }
 

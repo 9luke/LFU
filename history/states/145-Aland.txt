@@ -2,7 +2,7 @@ state=
 {
 	id=145
 	name="STATE_145" #ÅLAND
-	manpower = 28139
+	manpower = 1
 	
 	state_category = small_island
 	
@@ -13,12 +13,6 @@ state=
 			9228 1
 		}
 
-		buildings = {
-			infrastructure = 2 #MM: Was 3
-			9228 = {
-				naval_base = 1
-			}
-		}
 		add_core_of = WST
 
 	}

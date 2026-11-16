@@ -406,7 +406,6 @@ JAP_early_industrialization_efforts_dm = {
 	convoy_retreat_speed = JAP_industry_convoy_retreat_speed
 	production_factory_max_efficiency_factor = JAP_industry_production_factory_max_efficiency_factor
 	production_factory_efficiency_gain_factor = JAP_industry_production_factory_efficiency_gain_factor
-	special_project_speed_factor = JAP_industry_special_project_speed_factor
 	line_change_production_efficiency_factor = JAP_industry_line_change_production_efficiency_factor
 
 }
@@ -433,7 +432,6 @@ JAP_the_economic_mirale_dm = {
 	convoy_retreat_speed = JAP_industry_convoy_retreat_speed
 	production_factory_max_efficiency_factor = JAP_industry_production_factory_max_efficiency_factor
 	production_factory_efficiency_gain_factor = JAP_industry_production_factory_efficiency_gain_factor
-	special_project_speed_factor = JAP_industry_special_project_speed_factor
 	line_change_production_efficiency_factor = JAP_industry_line_change_production_efficiency_factor
 
 }
@@ -499,8 +497,6 @@ JAP_kantai_kessen_dm = {
 JAP_advanced_weapon_projects_dm = {
 	icon = GFX_idea_JAP_advanced_weapons_programs 
 	enable = { always = yes }
-	production_speed_land_facility_factor = JAP_advanced_weapons_production_speed_land_facility_factor
-	production_speed_air_facility_factor = JAP_advanced_weapons_production_speed_air_facility_factor
 	sp_tag_jet_speed_factor = JAP_advanced_weapons_sp_tag_jet_speed_factor
 	sp_tag_rocket_speed_factor = JAP_advanced_weapons_sp_tag_rocket_speed_factor
 	sp_tag_tank_speed_factor = JAP_advanced_weapons_sp_tag_tank_speed_factor
@@ -509,7 +505,6 @@ JAP_advanced_weapon_projects_dm = {
 	sp_commercial_nuclear_reactor_speed_factor = JAP_advanced_weapons_sp_commercial_nuclear_reactor_speed_factor
 	sp_nuclear_warheads_speed_factor = JAP_advanced_weapons_sp_nuclear_warheads_speed_factor
 	sp_nuclear_bomb_speed_factor = JAP_advanced_weapons_sp_nuclear_bomb_speed_factor
-	production_speed_nuclear_reactor_factor = JAP_advanced_weapons_production_speed_nuclear_reactor_factor
 	sp_air_intercontinental_bomber_speed_factor = JAP_advanced_weapons_sp_air_intercontinental_bomber_speed_factor
 	sp_air_mothership_aircraft_speed_factor = JAP_advanced_weapons_sp_air_mothership_aircraft_speed_factor
 	sp_nuclear_engines_speed_factor = JAP_advanced_weapons_sp_nuclear_engines_speed_factor

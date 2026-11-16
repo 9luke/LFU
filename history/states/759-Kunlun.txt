@@ -4,7 +4,7 @@ state={
 	provinces={
 		1698 2074 4947 5736  
 	}
-	manpower=70000
+	manpower = 1
 	buildings_max_level_factor=1.000
 	state_category = wasteland
 	history={
@@ -16,9 +16,7 @@ state={
 			2074 1 # Ruoqiang 
 		}
 
-		buildings = {
-			infrastructure = 1
-		}
+
 	}
 
 	local_supplies=0.0 

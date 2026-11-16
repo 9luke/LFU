@@ -2635,7 +2635,7 @@ GER_arado_flugzeugwerke_organization = {
 	icon = GFX_idea_GER_arado_flugzeugwerke
 	
 	allowed = {	
-		original_tag = GER 
+		always = no
 	}
 
 	add_trait = {

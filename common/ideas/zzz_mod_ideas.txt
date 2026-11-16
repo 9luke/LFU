@@ -1,5 +1,5 @@
 ideas = {
-		hidden_ideas = {
+	hidden_ideas = {
 		no_market = {
 			allowed = {
 				always = no
@@ -34,6 +34,24 @@ ideas = {
 			removal_cost = -1
 			rule = {
 				can_not_declare_war = yes
+			}
+		}
+	}
+	country = {
+		mod_wunderwaffe = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_wunderwaffen
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				local_resources_factor = -0.10
+
 			}
 		}
 	}

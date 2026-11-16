@@ -1926,7 +1926,6 @@ political_actions = {
         }
 
         modifier = {
-        	special_project_speed_factor = 0.02
             research_speed_factor = 0.05
             stability_factor = -0.05
         }
@@ -2026,7 +2025,7 @@ political_actions = {
 				add = 10
 				tag = AUS
 				fascism > 0.45
-				has_completed_focus = liberty_ethos
+				has_idea = liberty_ethos_focus
 			}
 			modifier = {
 				add = 50

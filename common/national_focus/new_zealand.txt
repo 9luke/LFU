@@ -505,7 +505,7 @@
 
 		completion_reward = {
 			if = {
-				limit = { always = false }
+				limit = { always = no }
 				create_equipment_variant = {
 					name = "Bristol Blenheim"
 					type = medium_plane_airframe_1

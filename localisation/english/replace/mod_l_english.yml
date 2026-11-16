@@ -41,3 +41,18 @@
  improved_oil_processing: "Oil Processing II"
  advanced_oil_processing: "Oil Processing III"
  modern_oil_processing: "Oil Processing IV"
+
+ #Ideas
+ mod_wunderwaffe: "Wunderwaffe"
+ GER_wunderwaffe: "Wunderwaffe"
+ mod_wunderwaffe_desc: "If we want to compete with other nations, we must build weapons never seen before."
+
+ #TT
+ ger_chromium_tt1:0 "§R-5§! £civ_factory  Civilian Factories\nResource rights §G+54§!  Chromium"
+ ger_chromium_tt2:0 "§R-5§! £civ_factory  Civilian Factories\nResource rights §G+50§!  Chromium"
+ ger_chromium_tt3:0 "§R-4§! £civ_factory  Civilian Factories\nResource rights §G+46§!  Chromium"
+
+ #Decision
+ GER_chromium1: "Purchase Turkish Chromium I"
+ GER_chromium2: "Purchase Turkish Chromium II"
+ GER_chromium3: "Purchase Turkish Chromium III"

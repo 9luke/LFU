@@ -733,10 +733,6 @@ ideas = {
 			removal_cost = -1
 
 			picture = jap_supremacy_of_technology
-			
-			modifier = {
-				special_project_speed_factor = 0.05
-			}
 
 			research_bonus = {
 				infantry_weapons = 0.07

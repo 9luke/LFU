@@ -20,44 +20,19 @@ sp_nuclear_reactor = {
 	
 	project_output = {
 		country_effects = {
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = SP_UNLOCK_BUILDING_ICON_DESC
-					BUILDING = nuclear_reactor
-					BUILDING_DESCRIPTION = nuclear_reactor_desc
-					ICON_FRAME = 13
-				}
-				IF = {
-					limit = {
-						has_country_flag = nuclear_reactor_heavy_water_flag
-					}
-					set_technology = {
-						nuclear_reactor_heavy_water = 1
-						popup = no
-					}
-				}
-				ELSE = {
-					set_technology = {
-						nuclear_reactor = 1
-						popup = no
-					}
-				}
-			}
-		}
-		facility_state_effects = {
 			IF = {
 				limit = {
-					OWNER = { has_country_flag = nuclear_reactor_heavy_water_flag }
+					has_country_flag = nuclear_reactor_heavy_water_flag
 				}
-				set_building_level = {
-					type = nuclear_reactor_heavy_water
-					level = 1
+				set_technology = {
+					nuclear_reactor_heavy_water = 1
+					popup = no
 				}
 			}
 			ELSE = {
-				set_building_level = {
-					type = nuclear_reactor
-					level = 1
+				set_technology = {
+					nuclear_reactor = 1
+					popup = no
 				}
 			}
 		}
@@ -87,15 +62,6 @@ sp_nuclear_reactor = {
 
 			option = {
 				token = sp_nuclear_design_choice_reward_graphite
-				
-				iteration_output = {
-					country_effects = {
-						custom_effect_tooltip = {
-							localization_key = SP_UNLOCK_BUILDING
-							BUILDING = nuclear_reactor
-						}
-					}
-				}
 			}
 
 			option = {
@@ -103,10 +69,6 @@ sp_nuclear_reactor = {
 				
 				iteration_output = {
 					country_effects = {
-						custom_effect_tooltip = {
-							localization_key = SP_UNLOCK_BUILDING
-							BUILDING = nuclear_reactor_heavy_water
-						}
 						set_country_flag = nuclear_reactor_heavy_water_flag
 					}
 				}
@@ -273,7 +235,7 @@ sp_commercial_nuclear_reactor = {
 		resources = { steel=6 tungsten=4 chromium=7 }
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		always = no
 	}
 	available = { 
 		FROM = {
@@ -283,61 +245,9 @@ sp_commercial_nuclear_reactor = {
 	
 	project_output = {
 		country_effects = {
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = SP_UNLOCK_BUILDING_ICON_DESC
-					BUILDING = commercial_nuclear_reactor
-					BUILDING_DESCRIPTION = commercial_nuclear_reactor_desc
-					ICON_FRAME = 27
-				}
-				set_technology = {
-					commercial_nuclear_reactor_tech = 1
-					popup = no
-				}
-			}
-		}
-
-		facility_state_effects = {
-			hidden_effect = {
-				IF = {
-					limit = {
-						nuclear_reactor_heavy_water > 0
-					}
-					remove_building = {
-						type = nuclear_reactor_heavy_water
-						level = 1
-					}
-					set_building_level = {
-						type = commercial_nuclear_reactor
-						level = 1
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						nuclear_reactor > 0
-					}
-					remove_building = {
-						type = nuclear_reactor
-						level = 1
-					}
-					set_building_level = {
-						type = commercial_nuclear_reactor
-						level = 1
-					}	
-				}
-				ELSE_IF = {
-					limit = { 
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes 
-						}
-					}
-					set_building_level = {
-						type = commercial_nuclear_reactor
-						level = 1
-					}
-				}
+			set_technology = {
+				commercial_nuclear_reactor_tech = 1
+				popup = no
 			}
 		}
 	}

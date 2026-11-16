@@ -3124,6 +3124,8 @@ focus_tree = {
 		available = {
 			has_tech = radio
 		}
+
+		
 		
 		bypass = {
 
@@ -3183,125 +3185,6 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				category = radar_tech
-			}
-
-			if = {
-				limit = { has_tech = radio_detection }
-				random_owned_controlled_state = {
-					prioritize = { 473 }
-					limit = {
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1
-				}
-
-				random_owned_controlled_state = {
-					limit = {
-						NOT = { has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1 }
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar2
-				}
-
-				random_owned_controlled_state = {
-					limit = {
-						NOT = { has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1 }
-						NOT = { has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar2 }
-						is_in_home_area = yes
-						free_building_slots = {
-							building = radar_station
-							size > 0
-						}
-					}
-					add_building_construction = {
-						type = radar_station
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar3
-				}
-				else = {
-					complete_special_project = {
-						project = sp:sp_air_radar
-					}
-					effect_tooltip = {
-						random_owned_controlled_state = {
-							prioritize = { 473 }
-							limit = {
-								is_in_home_area = yes
-							}
-							add_building_construction = {
-								type = radar_station
-								level = 1
-								instant_build = yes
-							}
-						}
-
-						random_owned_controlled_state = {
-							limit = {
-								NOT = { state = 473 }
-								NOT = { has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1 }
-								is_in_home_area = yes
-							}
-							add_building_construction = {
-								type = radar_station
-								level = 1
-								instant_build = yes
-							}
-						}
-					}
-					random_owned_controlled_state = {
-						prioritize = { 473 }
-						limit = {
-							is_in_home_area = yes
-							free_building_slots = {
-								building = radar_station
-								size > 0
-							}
-						}
-						add_building_construction = {
-							type = radar_station
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1
-					}
-
-					random_owned_controlled_state = {
-						limit = {
-							NOT = { has_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar1 }
-							is_in_home_area = yes
-							free_building_slots = {
-								building = radar_station
-								size > 0
-							}
-						}
-						add_building_construction = {
-							type = radar_station
-							level = 1
-							instant_build = yes
-						}
-						set_state_flag = CAN_the_pacific_coast_air_defence_radar_system_radar2
-					}
-				}
 			}
 		}
 	}

@@ -2849,7 +2849,6 @@ focus_tree = {
 		relative_position_id = ITA_fiocchi_munizioni
 		cost = 5
 		available = {
-			is_special_project_completed = sp:sp_air_radar
 			has_full_control_of_state = 159
 		}
 
@@ -6036,11 +6035,16 @@ focus_tree = {
 		icon = GFX_goal_generic_navy_anti_submarine
 		prerequisite = { focus = ITA_incrociatori_leggeri }
 		mutually_exclusive = { focus = ITA_midget_submarines }
+
 		x = -4
 		y = 1
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 10
 		available = {
+		}
+
+		allow_branch {
+			always = no
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -6099,6 +6103,10 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 10
 		available = {
+		}
+
+		allow_branch {
+			always = no
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}

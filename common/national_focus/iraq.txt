@@ -2290,15 +2290,6 @@ focus_tree = {
 			base = 1
 		}
 
-		available = {
-			any_owned_state = {
-				nuclear_facility < 1
-				air_facility < 1
-				land_facility < 1
-				naval_facility < 1
-			}
-		}
-
 		bypass = {
 
 		}
@@ -2311,19 +2302,6 @@ focus_tree = {
 
 		completion_reward = {
 			
-			random_owned_controlled_state = {
-				limit = {
-					land_facility < 1
-					air_facility < 1
-					nuclear_facility < 1
-					naval_facility < 1
-				}
-				prioritize = { 1011 }
-				construct_building_in_random_province = {
-					land_facility = 1
-				}
-			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_tech_bonus = {
@@ -2934,15 +2912,6 @@ focus_tree = {
 			base = 1
 		}
 
-		available = {
-			any_owned_state = {
-				nuclear_facility < 1
-				air_facility < 1
-				land_facility < 1
-				naval_facility < 1
-			}
-		}
-
 		bypass = {
 
 		}
@@ -2956,16 +2925,6 @@ focus_tree = {
 
 		completion_reward = {
 			
-			random_owned_controlled_state = {
-				limit = {
-					can_construct_building = air_facility
-				}
-				prioritize = { 1010 }
-				construct_building_in_random_province = {
-					air_facility = 1
-				}
-			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			add_tech_bonus = {
@@ -3015,15 +2974,6 @@ focus_tree = {
 			base = 1
 		}
 
-		available = {
-			any_owned_state = {
-				nuclear_facility < 1
-				air_facility < 1
-				land_facility < 1
-				naval_facility < 1
-			}
-		}
-
 		bypass = {
 
 		}
@@ -3036,16 +2986,6 @@ focus_tree = {
 
 		completion_reward = {
 			
-			random_owned_controlled_state = {
-				limit = {
-					can_construct_building = nuclear_facility
-				}
-				prioritize = { 291 }
-				construct_building_in_random_province = {
-					nuclear_facility = 1
-				}
-			}
-
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			if = {
@@ -3104,7 +3044,6 @@ focus_tree = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
 				}
-				add_potential_special_forces_tree = yes
 				add_doctrine_cost_reduction = {
 					name = IRQ_special_forces
 					cost_reduction = 0.25

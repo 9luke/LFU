@@ -2,7 +2,7 @@ state = {
 	id = 929
 	name = "STATE_929" #OULU
 	
-	manpower = 318000
+	manpower = 1
 	
 	state_category = rural
 	
@@ -22,13 +22,7 @@ state = {
 			3073 1 # Suomussalmi
 		}
 		
-		buildings = {
-			infrastructure = 1
 
-			# Merikoski Power Plant
-			#158 = { dam = 1 }
-		
-		}
 
 	}
 

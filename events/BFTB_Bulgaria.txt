@@ -5243,7 +5243,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-					archetype = fighter_equipment
+					archetype = small_plane_airframe
 	  				ratio < 0.76
 	  			}
 			}
@@ -5262,7 +5262,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-					archetype = nav_bomber_equipment
+					archetype = small_plane_airframe
 	  				ratio < 0.76
 	  			}
 			}
@@ -5287,7 +5287,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-					archetype = tac_bomber_equipment
+					archetype = medium_plane_airframe
 	  				ratio < 0.76
 	  			}
 			}

@@ -10719,7 +10719,6 @@ focus = {
 		available_if_capitulated = no
 	
 		completion_reward = {
-			add_potential_special_forces_tree = yes
 			if = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"

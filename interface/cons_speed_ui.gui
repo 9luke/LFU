@@ -134,29 +134,6 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
-		instantTextBoxType = {
-			name = "rocket_site_speed"   
-			position = { x = 396 y = 108 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_rocket_site_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "nuclear_reactor_speed"   
-			position = { x = 442 y = 108 } 
-			font = "cg_16b"              
-			text = "[?modifier@production_speed_nuclear_reactor_factor|%0=+]"	   
-			maxWidth = 50  
-			maxHeight = 20
-			format = right
-			alwaystransparent = yes
-		}
-
-
 
 		# ===============================================
 		

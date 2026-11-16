@@ -2988,7 +2988,6 @@ ideas = {
 				naval_manufacturer_cost_factor = -0.5
 
 				production_speed_facility_factor = 0.2
-				special_project_speed_factor = 0.1
 
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
