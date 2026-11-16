@@ -877,27 +877,6 @@ debug_decisions = {
 		}
 	}
 
-	plane_generator_test = {
-		available = {
-			is_ai = no
-		}
-
-		visible = {
-			is_ai = no
-			is_debug = yes
-			has_global_flag = show_debug_decisions_flag
-		}
-		complete_effect = {
-			set_variable = { fighter_buy_amount = 200 }
-			save_event_target_as = license_target
-			bba_get_fighter_GER_effect = yes
-			GER = {
-				bba_create_fighter_license_effect = yes
-			}
-		}
-		
-	}
-
 	debug_clr_dreadnought_flags = {
 		cost = 0
 		icon = GFX_decision_generic_naval
@@ -946,29 +925,6 @@ debug_decisions = {
 #			}
 #		}
 #	}
-
-	unlock_supersonic_jet = {
-		available = {
-			is_ai = no
-		}
-
-		visible = {
-			is_ai = no
-			is_debug = yes
-			has_global_flag = show_debug_decisions_flag
-		}
-		complete_effect = {
-			set_technology = {
-				supersonic_small_airframe = 1
-				popup = yes
-			}
-
-			set_technology = {
-				modern_small_airframe = 1
-				popup = yes
-			}
-		}
-	}
 
 	unlock_all_radars = {
 		available = {

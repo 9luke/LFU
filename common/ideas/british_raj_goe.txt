@@ -2961,8 +2961,6 @@ ideas = {
 				military_industrial_organization_research_bonus = 0.15
 				military_industrial_organization_funds_gain = 0.15
 
-				production_speed_facility_factor = 0.15
-				special_project_speed_factor = 0.1
 
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1

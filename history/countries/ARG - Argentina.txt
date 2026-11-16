@@ -9,24 +9,11 @@ IF = {
 		set_naval_oob = "ARG_1936_naval_legacy"
 	}
 }
-IF = {
-	limit = { always = no }
-		#ZHM-REVIEW oob file missing: set_air_oob = "ARG_1936_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			aa_lmg = 1
-			engines_1 = 1
-			early_bombs = 1
-		}
-	ELSE = {
-		set_air_oob = "ARG_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
+	set_air_oob = "ARG_1936_air_legacy"
+	set_technology = {
+		early_fighter = 1
+		CAS1 = 1
 	}
-}
-
 every_core_state = {
 	ROOT = {
 		add_to_array = { cores_at_game_start = PREV }
@@ -256,23 +243,12 @@ set_country_flag = monroe_doctrine
 			set_naval_oob = "ARG_1939_naval_legacy"
 		}
 	}
-	IF = {
-		limit = { always = no }
-			set_air_oob = "ARG_1939_air_bba"
-			set_technology = {
-				iw_medium_airframe = 1
-				bba_early_transport_plane = 1
-			}
-		ELSE = {
-			set_air_oob = "ARG_1939_air_legacy"
-			set_technology = {
-				early_bomber = 1
-				naval_bomber1 = 1
-				early_transport_plane = 1
-			}
-		}
+	set_air_oob = "ARG_1939_air_legacy"
+	set_technology = {
+		early_bomber = 1
+		naval_bomber1 = 1
+		early_transport_plane = 1
 	}
-
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1
@@ -366,21 +342,7 @@ set_popularities = {
 
 ### VARIANTS ###
 # 1936 Start #
-IF = {
-	limit = {
-		always = no
-	}
-	create_equipment_variant = {
-		name = "FMA D.21" #
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = no
-	}
-}
+
 IF = {
 	limit = { NOT = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###

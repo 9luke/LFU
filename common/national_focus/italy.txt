@@ -4432,17 +4432,8 @@ focus_tree = {
 		relative_position_id = ITA_superaereo
 		cost = 5
 		available = {
-			if = {
-				limit = {
-					always = no
-				}
-				has_tech = improved_small_airframe
-				has_tech = improved_medium_airframe
-			}
-			else = {
-				has_tech = fighter2
-				has_tech = tactical_bomber2
-			}
+			has_tech = fighter2
+			has_tech = tactical_bomber2
 		}
 
 		search_filters = {FOCUS_FILTER_AIR_XP}
@@ -13056,13 +13047,6 @@ focus_tree = {
 		cost = 10
 		available = {
 			has_full_control_of_state = 2
-			if = {
-				limit = {
-					always = no
-				}
-				has_tech = advanced_large_airframe
-				has_tech = engines_4
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -13092,45 +13076,6 @@ focus_tree = {
 				category = heavy_air
 			}
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				custom_effect_tooltip = ITA_the_king_of_the_skies_military_industry_dm_tt
-				hidden_effect = {
-					add_ideas = ITA_hidden_super_heavy_aircraft_ns
-				}
-
-				ITA_add_the_king_of_the_skies_template_production_and_wing = yes
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-
-			if = {
-				limit = {
-					has_dlc = "Gotterdammerung"
-				}
-				custom_effect_tooltip = ITA_modify_regia_aeronautica_dynamic_modifier_ns_intro
-				if = {
-					limit = {
-						NOT = { is_special_project_completed = sp:sp_air_intercontinental_bomber }
-					}
-					add_to_variable = { 
-						ITA_ra_sp_air_intercontinental_bomber_speed_factor = 0.2
-						tooltip = sp_air_intercontinental_bomber_speed_factor_tt
-					}
-				}
-				if = {
-					limit = {
-						NOT = { is_special_project_completed = sp:sp_air_mothership_aircraft }
-					}
-					add_to_variable = { 
-						ITA_ra_sp_air_mothership_aircraft_speed_factor = 0.2
-						tooltip = sp_air_mothership_aircraft_speed_factor_tt
-					}
-				}
-			}
 		}
 	}
 

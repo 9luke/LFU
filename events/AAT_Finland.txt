@@ -2877,22 +2877,10 @@ country_event = {
 						producer = ROOT
 					}
 				}
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = { 
-						type = small_plane_airframe_1
-						amount = 50
-						producer = ROOT
-					}
-				}
-				else = {
-					add_equipment_to_stockpile = { 
-						type = fighter_equipment_1
-						amount = 50
-						producer = ROOT
-					}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 50
+					producer = ROOT
 				}
 				add_equipment_to_stockpile = { 
 					type = convoy_1
@@ -3041,22 +3029,10 @@ country_event = {
 					producer = FROM
 				}
 			}
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = { 
-					type = small_plane_airframe_1
-					amount = 50
-					producer = FROM
-				}
-			}
-			else = {
-				add_equipment_to_stockpile = { 
-					type = fighter_equipment_1
-					amount = 50
-					producer = FROM
-				}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 50
+				producer = FROM
 			}
 			add_equipment_to_stockpile = { 
 				type = convoy_1

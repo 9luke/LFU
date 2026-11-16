@@ -1,22 +1,18 @@
 ﻿capital = 275
 
 oob = "SAF_1936"
-if = {
-	limit = { always = no }
-		set_air_oob = "SAF_1936_air_bba"
-	else = {
-		set_air_oob = "SAF_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			cv_early_fighter = 1
-			cv_naval_bomber1 = 1
-			naval_bomber1 = 1
-			early_bomber = 1
-			CAS1 = 1
 
-		}
-	}
+set_air_oob = "SAF_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	naval_bomber1 = 1
+	early_bomber = 1
+	CAS1 = 1
+
 }
+
 
 set_stability = 0.6
 set_war_support = 0.1
@@ -88,13 +84,9 @@ if = {
 	add_political_power = 1198
 	add_command_power = 100
 	oob = "SAF_1939"
-	if = {
-		limit = { always = no }
-			set_air_oob = "SAF_1939_air_bba"
-		else = {
-			set_air_oob = "SAF_1939_air_legacy"
-		}
-	}
+
+	set_air_oob = "SAF_1939_air_legacy"
+
 	if = {
 		limit = { has_dlc = "Together for Victory" }
 		complete_national_focus = SAF_special_service_battalion

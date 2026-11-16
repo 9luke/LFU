@@ -6696,12 +6696,7 @@ BUL_purchase_equipment = {
 				}
 				BUL_is_valid_subject = yes
 			}
-			FROM = { 
-				OR = { 
-					has_tech = early_fighter 
-					has_tech = iw_small_airframe 
-				}
-			}
+			FROM = { has_tech = early_fighter }
 			NOT = { has_country_flag = BUL_purchasing_aircraft_flag }
 
 			NOT = { has_war_with = FROM }
@@ -6783,15 +6778,15 @@ BUL_purchase_equipment = {
 					num_of_civilian_factories < 10
 					AND = {
 						stockpile_ratio = { 
-			  				archetype = small_plane_airframe
+							archetype = fighter_equipment
 			  				ratio > 0.75
 			  			}
 			  			stockpile_ratio = { 
-			  				archetype = small_plane_naval_bomber_airframe
+							archetype = nav_bomber_equipment
 			  				ratio > 0.75
 			  			}
 			  			stockpile_ratio = { 
-			  				archetype = medium_plane_airframe
+							archetype = tac_bomber_equipment
 			  				ratio > 0.75
 			  			}
 					}

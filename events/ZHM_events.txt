@@ -156,23 +156,6 @@ news_event = {
 					if = { limit = { NOT = { is_mio_trait_completed = generic_mio_trait_interceptor } } complete_mio_trait = generic_mio_trait_interceptor }
 					if = { limit = { NOT = { is_mio_trait_completed = generic_mio_trait_stiffened_wings } } complete_mio_trait = generic_mio_trait_stiffened_wings }
 				}
-
-				create_equipment_variant = {
-					name = "F2 JET NO ASIA"				
-					type = small_plane_airframe_2
-					parent_version = 0
-					allow_without_tech = yes
-					design_team = mio:ENG_supermarine_organization
-					modules = {
-						fixed_main_weapon_slot = heavy_mg_4x
-						fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
-						engine_type_slot = jet_engine_1x
-						special_type_slot_1 = fuel_tanks_small
-						special_type_slot_2 = fuel_tanks_small
-						fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
-						special_type_slot_3 = self_sealing_fuel_tanks_small
-					}
-				}
 				
 			}
 			every_state = { 

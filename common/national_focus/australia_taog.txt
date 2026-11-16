@@ -10228,24 +10228,14 @@ focus = {
 		cost = 10
 
 		available = {
-		    if = {
-		        limit = { has_dlc = "By Blood Alone" }    
-	            OR = {
-	                has_tech = basic_small_airframe
-	                has_tech = basic_medium_airframe
-	                has_tech = basic_large_airframe
-	            }
-		    }
-		    else = {
-	            OR = {
-	                has_tech = CAS1
-	                has_tech = fighter1
-	                has_tech = naval_bomber1
-	                has_tech = heavy_fighter1
-	                has_tech = tactical_bomber1
-	                has_tech = strategic_bomber1
-	            }     
-		    }
+			OR = {
+				has_tech = CAS1
+				has_tech = fighter1
+				has_tech = naval_bomber1
+				has_tech = heavy_fighter1
+				has_tech = tactical_bomber1
+				has_tech = strategic_bomber1
+			}
 		}
 
 		bypass = {
@@ -10419,24 +10409,14 @@ focus = {
 		cost = 10
 
 		available = {
-		    if = {
-		        limit = { has_dlc = "By Blood Alone" }    
-	            OR = {
-	                has_tech = improved_small_airframe
-	                has_tech = improved_medium_airframe
-	                has_tech = improved_large_airframe
-	            }
-		    }
-		    else = {
-	            OR = {
-	                has_tech = CAS2
-	                has_tech = fighter2
-	                has_tech = naval_bomber2
-	                has_tech = heavy_fighter2
-	                has_tech = tactical_bomber2
-	                has_tech = strategic_bomber2
-	            }     
-		    }
+			OR = {
+				has_tech = CAS2
+				has_tech = fighter2
+				has_tech = naval_bomber2
+				has_tech = heavy_fighter2
+				has_tech = tactical_bomber2
+				has_tech = strategic_bomber2
+			}
 		}
 
 		bypass = {

@@ -2602,20 +2602,9 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					always = false 
-				}
-				NOT = {
-					has_tech = advanced_small_airframe
-					has_tech = advanced_medium_airframe
-				}
-			}
-			else = {
-				NOT = {
-					has_tech = fighter3
-					has_tech = heavy_fighter3
-				}
+			NOT = {
+				has_tech = fighter3
+				has_tech = heavy_fighter3
 			}
 			OR = {
 				GER = {
@@ -2835,46 +2824,6 @@ focus_tree = {
 							uses = 1
 							technology = fighter2
 						}
-					}
-				}
-			}
-			if = {
-				limit = { always = false }
-				if = {
-					limit = {
-						NOT = { has_tech = improved_small_airframe }
-					}
-					add_tech_bonus = {
-						name = ROM_iar_80
-						bonus = 1.0
-						ahead_reduction = 2
-						uses = 1
-						technology = improved_small_airframe
-					}
-					create_equipment_variant = {
-						name = "IAR 80"
-						type = small_plane_airframe_2
-						modules = {
-							fixed_main_weapon_slot = light_mg_4x
-							fixed_auxiliary_weapon_slot_1 = light_mg_2x
-							engine_type_slot = engine_2_1x
-							special_type_slot_1 = empty
-						}
-						icon = "GFX_ROM_fighter2_medium"
-					}
-				}
-				else = {
-					create_equipment_variant = {
-						name = "IAR 80"
-						type = small_plane_airframe_2
-						allow_without_tech = yes #Makes no difference since appropriate tech is already researched, but it improves tooltip
-						modules = {
-							fixed_main_weapon_slot = light_mg_4x
-							fixed_auxiliary_weapon_slot_1 = light_mg_2x
-							engine_type_slot = engine_2_1x
-							special_type_slot_1 = empty
-						}
-						icon = "GFX_ROM_fighter2_medium"
 					}
 				}
 			}

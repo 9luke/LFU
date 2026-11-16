@@ -8,17 +8,13 @@ if = {
 		set_naval_oob = "SIA_1936_naval_legacy"
 	}
 }
-if = {
-	limit = { always = no }
-		set_air_oob = "SIA_1936_air_bba"
-	else = {
-		set_air_oob = "SIA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
+
+set_air_oob = "SIA_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	CAS1 = 1
 }
+
 
 recruit_character = SIA_phraya_phahon
 
@@ -83,14 +79,6 @@ if = {
 	}
 }
 
-if = {
-	limit = { always = no }
-	set_technology = {
-		iw_small_airframe = 1
-		engines_1 = 1
-		aa_lmg = 1
-	}
-}
 set_convoys = 15
 
 1939.1.1 = {
@@ -156,21 +144,11 @@ set_convoys = 15
 			set_naval_oob = "SIA_1939_naval_legacy"
 		}
 	}
-	if = {
-		limit = { always = no }
-			set_air_oob = "SIA_1939_air_bba"
-			set_technology = {
-				bba_early_transport_plane = 1
-			}
-		else = {
-			set_air_oob = "SIA_1939_air_legacy"
-			set_technology = {
-				early_bomber = 1
-				early_transport_plane = 1
-			}
-		}
+	set_air_oob = "SIA_1939_air_legacy"
+	set_technology = {
+		early_bomber = 1
+		early_transport_plane = 1
 	}
-
 	set_technology = {
 		tech_support = 1
 		tech_recon = 1

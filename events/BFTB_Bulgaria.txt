@@ -4585,20 +4585,10 @@ country_event = {
 		set_country_flag = BUL_german_aircraft_donation_flag
 
 		GER = {
-			if = {
-				limit = { NOT = { has_dlc = "By Blood Alone" } }
-				send_equipment = {
-					type = fighter_equipment_1
-					amount = 12
-					target = ROOT
-				}
-			}
-			else = {
-				send_equipment = {
-					type = small_plane_airframe
-					amount = 12
-					target = ROOT
-				}
+			send_equipment = {
+				type = fighter_equipment_1
+				amount = 12
+				target = ROOT
 			}
 		}
 		if = {
@@ -4654,7 +4644,7 @@ country_event = {
 				}
 			}
 			send_equipment = {
-				type = small_plane_airframe
+				type = fighter_equipment_1
 				amount = 12
 				target = ROOT
 			}
@@ -5253,13 +5243,13 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = small_plane_airframe
+					archetype = fighter_equipment
 	  				ratio < 0.76
 	  			}
 			}
 		}
 
-		set_variable = { BUL_aircraft_type = token:small_plane_airframe }
+		set_variable = { BUL_aircraft_type = token:fighter_equipment_1 }
 		var:BUL_aircraft_seller = { set_country_flag = BUL_producing_fighters_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.4.a_tt
 	}
@@ -5272,7 +5262,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = small_plane_naval_bomber_airframe
+					archetype = nav_bomber_equipment
 	  				ratio < 0.76
 	  			}
 			}
@@ -5280,11 +5270,11 @@ country_event = {
 
 		trigger = {
 			var:BUL_aircraft_seller = {
-				has_tech = naval_bomber1 #this won't work for BBA, because we can not guarantee that the sender country has a naval bomber design
+				has_tech = naval_bomber1
 			}
 		}
 
-		set_variable = { BUL_aircraft_type = token:small_plane_naval_bomber_airframe }
+		set_variable = { BUL_aircraft_type = token:nav_bomber_equipment_1 }
 		var:BUL_aircraft_seller = { set_country_flag = BUL_producing_naval_bombers_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.4.b_tt
 	}
@@ -5297,7 +5287,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				stockpile_ratio = { 
-	  				archetype = medium_plane_airframe
+					archetype = tac_bomber_equipment
 	  				ratio < 0.76
 	  			}
 			}
@@ -5307,12 +5297,11 @@ country_event = {
 			var:BUL_aircraft_seller = {
 				OR = {
 					has_tech = early_bomber
-					has_tech = iw_medium_airframe
 				}
 			}
 		}
 
-		set_variable = { BUL_aircraft_type = token:medium_plane_airframe }
+		set_variable = { BUL_aircraft_type = token:tac_bomber_equipment_1 }
 		var:BUL_aircraft_seller = { set_country_flag = BUL_producing_tactical_bombers_for_bulgaria_flag }
 		custom_effect_tooltip = bftb_bulgaria_equipment_purchases.4.c_tt
 	}

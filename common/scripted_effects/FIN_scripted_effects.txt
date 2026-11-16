@@ -416,54 +416,19 @@ FIN_purchase_soviet_equipment_for_cw = {
 		}
 	}
 
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		if = {
-			limit = {
-				NOT = { has_tech = iw_small_airframe }
-			}
-			set_technology = {
-				iw_small_airframe = 1
-				popup = yes
-			}
-		}
-		create_equipment_variant = { #Copy of I-15 variant in Soviet history file
-			name = "I-15"
-			type = small_plane_airframe_0
-			allow_without_tech = yes # Tooltip purposes, tech will be granted anyways
-			modules = {
-				fixed_main_weapon_slot = light_mg_4x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-			icon = "GFX_SOV_early_fighter_medium"
-			model = "SOV_fighter_equipment_0_entity"
-		}
-		add_equipment_to_stockpile = { 
-			type = small_plane_airframe_0
-			amount = 30
-			producer = SOV
-			variant_name = "I-15"
-		}
+	create_equipment_variant = {
+		name = "I-15"
+		type = fighter_equipment_0
+		allow_without_tech = yes
+		obsolete = yes
+		icon = "GFX_SOV_early_fighter_medium"
+		model = "SOV_fighter_equipment_0_entity"
 	}
-	else = {
-		create_equipment_variant = {
-			name = "I-15"
-			type = fighter_equipment_0
-			allow_without_tech = yes
-			obsolete = yes
-			icon = "GFX_SOV_early_fighter_medium"
-			model = "SOV_fighter_equipment_0_entity"
-		}
-		add_equipment_to_stockpile = { 
-			type = fighter_equipment_0
-			amount = 30
-			producer = SOV
-			variant_name = "I-15"
-		}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 30
+		producer = SOV
+		variant_name = "I-15"
 	}
 }
 
@@ -601,53 +566,19 @@ FIN_purchase_german_equipment_for_cw = {
 		}
 	}
 
-	if = {
-		limit = {
-			has_dlc = "By Blood Alone"
-		}
-		if = {
-			limit = {
-				NOT = { has_tech = iw_small_airframe }
-			}
-			set_technology = {
-				iw_small_airframe = 1
-				popup = yes
-			}
-		}
-		create_equipment_variant = { #Copy of I-15 variant in German history file
-			name = "He 51" #also covers Ar 68
-			type = small_plane_airframe_0
-			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				engine_type_slot = engine_1_1x
-				special_type_slot_1 = empty
-			}
-			obsolete = yes
-			icon = "GFX_GER_early_fighter_medium"
-			model = "GER_fighter_equipment_0_entity"
-		}
-		add_equipment_to_stockpile = { 
-			type = small_plane_airframe_0
-			amount = 30
-			producer = GER
-			variant_name = "He 51"
-		}
+	create_equipment_variant = {
+		name = "He 51"
+		type = fighter_equipment_0
+		allow_without_tech = yes
+		obsolete = yes
+		icon = "GFX_GER_early_fighter_medium"
+		model = "GER_fighter_equipment_0_entity"
 	}
-	else = {
-		create_equipment_variant = {
-			name = "He 51"
-			type = fighter_equipment_0
-			allow_without_tech = yes
-			obsolete = yes
-			icon = "GFX_GER_early_fighter_medium"
-			model = "GER_fighter_equipment_0_entity"
-		}
-		add_equipment_to_stockpile = { 
-			type = fighter_equipment_0
-			amount = 30
-			producer = GER
-			variant_name = "He 51"
-		}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_0
+		amount = 30
+		producer = GER
+		variant_name = "He 51"
 	}
 }
 

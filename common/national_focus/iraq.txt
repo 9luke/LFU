@@ -2612,69 +2612,17 @@ focus_tree = {
 					limit = {
 						has_idea = IRQ_anglo_iraqi_treaty
 					}
-					IF = {
-						limit = {
-							has_dlc = "By Blood Alone"
-						}
-						IF = {
-							limit = {
-								has_equipment = {
-									small_plane_airframe_1 > 0
-								}
-							}
-							add_equipment_to_stockpile = { 
-								type = small_plane_airframe_1
-								amount = 50
-								producer = ENG
-							}
-						}
-						ELSE = {
-							add_equipment_to_stockpile = { 
-								type = small_plane_airframe_0
-								amount = 50
-								producer = ENG
-							}
-						}
-					}
-					ELSE = {
-						add_equipment_to_stockpile = { 
-							type = fighter_equipment_1
-							amount = 50
-							producer = ENG
-						}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_1
+						amount = 50
+						producer = ENG
 					}
 				}
 				ELSE = {
-					IF = {
-						limit = {
-							has_dlc = "By Blood Alone"
-						}
-						IF = {
-							limit = {
-								has_equipment = {
-									small_plane_airframe_1 > 0
-								}
-							}
-							add_equipment_to_stockpile = { 
-								type = small_plane_airframe_1
-								amount = 50
-								producer = ENG
-							}
-						}
-						ELSE = {
-							add_equipment_to_stockpile = { 
-								type = small_plane_airframe_0
-								amount = 50
-								producer = ENG
-							}
-						}
-					}
-					ELSE = {
-						add_equipment_to_stockpile = { 
-							type = fighter_equipment_1
-							amount = 25
-							producer = ENG
-						}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_1
+						amount = 25
+						producer = ENG
 					}
 				}
 
@@ -2684,69 +2632,17 @@ focus_tree = {
 					has_idea = IRQ_anglo_iraqi_treaty
 				}
 				custom_effect_tooltip = IRQ_purchase_british_aircraft_treaty_tt
-				IF = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					IF = {
-						limit = {
-							has_equipment = {
-								small_plane_airframe_1 > 0
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_1
-							amount = 100
-							producer = ENG
-						}
-					}
-					ELSE = {
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_0
-							amount = 100
-							producer = ENG
-						}
-					}
-				}
-				ELSE = {
-					add_equipment_to_stockpile = { 
-						type = fighter_equipment_1
-						amount = 100
-						producer = ENG
-					}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 100
+					producer = ENG
 				}
 			}
 			ELSE = {
-				IF = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					IF = {
-						limit = {
-							has_equipment = {
-								small_plane_airframe_1 > 0
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_1
-							amount = 50
-							producer = ENG
-						}
-					}
-					ELSE = {
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_0
-							amount = 50
-							producer = ENG
-						}
-					}
-				}
-				ELSE = {
-					add_equipment_to_stockpile = { 
-						type = fighter_equipment_1
-						amount = 50
-						producer = ENG
-					}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 50
+					producer = ENG
 				}
 			}
 			ENG = {
@@ -2808,22 +2704,10 @@ focus_tree = {
 					equipment_type = small_plane_airframe
 					seller_tags = { ITA } 
 				}
-				IF = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = { 
-						type = small_plane_airframe_0
-						amount = 30
-						producer = ITA
-					}
-				}
-				ELSE = {
-					add_equipment_to_stockpile = { 
-						type = fighter_equipment_0
-						amount = 30
-						producer = ITA
-					}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_0
+					amount = 30
+					producer = ITA
 				}
 			}
 			ELSE_IF = {
@@ -2972,31 +2856,13 @@ focus_tree = {
 			}
 			IF = {
 				limit = {
-					has_dlc = "By Blood Alone"
+					NOT = {
+						has_tech = naval_bomber1
+					}
 				}
-				IF = {
-					limit = {
-						NOT = {
-							has_tech = air_torpedoe_1
-						}
-					}
-					set_technology = {
-						air_torpedoe_1 = 1
-						popup = yes
-					}	
-				}
-			}
-			ELSE = {
-				IF = {
-					limit = {
-						NOT = {
-							has_tech = naval_bomber1
-						}
-					}
-					set_technology = {
-						naval_bomber1 = 1
-						popup = yes
-					}
+				set_technology = {
+					naval_bomber1 = 1
+					popup = yes
 				}
 			}	
 
@@ -4477,27 +4343,10 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			IF = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_equipment_to_stockpile = { 
-					type = small_plane_airframe_1
-					amount = 50
-					producer = GER
-				}
-				add_equipment_to_stockpile = { 
-					type = medium_plane_airframe_1
-					amount = 50
-					producer = GER
-				}
-			}
-			ELSE = {
-				add_equipment_to_stockpile = { 
-					type = fighter_equipment_1
-					amount = 100
-					producer = GER
-				}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_1
+				amount = 100
+				producer = GER
 			}
 			add_manpower = 2200		
 			custom_effect_tooltip = generic_skip_one_line_tt

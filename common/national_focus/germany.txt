@@ -3276,20 +3276,6 @@ focus_tree = {
 			
 			custom_effect_tooltip = generic_skip_one_line_tt
 
-			if = {
-				limit = {
-					OR = {
-						has_dlc = "Gotterdammerung"
-						has_dlc = "No Step Back"
-					}
-				}
-				GER_add_or_modify_wunderwaffen = yes
-				add_to_variable = { 
-					GER_wunderwaffen_sp_tag_artillery_speed_factor = GER_wunderwaffe_research_speed_bonus
-					tooltip = sp_tag_artillery_speed_factor_tt
-				}
-				custom_effect_tooltip = generic_skip_one_line_tt
-			}
 
 			custom_effect_tooltip = GER_modify_bewegungskrieg_modifier_tt
 			effect_tooltip = {
@@ -6272,10 +6258,10 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 
 			GER_add_or_modify_wunderwaffen = yes
-			add_to_variable = { 
-				GER_wunderwaffen_sp_tag_jet_speed_factor = GER_wunderwaffe_research_speed_bonus
-				tooltip = sp_tag_jet_speed_factor_tt
-			}
+			#add_to_variable = { 
+			#	GER_wunderwaffen_sp_tag_jet_speed_factor = GER_wunderwaffe_research_speed_bonus
+			#	tooltip = sp_tag_jet_speed_factor_tt
+			#}
 
 			IF = {
 				limit = {

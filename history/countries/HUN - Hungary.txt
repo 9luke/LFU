@@ -15,33 +15,11 @@ IF = {
 	}
 }
 
-IF = {
-	limit = { always = no }
-		set_air_oob = "HUN_1936_air_bba"
-		set_technology = {
-			iw_small_airframe = 1
-			engines_1 = 1
-			early_bombs = 1
-			aa_lmg = 1
-		}
-	ELSE = {
-		set_air_oob = "HUN_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-		always = no
-	}
+	set_air_oob = "HUN_1936_air_legacy"
 	set_technology = {
-					photo_reconnaisance = 1
+		early_fighter = 1
+		CAS1 = 1
 	}
-}
-
 IF = {
 	limit = { has_dlc = "Man the Guns" }
 		set_technology = {
@@ -205,29 +183,7 @@ IF = {
 set_variable = { HUN_academy_of_sciences_research_speed_factor = 0.03 }
 
 ### PLANE VARIANTS ###
-IF = {
-	limit = {
-		always = no
-	}
-	create_equipment_variant = {
-		name = "Weiss WM-16 Budapest"
-		type = small_plane_cas_airframe_0
-		modules = {
-			fixed_main_weapon_slot = bomb_locks
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-	}
-	create_equipment_variant = {
-		name = "Weiss WM-10 Ölyv"
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-	}
-}
+
 
 ### TANK VARIANTS ###
 IF = {

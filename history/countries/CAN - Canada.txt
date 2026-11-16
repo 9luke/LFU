@@ -21,21 +21,7 @@ if = {
 		set_naval_oob = "CAN_1936_naval_legacy"
 	}
 }
-if = {
-	limit = { always = no }
-		set_air_oob = "CAN_1936_air_bba"
-		set_technology = {
-			aa_lmg = 1
-			engines_1 = 1
-			aircraft_construction = 1
-			iw_small_airframe = 1
-			bba_early_transport_plane = 1
-		}
-	else = {
-		set_air_oob = "CAN_1936_air_legacy"
-	}
-}
-
+	set_air_oob = "CAN_1936_air_legacy"
 set_research_slots = 3
 set_country_flag = monroe_doctrine
 set_stability = 0.8
@@ -217,23 +203,9 @@ if = {
 			set_naval_oob = "CAN_1939_naval_legacy"
 		}
 	}
-	if = {
-		limit = { always = no }
-			set_air_oob = "CAN_1939_air_bba"
-			set_technology = {
-				iw_small_airframe = 1
-				iw_medium_airframe = 1
-				aa_lmg = 1
-				early_bombs = 1
-				engines_1 = 1
-				bba_early_transport_plane = 1
-			}
-		else = {
-			set_air_oob = "CAN_1939_air_legacy"
-			set_technology = {
-				fighter1 = 1
-			}
-		}
+	set_air_oob = "CAN_1939_air_legacy"
+	set_technology = {
+		fighter1 = 1
 	}
 	set_technology = {
 		interwar_artillery = 1

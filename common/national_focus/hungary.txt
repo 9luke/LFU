@@ -3908,20 +3908,9 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					always = yes
-				}
-				NOT = {
-					has_tech = fighter3
-					has_tech = heavy_fighter3
-				}
-			}
-			else = {
-				NOT = {
-					has_tech = advanced_small_airframe
-					has_tech = advanced_medium_airframe
-				}
+			NOT = {
+				has_tech = fighter3
+				has_tech = heavy_fighter3
 			}
 			OR = {
 				GER = {
@@ -4001,20 +3990,9 @@ focus_tree = {
 		}
 
 		available = {
-			if = {
-				limit = {
-					always = yes
-				}
-				NOT = {
-					has_tech = CAS3
-					has_tech = tactical_bomber3
-				}
-			}
-			else = {
-				NOT = {
-					has_tech = advanced_small_airframe
-					has_tech = advanced_medium_airframe
-				}
+			NOT = {
+				has_tech = CAS3
+				has_tech = tactical_bomber3
 			}
 			OR = {
 				GER = {

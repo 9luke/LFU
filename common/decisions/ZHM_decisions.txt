@@ -620,10 +620,9 @@ easy_LL = {
             if = { 
 				limit = { date < 1940.1.1 }
 					add_equipment_to_stockpile = {
-					type = small_plane_airframe_2
-					amount = 250
+					type = fighter_equipment_3
+					amount = 500
 					producer = ENG
-					variant_name = "F2 JET NO ASIA"
 				}	
 			}
 			else_if = { 
@@ -632,10 +631,9 @@ easy_LL = {
 					date < 1940.6.1
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe_2
-					amount = 500
+					type = fighter_equipment_3
+					amount = 1000
 					producer = ENG
-					variant_name = "F2 JET NO ASIA"
 				}	
 			}
 			else_if = { 
@@ -644,10 +642,9 @@ easy_LL = {
 					#date > 1940.8.1
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe_2
-					amount = 1000
+					type = fighter_equipment_3
+					amount = 2000
 					producer = ENG
-					variant_name = "F2 JET NO ASIA"
 				}	
 			}
 			
@@ -683,10 +680,9 @@ easy_LL = {
            if = { 
 				limit = { date < 1940.1.1 }
 					add_equipment_to_stockpile = {
-					type = small_plane_airframe_2
-					amount = 250
+					type = fighter_equipment_3
+					amount = 500
 					producer = ENG
-					variant_name = "F2 JET NO ASIA"
 				}	
 			}
 			else_if = { 
@@ -695,10 +691,9 @@ easy_LL = {
 					date < 1940.6.1
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe_2
-					amount = 500
+					type = fighter_equipment_3
+					amount = 1000
 					producer = ENG
-					variant_name = "F2 JET NO ASIA"
 				}	
 			}
 			else_if = { 
@@ -707,10 +702,9 @@ easy_LL = {
 					#date > 1940.8.1
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe_2
-					amount = 1000
+					type = fighter_equipment_3
+					amount = 2000
 					producer = ENG
-					variant_name = "F2 JET NO ASIA"
 				}	
 			}
 			activate_mission = no_asia_uk_LL

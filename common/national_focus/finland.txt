@@ -4858,22 +4858,10 @@ focus_tree = {
 									producer = PREV
 								}
 							}
-							if = {
-								limit = {
-									has_dlc = "By Blood Alone"
-								}
-								add_equipment_to_stockpile = { 
-									type = small_plane_airframe_1
-									amount = 50
-									producer = PREV
-								}
-							}
-							else = {
-								add_equipment_to_stockpile = { 
-									type = fighter_equipment_1
-									amount = 50
-									producer = PREV
-								}
+							add_equipment_to_stockpile = {
+								type = fighter_equipment_1
+								amount = 50
+								producer = PREV
 							}
 							add_equipment_to_stockpile = { 
 								type = convoy_1
@@ -4923,22 +4911,10 @@ focus_tree = {
 								producer = SWE
 							}
 						}
-						if = {
-							limit = {
-								has_dlc = "By Blood Alone"
-							}
-							add_equipment_to_stockpile = { 
-								type = small_plane_airframe_0
-								amount = 25
-								producer = PREV
-							}
-						}
-						else = {
-							add_equipment_to_stockpile = { 
-								type = fighter_equipment_0
-								amount = 25
-								producer = PREV
-							}
+						add_equipment_to_stockpile = {
+							type = fighter_equipment_0
+							amount = 25
+							producer = PREV
 						}
 						add_equipment_to_stockpile = { 
 							type = convoy_1
@@ -5392,22 +5368,10 @@ focus_tree = {
 						producer = GER
 					}
 				}
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = { 
-						type = small_plane_airframe_1
-						amount = 50
-						producer = GER
-					}
-				}
-				else = {
-					add_equipment_to_stockpile = { 
-						type = fighter_equipment_1
-						amount = 50
-						producer = GER
-					}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_1
+					amount = 50
+					producer = GER
 				}
 				add_equipment_to_stockpile = { 
 					type = convoy_1
@@ -11307,253 +11271,124 @@ focus_tree = {
 			
 				if = {
 					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					if = {
-						limit = {
-							GER = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_1
-							amount = 50
-							producer = GER
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_cas_airframe_1
-							amount = 35
-							producer = GER
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_naval_bomber_airframe_1
-							amount = 35
-							producer = GER
+						GER = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							ITA = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = medium_plane_airframe_1
-							amount = 25
-							producer = ITA
-						}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_1
+						amount = 50
+						producer = GER
 					}
-					if = {
-						limit = {
-							ENG = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_0
-							amount = 50
-							producer = ENG
-						}
-						add_equipment_to_stockpile = { 
-							type = medium_plane_airframe_1
-							amount = 25
-							producer = ENG
-						}
+					add_equipment_to_stockpile = {
+						type = CAS_equipment_1
+						amount = 35
+						producer = GER
 					}
-					if = {
-						limit = {
-							FRA = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_naval_bomber_airframe_0
-							amount = 35
-							producer = FRA
-						}
-					}
-					if = {
-						limit = {
-							USA = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_1
-							amount = 25
-							producer = USA
-						}
-					}
-					if = {
-						limit = {
-							SOV = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_0
-							amount = 50
-							producer = SOV
-						}
-						add_equipment_to_stockpile = { 
-							type = medium_plane_airframe_1
-							amount = 35
-							producer = SOV
-						}
-						add_equipment_to_stockpile = { 
-							type = large_plane_airframe_0
-							amount = 25
-							producer = SOV
-						}
-					}
-					if = {
-						limit = {
-							HOL = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = medium_plane_airframe_0
-							amount = 25
-							producer = HOL
-						}
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-							SWE = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = small_plane_airframe_0
-							amount = 35
-							producer = SWE
-						}
+					add_equipment_to_stockpile = {
+						type = nav_bomber_equipment_1
+						amount = 35
+						producer = GER
 					}
 				}
-				else = {
-					if = {
-						limit = {
-							GER = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = fighter_equipment_1
-							amount = 50
-							producer = GER
-						}
-						add_equipment_to_stockpile = { 
-							type = CAS_equipment_1
-							amount = 35
-							producer = GER
-						}
-						add_equipment_to_stockpile = { 
-							type = nav_bomber_equipment_1
-							amount = 35
-							producer = GER
+				if = {
+					limit = {
+						ITA = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							ITA = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = nav_bomber_equipment_1
-							amount = 25
-							producer = ITA
+					add_equipment_to_stockpile = {
+						type = nav_bomber_equipment_1
+						amount = 25
+						producer = ITA
+					}
+				}
+				if = {
+					limit = {
+						ENG = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							ENG = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = fighter_equipment_0
-							amount = 50
-							producer = ENG
-						}
-						add_equipment_to_stockpile = { 
-							type = CAS_equipment_1
-							amount = 25
-							producer = ENG
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 50
+						producer = ENG
+					}
+					add_equipment_to_stockpile = {
+						type = CAS_equipment_1
+						amount = 25
+						producer = ENG
+					}
+				}
+				if = {
+					limit = {
+						FRA = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							FRA = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = nav_bomber_equipment_1
-							amount = 35
-							producer = FRA
+					add_equipment_to_stockpile = {
+						type = nav_bomber_equipment_1
+						amount = 35
+						producer = FRA
+					}
+				}
+				if = {
+					limit = {
+						USA = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							USA = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = fighter_equipment_0
-							amount = 25
-							producer = USA
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 25
+						producer = USA
+					}
+				}
+				if = {
+					limit = {
+						SOV = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							SOV = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = fighter_equipment_0
-							amount = 50
-							producer = SOV
-						}
-						add_equipment_to_stockpile = { 
-							type = tac_bomber_equipment_0
-							amount = 35
-							producer = SOV
-						}
-						add_equipment_to_stockpile = { 
-							type = strat_bomber_equipment_1
-							amount = 25
-							producer = SOV
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 50
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = tac_bomber_equipment_0
+						amount = 35
+						producer = SOV
+					}
+					add_equipment_to_stockpile = {
+						type = strat_bomber_equipment_1
+						amount = 25
+						producer = SOV
+					}
+				}
+				if = {
+					limit = {
+						HOL = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							HOL = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = tac_bomber_equipment_0
-							amount = 25
-							producer = HOL
+					add_equipment_to_stockpile = {
+						type = tac_bomber_equipment_0
+						amount = 25
+						producer = HOL
+					}
+				}
+				if = {
+					limit = {
+						has_dlc = "Arms Against Tyranny"
+						SWE = {
+							FIN_can_purchase_equipment_from_country = yes
 						}
 					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-							SWE = {
-								FIN_can_purchase_equipment_from_country = yes
-							}
-						}
-						add_equipment_to_stockpile = { 
-							type = fighter_equipment_0
-							amount = 35
-							producer = SWE
-						}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 35
+						producer = SWE
 					}
 				}
 			}
@@ -11682,12 +11517,7 @@ focus_tree = {
 		relative_position_id = FIN_suomen_ilmavoimat
 		cost = 10
 		available = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				has_tech = iw_small_airframe
-			}
+			has_tech = naval_bomber1
 		}
 
 		search_filters = {  FOCUS_FILTER_AIR_XP FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH }
@@ -11711,76 +11541,6 @@ focus_tree = {
 			air_experience = 15
 			navy_experience = 15
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				if = {
-					limit = {
-						has_tech = basic_small_airframe
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						create_equipment_variant = {
-							name = "VL Kotka" 
-							type = small_plane_naval_bomber_airframe_1
-							modules = {
-								fixed_main_weapon_slot = torpedo_mounting
-								engine_type_slot = engine_1_1x
-								special_type_slot_1 = empty
-							}
-							icon = "GFX_FIN_naval_bomber1_medium"
-							design_team = mio:FIN_valtion_lentokonetehdas_organization
-						}
-					}
-					else = {
-						create_equipment_variant = {
-							name = "VL Kotka" 
-							type = small_plane_naval_bomber_airframe_1
-							modules = {
-								fixed_main_weapon_slot = torpedo_mounting
-								engine_type_slot = engine_1_1x
-								special_type_slot_1 = empty
-							}
-							icon = "GFX_FIN_naval_bomber1_medium"
-						}
-					}
-				}
-				else = {
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						create_equipment_variant = {
-							name = "VL Kotka" 
-							type = small_plane_naval_bomber_airframe_0
-							allow_without_tech = yes #Tooltip purposes (focus requires tech anyways)
-							modules = {
-								fixed_main_weapon_slot = torpedo_mounting
-								engine_type_slot = engine_1_1x
-								special_type_slot_1 = empty
-							}
-							icon = "GFX_FIN_iw_small_naval_bomber_1_medium"
-							design_team = mio:FIN_valtion_lentokonetehdas_organization
-						}
-					}
-					else = {
-						create_equipment_variant = {
-							name = "VL Kotka" 
-							type = small_plane_naval_bomber_airframe_0
-							allow_without_tech = yes #Tooltip purposes (focus requires tech anyways)
-							modules = {
-								fixed_main_weapon_slot = torpedo_mounting
-								engine_type_slot = engine_1_1x
-								special_type_slot_1 = empty
-							}
-							icon = "GFX_FIN_iw_small_naval_bomber_1_medium"
-						}
-					}
-				}
-			}
 		}
 	}
 	
@@ -11868,12 +11628,7 @@ focus_tree = {
 		relative_position_id = FIN_national_aircraft_production
 		cost = 10
 		available = {
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				has_tech = iw_small_airframe
-			}
+			has_tech = CAS1
 		}
 
 		search_filters = { FOCUS_FILTER_AIR_XP FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
@@ -11896,111 +11651,6 @@ focus_tree = {
 
 			air_experience = 15
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				if = {
-					limit = {
-						has_tech = improved_small_airframe
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						create_equipment_variant = { #Made-up
-							name = "VL Kemi"
-							type = small_plane_cas_airframe_2
-							parent_version = 0
-							modules = {
-								fixed_main_weapon_slot = bomb_locks
-								fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-								engine_type_slot = engine_2_1x
-							}
-							icon = "GFX_FIN_CAS2_medium"
-							design_team = mio:FIN_valtion_lentokonetehdas_organization
-						}
-					}
-					else = {
-						create_equipment_variant = { #Made-up
-							name = "VL Kemi"
-							type = small_plane_cas_airframe_2
-							parent_version = 0
-							modules = {
-								fixed_main_weapon_slot = bomb_locks
-								fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-								engine_type_slot = engine_2_1x
-							}
-							icon = "GFX_FIN_CAS2_medium"
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						has_tech = basic_small_airframe
-					}
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						create_equipment_variant = { #Made-up
-							name = "VL Kemi"
-							type = small_plane_cas_airframe_1
-							parent_version = 0
-							modules = {
-								fixed_main_weapon_slot = bomb_locks
-								fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-								engine_type_slot = engine_1_1x
-							}
-							icon = "GFX_FIN_CAS1_medium"
-							design_team = mio:FIN_valtion_lentokonetehdas_organization
-						}
-					}
-					else = {
-						create_equipment_variant = { #Made-up
-							name = "VL Kemi"
-							type = small_plane_cas_airframe_1
-							parent_version = 0
-							modules = {
-								fixed_main_weapon_slot = bomb_locks
-								fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-								engine_type_slot = engine_1_1x
-							}
-							icon = "GFX_FIN_CAS1_medium"
-						}
-					}
-				}
-				else = {
-					if = {
-						limit = {
-							has_dlc = "Arms Against Tyranny"
-						}
-						create_equipment_variant = { #Made-up
-							name = "VL Kemi"
-							type = small_plane_cas_airframe_0
-							parent_version = 0
-							modules = {
-								fixed_main_weapon_slot = bomb_locks
-								engine_type_slot = engine_1_1x
-							}
-							icon = "GFX_FIN_CAS1_medium"
-							design_team = mio:FIN_valtion_lentokonetehdas_organization
-						}
-					}
-					else = {
-						create_equipment_variant = { #Made-up
-							name = "VL Kemi"
-							type = small_plane_cas_airframe_0
-							parent_version = 0
-							modules = {
-								fixed_main_weapon_slot = bomb_locks
-								engine_type_slot = engine_1_1x
-							}
-							icon = "GFX_FIN_CAS1_medium"
-						}
-					}
-				}
-			}
 		}
 	}
 	
@@ -12036,137 +11686,6 @@ focus_tree = {
 
 			air_experience = 15
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				if = {
-					limit = {
-						has_dlc = "Arms Against Tyranny"
-					}
-					create_equipment_variant = {
-						name = "VL Pyörremyrsky"
-						type = small_plane_airframe_4
-						parent_version = 0
-						modules = {
-							fixed_main_weapon_slot = heavy_mg_2x
-							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
-							fixed_auxiliary_weapon_slot_2 = bomb_locks
-							engine_type_slot = engine_4_1x
-						}
-						icon = "GFX_FIN_modern_small_fighter_1_medium"
-						design_team = mio:FIN_valtion_lentokonetehdas_organization
-					}
-					create_equipment_variant = {
-						name = "VL Humu"
-						type = small_plane_airframe_3
-						parent_version = 0
-						modules = {
-							fixed_main_weapon_slot = heavy_mg_2x
-							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-							engine_type_slot = engine_3_1x
-						}
-						icon = "GFX_FIN_fighter3_medium"
-						design_team = mio:FIN_valtion_lentokonetehdas_organization
-					}
-
-					create_equipment_variant = {
-						name = "VL Myrsky"
-						type = small_plane_airframe_2
-						parent_version = 0
-						modules = {
-							fixed_main_weapon_slot = heavy_mg_2x
-							fixed_auxiliary_weapon_slot_1 = bomb_locks
-							engine_type_slot = engine_2_1x
-						}
-						icon = "GFX_FIN_fighter2_medium"
-						design_team = mio:FIN_valtion_lentokonetehdas_organization
-					}
-
-					create_equipment_variant = { #Made-up
-						name = "IVL Haukka II"
-						type = small_plane_airframe_1
-						parent_version = 0
-						modules = {
-								fixed_main_weapon_slot = heavy_mg_2x
-								engine_type_slot = engine_1_1x
-							}
-						icon = "GFX_FIN_fighter1_medium"
-						design_team = mio:FIN_valtion_lentokonetehdas_organization
-					}
-
-					create_equipment_variant = {
-						name = "IVL Haukka"
-						type = small_plane_airframe_0
-						parent_version = 0
-						modules = {
-								fixed_main_weapon_slot = light_mg_2x
-								engine_type_slot = engine_1_1x
-							}
-						icon = "GFX_FIN_early_fighter_medium"
-						design_team = mio:FIN_valtion_lentokonetehdas_organization
-					}
-				}
-				else = {
-					create_equipment_variant = {
-						name = "VL Pyörremyrsky"
-						type = small_plane_airframe_4
-						parent_version = 0
-						modules = {
-							fixed_main_weapon_slot = heavy_mg_2x
-							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
-							fixed_auxiliary_weapon_slot_2 = bomb_locks
-							engine_type_slot = engine_4_1x
-						}
-						icon = "GFX_FIN_modern_small_fighter_1_medium"
-					}
-					create_equipment_variant = {
-						name = "VL Humu"
-						type = small_plane_airframe_3
-						parent_version = 0
-						modules = {
-							fixed_main_weapon_slot = heavy_mg_2x
-							fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-							engine_type_slot = engine_3_1x
-						}
-						icon = "GFX_FIN_fighter3_medium"
-					}
-
-					create_equipment_variant = {
-						name = "VL Myrsky"
-						type = small_plane_airframe_2
-						parent_version = 0
-						modules = {
-							fixed_main_weapon_slot = heavy_mg_2x
-							fixed_auxiliary_weapon_slot_1 = bomb_locks
-							engine_type_slot = engine_2_1x
-						}
-						icon = "GFX_FIN_fighter2_medium"
-					}
-
-					create_equipment_variant = { #Made-up
-						name = "IVL Haukka II"
-						type = small_plane_airframe_1
-						parent_version = 0
-						modules = {
-								fixed_main_weapon_slot = heavy_mg_2x
-								engine_type_slot = engine_1_1x
-							}
-						icon = "GFX_FIN_fighter1_medium"
-					}
-
-					create_equipment_variant = {
-						name = "IVL Haukka"
-						type = small_plane_airframe_0
-						parent_version = 0
-						modules = {
-								fixed_main_weapon_slot = light_mg_2x
-								engine_type_slot = engine_1_1x
-							}
-						icon = "GFX_FIN_early_fighter_medium"
-					}
-				}
-			}
 		}
 	}
 	

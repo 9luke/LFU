@@ -6080,10 +6080,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
-		available = {
-			is_special_project_completed = sp:sp_naval_cruiser_submarine
-		}
 		
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -6092,23 +6088,11 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_tech_bonus = {
-				name = USA_fleet_submarines
+				name = USA_mod_submarines
 				bonus = 1.0
 				uses = 2
 				category = ss_tech
 			}
-
-
-
-			IF = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				add_ideas = fleet_submarine_specialization_mtg
-			}
-			ELSE = {
-				add_ideas = fleet_submarine_specialization
-			}	
 		}
 	}
 

@@ -7,17 +7,13 @@ every_core_state = {
 		add_to_array = { cores_at_game_start = PREV }
 	}
 }
-IF = {
-	limit = { always = no }
-		set_air_oob = "BRA_1936_air_bba"
-	ELSE = {
-		set_air_oob = "BRA_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			CAS1 = 1
-		}
-	}
+
+set_air_oob = "BRA_1936_air_legacy"
+set_technology = {
+	early_fighter = 1
+	CAS1 = 1
 }
+
 recruit_character = BRA_getulio_vargas
 ###############################################################################
 # ToA
@@ -381,13 +377,9 @@ recruit_character = BRA_random_army_chief
 # no need to manually add in ideas and modifiers, I have tried and it is not needed, in fact, adding them in does nothing and adding to variables adds double. I write this here to serve as a note to future me, and other rookie CDs, it is not needed. You need not do it. The ideas, modifiers and such are set automatically.
 	
 	oob = "BRA_1939"
-	if = {
-		limit = { always = no }
-			set_air_oob = "BRA_1939_air_bba"
-		else = {
-			set_air_oob = "BRA_1939_air_legacy"
-		}
-	}
+
+	set_air_oob = "BRA_1939_air_legacy"
+
 	set_technology = {
 		interwar_artillery = 1
 		infantry_weapons1 = 1

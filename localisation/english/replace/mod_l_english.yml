@@ -6,6 +6,8 @@
  ARTILLERY_TITLE_HOWITZER: "SUPER-HEAVY\nARTILLERY"
  ENG_vickers_experimental_facility_focus: "Vickers Air Factories"
  SOV_secure_leningrad: "Winter War"
+ USA_fleet_submarines: "Submarine Advancements"
+ USA_mod_submarines: "Submarine Advancements"
 
 # Tanks
  tank_armament: "Basic Armament"
@@ -35,7 +37,6 @@
  improved_rubber_processing: "Rubber Processing II"
  advanced_rubber_processing: "Rubber Processing III"
  modern_rubber_processing: "Rubber Processing IV"
-
  oil_processing: "Oil Processing I"
  improved_oil_processing: "Oil Processing II"
  advanced_oil_processing: "Oil Processing III"

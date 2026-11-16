@@ -15610,20 +15610,9 @@ focus_tree = {
 
 		available = {
 			always = no
-			IF = {
-				limit = {
-					always = yes
-				}
-				NOT = {
-					has_tech = fighter3
-					has_tech = heavy_fighter3
-				}
-			}
-			ELSE = {
-				NOT = {
-					has_tech = advanced_small_airframe
-					has_tech = advanced_medium_airframe
-				}
+			NOT = {
+				has_tech = fighter3
+				has_tech = heavy_fighter3
 			}
 			OR = {
 				GER = {

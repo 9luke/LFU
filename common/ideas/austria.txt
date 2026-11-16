@@ -46,7 +46,6 @@ ideas = {
 			modifier = {
 				production_speed_arms_factory_factor = -0.75
 				industrial_capacity_factory = -0.5
-				production_speed_facility_factor = -1
 				custom_modifier_tooltip = AUS_treaty_of_saint_germain_en_laye_tt
 				custom_modifier_tooltip = generic_skip_one_line_tt
 				custom_modifier_tooltip = generic_skip_one_line_tt
