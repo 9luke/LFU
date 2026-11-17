@@ -52,6 +52,9 @@
  ger_chromium_tt2:0 "§R-5§! £civ_factory  Civilian Factories\nResource rights §G+50§!  Chromium"
  ger_chromium_tt3:0 "§R-4§! £civ_factory  Civilian Factories\nResource rights §G+46§!  Chromium"
 
+ #Flags
+ no_asia_fighter_LL: "Fighter Shipments"
+
  #Countries
  HUN_ROM_KINGDOM: "Kingdom of Romania-Hungary"
 

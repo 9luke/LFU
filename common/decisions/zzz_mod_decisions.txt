@@ -1,0 +1,132 @@
+operations = {
+    no_asia_uk_LL = {
+
+		name = "USA Fighter Shipments"
+
+		icon = GFX_decision_generic_air
+			
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		visible = { 
+			has_country_flag = no_asia_fighter_LL
+		}
+
+		is_good = yes
+		activation = { 
+            AND = {
+                has_country_flag = no_asia_fighter_LL 
+                NOT = { has_active_mission = no_asia_uk_LL_2 }
+                has_tech = fighter2
+            }
+		}
+		days_mission_timeout = 30
+
+		cancel_if_not_visible = yes
+
+		timeout_effect = {
+            if = { 
+				limit = { date < 1940.1.1 }
+					add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 250
+					producer = ENG
+                    design_team = ENG_supermarine_mio
+				}	
+			}
+			else_if = { 
+				limit = { 
+					date > 1940.1.1
+					date < 1940.6.1
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 500
+					producer = ENG
+                    design_team = ENG_supermarine_mio
+				}	
+			}
+			else_if = { 
+				limit = { 
+					date > 1940.6.1
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 1000
+					producer = ENG
+                    design_team = ENG_supermarine_mio
+				}	
+			}
+			
+			activate_mission = no_asia_uk_LL_2
+		}			
+    }
+
+	no_asia_uk_LL_2 = {
+
+		name = "USA Fighter Shipments"
+
+		icon = GFX_decision_generic_air
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+		
+		visible = { 
+			has_country_flag = no_asia_fighter_LL
+		}
+
+		cancel_if_not_visible = yes
+
+		is_good = yes
+		activation = { always = no }
+		days_mission_timeout = 30
+		
+		timeout_effect = {
+           if = { 
+				limit = { date < 1940.1.1 }
+					add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 250
+					producer = ENG
+                    design_team = ENG_supermarine_mio
+				}	
+			}
+			else_if = { 
+				limit = { 
+					date > 1940.1.1
+					date < 1940.6.1
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 500
+					producer = ENG
+                    design_team = ENG_supermarine_mio
+				}	
+			}
+			else_if = { 
+				limit = { 
+					date > 1940.6.1
+					#date > 1940.8.1
+				}
+				add_equipment_to_stockpile = {
+					type = fighter_equipment_2
+					amount = 1000
+					producer = ENG
+                    design_team = ENG_supermarine_mio
+				}	
+			}
+			activate_mission = no_asia_uk_LL
+		}			
+    }
+}	

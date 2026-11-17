@@ -385,6 +385,66 @@ on_actions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = asia_status
+						option = noasia
+					}
+					country_exists = WST
+				}
+				every_state = {
+					limit = {
+						OR = {
+							is_owned_by = USA
+							is_owned_by = CHI
+							is_owned_by = JAP
+							is_owned_by = MAN
+						}
+					}
+					add_core_of = WST
+					remove_core_of = USA
+					remove_core_of = CHI
+					remove_core_of = JAP
+					remove_core_of = MAN
+				}
+ 
+				if = {
+					limit = { country_exists = USA }
+					WST = { annex_country = { target = USA transfer_troops = no } }
+				}
+				if = {
+					limit = { country_exists = CHI }
+					WST = { annex_country = { target = CHI transfer_troops = no } }
+				}
+				if = {
+					limit = { country_exists = JAP }
+					WST = { annex_country = { target = JAP transfer_troops = no } }
+				}
+				if = {
+					limit = { country_exists = MAN }
+					WST = { annex_country = { target = MAN transfer_troops = no } }
+				}
+				if = {
+					limit = { country_exists = ENG }
+					ENG = {
+						add_offsite_building = {
+							type = industrial_complex
+							level = 30
+						}
+					}
+				}
+				WST = {
+					give_resource_rights = { 
+						receiver = ENG
+						state = 375
+					}
+				}
+				
+				ENG = {
+					set_country_flag = no_asia_fighter_LL
+				}
+			}
 		}
 	}
 	on_monthly = {

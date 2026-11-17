@@ -11777,7 +11777,7 @@ focus_tree = {
 			}	
 		}
 		allow_branch = {
-			
+			always = no
 		}
 		available = {
 			always = no # maybe in the future

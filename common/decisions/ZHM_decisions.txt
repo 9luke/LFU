@@ -55,9 +55,11 @@ easy_LL = {
 		visible = {	
 			original_tag = USA
 			NOT = { has_country_flag = sending_ll_to_eng }
-			has_game_rule = { 
-				rule = allies_ac_rule
-				option = uk_ac
+			ENG = {
+				OR = {
+					has_idea = uk_ac_idea_1
+					has_idea = uk_ac_idea_2
+				}
 			}
 		}
 
