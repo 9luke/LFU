@@ -432,6 +432,7 @@ guiTypes = {
             maxwidth = 110
             
         }
+
         # Railway Gun (changed)
         iconType = {
             name = "railway_gun_icon_changed"
@@ -730,8 +731,27 @@ guiTypes = {
             text = "[GetTradebacksStatus]"
             format = center
             maxwidth = 110
-            
         }
 
+        iconType = {
+            name = "ethiopia_hold_icon_changed"
+            spriteType = "GFX_decision_generic_orginization_of_african_unity"
+            position = { x = @GAMERULE_ICONS_X y = 960 }
+        }
+        instantTextBoxType = {
+            name = "ethiopia_hold_name_text_changed"
+            position = { x = @GAMERULE_NAMES_X y = 965 }
+            font = "hoi_18mbs"
+            text = "Ethiopia Hold"
+            maxWidth = 180
+        }
+        instantTextBoxType = {
+            name = "ethiopia_hold_status_changed"
+            position = { x = @STATUS_TEXT_X y = 965 }
+            font = "hoi_18mbs"
+            text = "[GetEthiopiaHoldStatus]"
+            format = center
+            maxwidth = 110    
+        }
     }
 }

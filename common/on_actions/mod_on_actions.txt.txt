@@ -384,7 +384,7 @@ on_actions = {
 						technology = advanced_infantry_weapons
 					}
 				}
-			}
+			}  
 			if = {
 				limit = {
 					has_game_rule = {
@@ -466,13 +466,50 @@ on_actions = {
 			if = {
 				limit = { 
 					has_idea = peace_training
-				 }
+				}
+				add_daily_mastery = {
+					amount = 1
+					days = 7
+					name = Mastery
+				}
 			}
-			add_daily_mastery = {
-				amount = 1
-				days = 7
-				name = Mastery
-			}
+            if = { 
+                limit = { 
+                    has_game_rule = { 
+                        rule = ethiopia_hold
+                        option = banned
+                    }
+                }
+                if = {
+                    limit = { 
+                        ITA = { 
+                            exists = yes
+                            NOT = { 
+                                has_war_with = ENG
+                            }
+                        }
+                    }
+                    every_state = { 
+                        if = {
+                            limit = {
+                                is_initial_ethiopian_state = yes
+                                AND = {
+                                    is_owned_and_controlled_by = ITA
+                                    NOT = { 
+                                        is_demilitarized_zone = yes
+                                    }
+                                }
+                            }
+                            teleport_armies = {
+							    limit = { 
+								    axis = yes
+							    }
+						    }
+                            set_demilitarized_zone = yes 
+                        }
+                    }
+                }
+            } 
 		}
 	}
 }

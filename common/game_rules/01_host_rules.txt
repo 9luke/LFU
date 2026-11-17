@@ -229,6 +229,22 @@ Germany_Fate_of_yugo= {
 
 }
 
+ethiopia_hold = {
+	name = "Ethiopia Hold"
+	group = "LFU Rules"
+	icon = "GFX_decision_generic_orginization_of_african_unity"
+	default = {
+		name = banned
+		text = "Banned"
+		desc = "Ethiopia is demilitarized and any Axis armies in Ethiopia will be teleported before WW2"
+	}
+	option = {
+		name = allowed
+		text = "Allowed"
+		desc = "Axis are allowed to have divisions in Ethiopia"
+	}
+}
+
 railway_gun= {
 	name = "Railway Gun"
 	group = "LFU Rules"
