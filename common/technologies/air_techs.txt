@@ -1536,6 +1536,15 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		allow = {
+			NOT = {
+				has_game_rule = {
+					rule = strat_bombing
+					option = banned
+				}
+			}
+		}
+
 		research_cost = 2
 		start_year = 1936
 		folder = {
@@ -1576,6 +1585,15 @@ technologies = {
 		path = {
 			leads_to_tech = strategic_bomber3
 			research_cost_coeff = 1
+		}
+
+		allow = {
+			NOT = {
+				has_game_rule = {
+					rule = strat_bombing
+					option = banned
+				}
+			}
 		}
 
 		
@@ -1621,6 +1639,15 @@ technologies = {
 		folder = {
 			name = air_techs_folder
 			position = { x = 0 y = 8 }
+		}
+
+		allow = {
+			NOT = {
+				has_game_rule = {
+					rule = strat_bombing
+					option = banned
+				}
+			}
 		}
 		
 		categories = {

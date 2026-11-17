@@ -41,7 +41,6 @@ set_grand_doctrine = new_strategic_destruction
 		fighter1 = 1
 		early_bomber = 1
 		tactical_bomber1 = 1
-		strategic_bomber1 = 1
 		CAS1 = 1
 		naval_bomber1 = 1
 		early_transport_plane = 1

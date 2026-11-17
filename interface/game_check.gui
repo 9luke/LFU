@@ -432,42 +432,16 @@ guiTypes = {
             maxwidth = 110
             
         }
-
-        # Urban Assault Vehicle (changed)
-        iconType = {
-            name = "urban_assault_vechile_icon_changed"
-            spriteType = "GFX_decision_generic_tank"
-            position = { x = @GAMERULE_ICONS_X y = 595 }
-            
-        }
-        instantTextBoxType = {
-            name = "urban_assault_vechile_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 600 }
-            font = "hoi_18mbs"
-            text = "Urban Assault Vehicle"
-            maxWidth = 180
-            
-        }
-        instantTextBoxType = {
-            name = "urban_assault_vechile_status_changed"
-            position = { x = @STATUS_TEXT_X y = 600 }
-            font = "hoi_18mbs"
-            text = "[GetUrbanAssaultVechileStatus]"
-            format = center
-            maxwidth = 110
-            
-        }
-
         # Railway Gun (changed)
         iconType = {
             name = "railway_gun_icon_changed"
             spriteType = "GFX_decision_generic_ignite_civil_war"
-            position = { x = @GAMERULE_ICONS_X y = 630 }
+            position = { x = @GAMERULE_ICONS_X y = 590 }
             
         }
         instantTextBoxType = {
             name = "railway_gun_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 635 }
+            position = { x = @GAMERULE_NAMES_X y = 595 }
             font = "hoi_18mbs"
             text = "Railway Gun"
             maxWidth = 180
@@ -475,59 +449,9 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "railway_gun_status_changed"
-            position = { x = @STATUS_TEXT_X y = 635 }
+            position = { x = @STATUS_TEXT_X y = 595 }
             font = "hoi_18mbs"
             text = "[GetRailwayGunStatus]"
-            format = center
-            maxwidth = 110
-            
-        }
-
-        # Super Heavy Railway Gun (changed)
-        iconType = {
-            name = "super_heavy_railway_gun_icon_changed"
-            spriteType = "GFX_decision_generic_ignite_civil_war"
-            position = { x = @GAMERULE_ICONS_X y = 665 }
-            
-        }
-        instantTextBoxType = {
-            name = "super_heavy_railway_gun_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 670 }
-            font = "hoi_18mbs"
-            text = "Super Heavy Railway Gun"
-            maxWidth = 180
-            
-        }
-        instantTextBoxType = {
-            name = "super_heavy_railway_gun_status_changed"
-            position = { x = @STATUS_TEXT_X y = 670 }
-            font = "hoi_18mbs"
-            text = "[GetSuperHeavyRailwayGunStatus]"
-            format = center
-            maxwidth = 110
-            
-        }
-
-        # Multi Charge LCG (changed)
-        iconType = {
-            name = "multi_charge_large_caliber_gun_icon_changed"
-            spriteType = "GFX_decision_generic_ignite_civil_war"
-            position = { x = @GAMERULE_ICONS_X y = 700 }
-            
-        }
-        instantTextBoxType = {
-            name = "multi_charge_large_caliber_gun_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 705 }
-            font = "hoi_18mbs"
-            text = "Multi Charge LCG"
-            maxWidth = 180
-            
-        }
-        instantTextBoxType = {
-            name = "multi_charge_large_caliber_gun_status_changed"
-            position = { x = @STATUS_TEXT_X y = 705 }
-            font = "hoi_18mbs"
-            text = "[GetMultiChargeLargeCaliberGunStatus]"
             format = center
             maxwidth = 110
             
@@ -537,12 +461,12 @@ guiTypes = {
         iconType = {
             name = "max_submarine_tech_icon_changed"
             spriteType = "GFX_decision_generic_ignite_civil_war"
-            position = { x = @GAMERULE_ICONS_X y = 735 }
+            position = { x = @GAMERULE_ICONS_X y = 620 }
             
         }
         instantTextBoxType = {
             name = "max_submarine_tech_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 740 }
+            position = { x = @GAMERULE_NAMES_X y = 625 }
             font = "hoi_18mbs"
             text = "Submarine 3 and 4"
             maxWidth = 180
@@ -550,7 +474,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "max_submarine_tech_status_changed"
-            position = { x = @STATUS_TEXT_X y = 740 }
+            position = { x = @STATUS_TEXT_X y = 625 }
             font = "hoi_18mbs"
             text = "[GetMaxSubmarineTechStatus]"
             format = center
@@ -562,12 +486,12 @@ guiTypes = {
         iconType = {
             name = "sov_boost_icon_changed"
             spriteType = "GFX_decision_generic_merge_plant_materiel"
-            position = { x = @GAMERULE_ICONS_X y = 770 }
+            position = { x = @GAMERULE_ICONS_X y = 650 }
             
         }
         instantTextBoxType = {
             name = "sov_boost_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 775 }
+            position = { x = @GAMERULE_NAMES_X y = 655 }
             font = "hoi_18mbs"
             text = "Soviet Civ Boost"
             maxWidth = 180
@@ -575,7 +499,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "sov_boost_status_changed"
-            position = { x = @STATUS_TEXT_X y = 775 }
+            position = { x = @STATUS_TEXT_X y = 655 }
             font = "hoi_18mbs"
             text = "[GetSovBoostStatus]"
             format = center
@@ -587,12 +511,12 @@ guiTypes = {
         iconType = {
             name = "ger_boost_icon_changed"
             spriteType = "GFX_decision_generic_merge_plant_materiel"
-            position = { x = @GAMERULE_ICONS_X y = 805 }
+            position = { x = @GAMERULE_ICONS_X y = 680 }
             
         }
         instantTextBoxType = {
             name = "ger_boost_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 810 }
+            position = { x = @GAMERULE_NAMES_X y = 685 }
             font = "hoi_18mbs"
             text = "German Civ Boost"
             maxWidth = 180
@@ -600,7 +524,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "ger_boost_status_changed"
-            position = { x = @STATUS_TEXT_X y = 810 }
+            position = { x = @STATUS_TEXT_X y = 685 }
             font = "hoi_18mbs"
             text = "[GetGerBoostStatus]"
             format = center
@@ -612,12 +536,12 @@ guiTypes = {
         iconType = {
             name = "jap_boost_icon_changed"
             spriteType = "GFX_decision_generic_merge_plant_materiel"
-            position = { x = @GAMERULE_ICONS_X y = 840 }
+            position = { x = @GAMERULE_ICONS_X y = 710 }
             
         }
         instantTextBoxType = {
             name = "jap_boost_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 845 }
+            position = { x = @GAMERULE_NAMES_X y = 715 }
             font = "hoi_18mbs"
             text = "Japan Civ Boost"
             maxWidth = 180
@@ -625,7 +549,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "jap_boost_status_changed"
-            position = { x = @STATUS_TEXT_X y = 845 }
+            position = { x = @STATUS_TEXT_X y = 715 }
             font = "hoi_18mbs"
             text = "[GetJapBoostStatus]"
             format = center
@@ -637,12 +561,12 @@ guiTypes = {
         iconType = {
             name = "eng_boost_icon_changed"
             spriteType = "GFX_decision_generic_merge_plant_materiel"
-            position = { x = @GAMERULE_ICONS_X y = 875 }
+            position = { x = @GAMERULE_ICONS_X y = 740 }
             
         }
         instantTextBoxType = {
             name = "eng_boost_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 880 }
+            position = { x = @GAMERULE_NAMES_X y = 745 }
             font = "hoi_18mbs"
             text = "Britain Civ Boost"
             maxWidth = 180
@@ -650,7 +574,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "eng_boost_status_changed"
-            position = { x = @STATUS_TEXT_X y = 880 }
+            position = { x = @STATUS_TEXT_X y = 745 }
             font = "hoi_18mbs"
             text = "[GetEngBoostStatus]"
             format = center
@@ -662,12 +586,12 @@ guiTypes = {
         iconType = {
             name = "ita_boost_icon_changed"
             spriteType = "GFX_decision_generic_merge_plant_materiel"
-            position = { x = @GAMERULE_ICONS_X y = 905 }
+            position = { x = @GAMERULE_ICONS_X y = 770 }
             
         }
         instantTextBoxType = {
             name = "ita_boost_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 910 }
+            position = { x = @GAMERULE_NAMES_X y = 775 }
             font = "hoi_18mbs"
             text = "Italy Civ Boost"
             maxWidth = 180
@@ -675,7 +599,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "ita_boost_status_changed"
-            position = { x = @STATUS_TEXT_X y = 910 }
+            position = { x = @STATUS_TEXT_X y = 775 }
             font = "hoi_18mbs"
             text = "[GetItaBoostStatus]"
             format = center
@@ -687,12 +611,12 @@ guiTypes = {
         iconType = {
             name = "fra_boost_icon_changed"
             spriteType = "GFX_decision_generic_merge_plant_materiel"
-            position = { x = @GAMERULE_ICONS_X y = 940 }
+            position = { x = @GAMERULE_ICONS_X y = 800 }
             
         }
         instantTextBoxType = {
             name = "fra_boost_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 945 }
+            position = { x = @GAMERULE_NAMES_X y = 805 }
             font = "hoi_18mbs"
             text = "French Civ Boost"
             maxWidth = 180
@@ -700,7 +624,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "fra_boost_status_changed"
-            position = { x = @STATUS_TEXT_X y = 945 }
+            position = { x = @STATUS_TEXT_X y = 805 }
             font = "hoi_18mbs"
             text = "[GetFraBoostStatus]"
             format = center
@@ -712,12 +636,12 @@ guiTypes = {
         iconType = {
             name = "usa_boost_icon_changed"
             spriteType = "GFX_decision_generic_merge_plant_materiel"
-            position = { x = @GAMERULE_ICONS_X y = 975 }
+            position = { x = @GAMERULE_ICONS_X y = 830 }
             
         }
         instantTextBoxType = {
             name = "usa_boost_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 980 }
+            position = { x = @GAMERULE_NAMES_X y = 835 }
             font = "hoi_18mbs"
             text = "USA Civ Boost"
             maxWidth = 180
@@ -725,7 +649,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "usa_boost_status_changed"
-            position = { x = @STATUS_TEXT_X y = 980 }
+            position = { x = @STATUS_TEXT_X y = 835 }
             font = "hoi_18mbs"
             text = "[GetUsaBoostStatus]"
             format = center
@@ -737,12 +661,12 @@ guiTypes = {
         iconType = {
             name = "strat_bombing_icon_changed"
             spriteType = "GFX_decision_generic_air"
-            position = { x = @GAMERULE_ICONS_X y = 1010 }
+            position = { x = @GAMERULE_ICONS_X y = 860 }
             
         }
         instantTextBoxType = {
             name = "strat_bombing_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 1015}
+            position = { x = @GAMERULE_NAMES_X y = 865 }
             font = "hoi_18mbs"
             text = "Strategic Bombing"
             maxWidth = 180
@@ -750,7 +674,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "strat_bombing_status_changed"
-            position = { x = @STATUS_TEXT_X y = 1015 }
+            position = { x = @STATUS_TEXT_X y = 865 }
             font = "hoi_18mbs"
             text = "[GetStratBombingStatus]"
             format = center
@@ -762,12 +686,12 @@ guiTypes = {
         iconType = {
             name = "spanish_production_icon_changed"
             spriteType = "GFX_decision_generic_industry"
-            position = { x = @GAMERULE_ICONS_X y = 1045 }
+            position = { x = @GAMERULE_ICONS_X y = 890 }
             
         }
         instantTextBoxType = {
             name = "spanish_production_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 1050 }
+            position = { x = @GAMERULE_NAMES_X y = 895 }
             font = "hoi_18mbs"
             text = "Spanish Production"
             maxWidth = 180
@@ -775,7 +699,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "spanish_production_status_changed"
-            position = { x = @STATUS_TEXT_X y = 1050 }
+            position = { x = @STATUS_TEXT_X y = 895 }
             font = "hoi_18mbs"
             text = "[GetSpanishProductionStatus]"
             format = center
@@ -783,41 +707,17 @@ guiTypes = {
             
         }
 
-        # Finnish Production (changed)
-        iconType = {
-            name = "finish_production_icon_changed"
-            spriteType = "GFX_decision_generic_industry"
-            position = { x = @GAMERULE_ICONS_X y = 1080 }
-            
-        }
-        instantTextBoxType = {
-            name = "finish_production_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 1085 }
-            font = "hoi_18mbs"
-            text = "Finnish Production"
-            maxWidth = 180
-            
-        }
-        instantTextBoxType = {
-            name = "finish_production_status_changed"
-            position = { x = @STATUS_TEXT_X y = 1085 }
-            font = "hoi_18mbs"
-            text = "[GetFinishProductionStatus]"
-            format = center
-            maxwidth = 110
-            
-        }
 
         # No Tradebacks Idea (changed)
         iconType = {
             name = "tradebacks_icon_changed"
             spriteType = "GFX_decision_category_generic_trade"
-            position = { x = 5 y = 1115 }
+            position = { x = 5 y = 920 }
             
         }
         instantTextBoxType = {
             name = "tradebacks_name_text_changed"
-            position = { x = @GAMERULE_NAMES_X y = 1120 }
+            position = { x = @GAMERULE_NAMES_X y = 925 }
             font = "hoi_18mbs"
             text = "No Tradebacks Idea"
             maxWidth = 180
@@ -825,7 +725,7 @@ guiTypes = {
         }
         instantTextBoxType = {
             name = "tradebacks_status_changed"
-            position = { x = @STATUS_TEXT_X y = 1120 }
+            position = { x = @STATUS_TEXT_X y = 925 }
             font = "hoi_18mbs"
             text = "[GetTradebacksStatus]"
             format = center

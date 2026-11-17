@@ -334,7 +334,7 @@ defined_text = {
                 option = banned
             }
         }
-        localization_key = "Banned"
+        localization_key = "Fully Banned"
     }
     text = {
         trigger = {
@@ -361,7 +361,7 @@ defined_text = {
                 option = allowed
             }
         }
-        localization_key = "Allowed"
+        localization_key = "Allowed for Everyone"
     }
 }
 
@@ -502,7 +502,7 @@ defined_text = {
                 option = off
             }
         }
-        localization_key = "On"
+        localization_key = "Off"
     }
 }
 
@@ -546,7 +546,7 @@ defined_text = {
                 option = skoda_works
             }
         }
-        localization_key = "Skoda Works"
+        localization_key = "Skoda Allowed"
     }
     text = {
         trigger = {
@@ -555,7 +555,7 @@ defined_text = {
                 option = td_mio
             }
         }
-        localization_key = "TD MIO Banned"
+        localization_key = "Czech TD MIO Banned"
     }
     text = {
         trigger = {
@@ -564,7 +564,7 @@ defined_text = {
                 option = air_mio
             }
         }
-        localization_key = "Air MIO banned"
+        localization_key = "Czech Aircraft MIO Banned"
     }
     text = {
         trigger = {
@@ -749,7 +749,7 @@ defined_text = {
                 option = sub2
             }
         }
-        localization_key = "Submarine 3 & 4 Banned"
+        localization_key = "Banned"
     }
     text = {
         trigger = {
@@ -1060,16 +1060,7 @@ defined_text = {
                 option = banned
             }
         }
-        localization_key = "Banned and German Eco Nerfed"
-    }
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = strat_bombing
-                option = banned_no_eco_nerf
-            }
-        }
-        localization_key = "Banned and German Eco Unnerfed"
+        localization_key = "Banned"
     }
 }
 
@@ -1082,7 +1073,7 @@ defined_text = {
                 option = ger_mech
             }
         }
-        localization_key = "German Lend Lease for Mech"
+        localization_key = "Germany Lend Leased Mech"
     }
     text = {
         trigger = {
@@ -1091,7 +1082,7 @@ defined_text = {
                 option = bul_mech
             }
         }
-        localization_key = "German-Bulgarian Lend Lease for Mech"
+        localization_key = "Bulgaria Lend Leased Mech"
     }
     text = {
         trigger = {
@@ -1100,7 +1091,7 @@ defined_text = {
                 option = mixer
             }
         }
-        localization_key = "Germany can choose either BUL or GER"
+        localization_key = "Germany Chooses"
     }
     text = {
         trigger = {
@@ -1113,27 +1104,6 @@ defined_text = {
     }
 }
 
-defined_text = {
-    name = GetFinishProductionStatus
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = finish_production
-                option = ger_gun
-            }
-        }
-        localization_key = "On"
-    }
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = finish_production
-                option = off
-            }
-        }
-        localization_key = "Off"
-    }
-}
 
 defined_text = {
     name = GetTradebacksStatus
@@ -1162,7 +1132,7 @@ defined_text = {
                 option = only_axis
             }
         }
-        localization_key = "Axis Only"
+        localization_key = "Only Axis"
     }
 }
 

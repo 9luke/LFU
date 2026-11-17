@@ -1,0 +1,105 @@
+asia_status = {
+	name = "Asia Status"
+	group = "LFU Country Status"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = asia
+		text = "Europe & Asia"
+		desc = "Play a full 18 player game with Asia enabled"
+	}
+	option = {
+		name = noasia
+		text = "Europe Only"
+		desc = "Remove Asia on startup and play a smaller game designed for fewer players"
+	}
+}
+romania_hungary_status = {
+	name = "Merge Romania & Hungary"
+	group = "LFU Country Status"
+	icon = "GFX_decision_ROM_claim_yugo_4"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Romania & Hungary will both be independent nations"
+	}
+	option = {
+		name = merge
+		text = "ROn"
+		desc = "Merge Romania & Hungary into one nation, requires 1 less player"
+	}
+}
+canada_status = {
+	name = "Disable Canada"
+	group = "LFU Country Status"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Canada will be independent"
+	}
+	option = {
+		name = annex
+		text = "ROn"
+		desc = "Annex Canada and give mech bonus to UK, requires 1 less player"
+	}
+}
+saf_status = {
+	name = "Disable SAF"
+	group = "LFU Country Status"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "SAF will be independent"
+	}
+	option = {
+		name = annex
+		text = "ROn"
+		desc = "Annex SAF into France, requires 1 less player"
+	}
+}
+bul_status = {
+	name = "Disable Bulgaria"
+	group = "LFU Country Status"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Bulgaria will be independent"
+	}
+	option = {
+		name = annex
+		text = "ROn"
+		desc = "Annex Bulgaria and give gun research bonuses to Italy, requires 1 less player"
+	}
+}
+ast_status = {
+	name = "Disable Australia"
+	group = "LFU Country Status"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Australia will be playable"
+	}
+	option = {
+		name = annex
+		text = "ROn"
+		desc = "Removes Australia and gives 12 civs to The Raj, requires 1 less player"
+	}
+}
+bra_status = {
+	name = "Disable Brazil"
+	group = "LFU Country Status"
+	icon = "GFX_decision_eng_trade_unions_support"
+	default = {
+		name = off
+		text = "GOff"
+		desc = "Brazil will be playable"
+	}
+	option = {
+		name = annex
+		text = "ROn"
+		desc = "Removes Brazil and gives 12 civs to The Raj, requires 1 less player"
+	}
+}

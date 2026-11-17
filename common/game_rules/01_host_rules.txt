@@ -1,26 +1,26 @@
 cas_doctrines_status = {
-	name = "Ground Support doctrines are..."
+	name = "Ground Support Doctrines"
 	group = "LFU Rules"
 	icon = "GFX_decision_generic_air"
 	default = {
 		name = banned
 		text = "Fully Banned"
-		desc = "Battlefield Support and all air subdoctrines that provide ground support bonuses cannot be taken by anyone."
+		desc = "Battlefield Support and all air subdoctrines that provide ground support bonuses cannot be taken by anyone"
 	}
 	option = {
 		name = axis
 		text = "Axis Only"
-		desc = "Battlefield Support and all air subdoctrines that provide ground support bonuses are only allowed for Axis countries."
+		desc = "Battlefield Support and all air subdoctrines that provide ground support bonuses are only allowed for Axis countries"
 	}
 	option = {
 		name = allies
 		text = "Allies Only"
-		desc = "Battlefield Support and all air subdoctrines that provide ground support bonuses are only allowed for Allied countries."
+		desc = "Battlefield Support and all air subdoctrines that provide ground support bonuses are only allowed for Allied countries"
 	}
 	option = {
 		name = allowed
 		text = "Allowed for Everyone"
-		desc = "All grand doctrines and air subdoctrines can be taken by anyone."
+		desc = "All grand doctrines and air subdoctrines can be taken by anyone"
 	}
 }
 
@@ -142,38 +142,38 @@ soviet_eradicate_western_fascism_rule = {
 }
 
 Germany_czech_manufacturers = {
-	name = "German Czech Manufacturers"
+	name = "Czech MIOs"
 	group = "LFU Rules"
 	icon = "GFX_decision_generic_GER_flag"
 	option = {
 		name = allowed
 		text = "Allowed"
-		desc = "Every Czech MIO gained from 'Integrate Czech Manufacturers' is allowed"
+		desc = "Every Czech MIO is allowed"
 	}
 	default = { 
 		name = skoda_works
-		text = "Skoda Works allowed"
-		desc = "Skoda Works(Tank Production) allowed, Czech Tank Destroyer and Aircraft MIOs are banned"
+		text = "Skoda Works Allowed"
+		desc = " Only Skoda Works is allowed"
 	}
 	option = { 
 		name = td_mio
-		text = "Czech TD MIO banned"
-		desc = "Only Czech Tank Destroyer MIO is banned"
+		text = "Czech TD MIO Banned"
+		desc = "Only Czech Tank Destroyer is banned"
 	}
 	option = { 
 		name = air_mio
-		text = "Czech Aircraft MIO banned"
+		text = "Czech Aircraft MIO Banned"
 		desc = "Only Czech Aircraft MIO is banned"
 	}
 	option = { 
 		name = production_mio
-		text = "Skoda Works banned"
-		desc = "Skoda Works banned, TD & Aircraft MIO allowed"
+		text = "Skoda Works Banned"
+		desc = "Skoda Works banned, others are allowed"
 	}
 	option = {
 		name = banned
 		text = "Banned"
-		desc = "Every Czech MIO gained from 'Integrate Czech Manufacturers' is banned"
+		desc = "All Czech MIOs are banned"
 	}
 
 }
@@ -196,7 +196,7 @@ Germany_Wirtschaftswunder = {
 }
 
 Germany_Cancel_Mefo= {
-	name = "cancel MEFO Bills"
+	name = "Cancel MEFO Bills"
 	group = "LFU Rules"
 	icon = "GFX_decision_ger_mefo_bills"
 	default = {
@@ -229,22 +229,6 @@ Germany_Fate_of_yugo= {
 
 }
 
-urban_assault_vechile= {
-	name = "Urban Assault Vehicle"
-	group = "LFU Rules"
-	icon = "GFX_decision_generic_tank"
-	option = {
-		name = off
-		text = "Banned"
-		desc = ""
-	}
-	default = {
-		name = on
-		text = "Allowed"
-		desc = ""
-	}
-}
-
 railway_gun= {
 	name = "Railway Gun"
 	group = "LFU Rules"
@@ -252,44 +236,12 @@ railway_gun= {
 	default = {
 		name = off
 		text = "Banned"
-		desc = "###."
+		desc = ""
 	}
 	option = {
 		name = on
 		text = "Allowed"
-		desc = "###"
-	}
-}
-
-super_heavy_railway_gun= {
-	name = "Super Heavy Railway Gun"
-	group = "LFU Rules"
-	icon = "GFX_decision_generic_ignite_civil_war"
-	default = {
-		name = off
-		text = "Banned"
-		desc = "###."
-	}
-	option = {
-		name = on
-		text = "Allowed"
-		desc = "###"
-	}
-}
-
-multi_charge_large_caliber_gun= {
-	name = "Multi Charge LCG"
-	group = "LFU Rules"
-	icon = "GFX_decision_generic_ignite_civil_war"
-	default = {
-		name = off
-		text = "Banned"
-		desc = "###."
-	}
-	option = {
-		name = on
-		text = "Allowed"
-		desc = "###"
+		desc = ""
 	}
 }
 
@@ -300,17 +252,17 @@ max_submarine_tech= {
 	default = {
 		name = sub2
 		text = "Submarine 3 & 4 Banned"
-		desc = "###."
+		desc = ""
 	}
 	option = {
 		name = sub3
 		text = "Submarine 3 and Snorkel 1 Allowed"
-		desc = "###"
+		desc = ""
 	}
 	option = {
 		name = sub4
-		text = "Submarine 4 and Snorkel 2. Allowed"
-		desc = "###"
+		text = "Submarine 4 and Snorkel 2 Allowed"
+		desc = ""
 	}
 }
 
@@ -326,17 +278,17 @@ sov_boost = {
 	option = {
 		name = sov4
 		text = "ROn-4"
-		desc = "Soviets receives 4 Civilian factories"
+		desc = "Soviets receives 4 civilian factories"
 	}
 	option = {
 		name = sov8
 		text = "ROn-8"
-		desc = "Soviets receives 8 Civilian factories"
+		desc = "Soviets receives 8 civilian factories"
 	}
 	option = {
 		name = sov12
 		text = "ROn-12"
-		desc = "Soviets receives 12 Civilian factories"
+		desc = "Soviets receives 12 civilian factories"
 	}
 }     
   
@@ -347,22 +299,22 @@ ger_boost = {
 	default = {
 		name = off
 		text = "GOff"
-		desc = "Germany won't have civilian factories buff (Recommmended)"
+		desc = "Germany won't receive civilian factories"
 	}
 	option = {
 		name = ger4
 		text = "ROn-4"
-		desc = "Germany get 4 Civilian factories (Not Recommmended)"
+		desc = "Germany receives 4 civilian factories"
 	}
 	option = {
 		name = ger8
 		text = "ROn-8"
-		desc = "Germany get 8 Civilian factories (Not Recommmended)"
+		desc = "Germany receives 8 civilian factories"
 	}
 	option = {
 		name = ger12
 		text = "ROn-12"
-		desc = "Germany get 12 Civilian factories (Not Recommmended)"
+		desc = "Germany receives 12 civilian factories"
 	}
 }
 
@@ -378,17 +330,17 @@ jap_boost = {
 	option = {
 		name = jap4
 		text = "ROn-4"
-		desc = "Japan receives 4 Civilian factories"
+		desc = "Japan receives 4 civilian factories"
 	}
 	option = {
 		name = jap8
 		text = "ROn-8"
-		desc = "Japan receives 8 Civilian factories)"
+		desc = "Japan receives 8 civilian factories"
 	}
 	option = {
 		name = jap12
 		text = "ROn-12"
-		desc = "Japan receives 12 Civilian factories"
+		desc = "Japan receives 12 civilian factories"
 	}
 }  
 
@@ -404,17 +356,17 @@ eng_boost = {
 	option = {
 		name = eng4
 		text = "ROn-4"
-		desc = "Britain receives 4 Civilian factories"
+		desc = "Britain receives 4 civilian factories"
 	}
 	option = {
 		name = eng8
 		text = "ROn-8"
-		desc = "Britain receives 8 Civilian factories"
+		desc = "Britain receives 8 civilian factories"
 	}
 	option = {
 		name = eng12
 		text = "ROn-12"
-		desc = "Britain receives 12 Civilian factories"
+		desc = "Britain receives 12 civilian factories"
 	}
 }
 
@@ -430,17 +382,17 @@ ita_boost = {
 	option = {
 		name = ita4
 		text = "ROn-4"
-		desc = "Italy receives 4 Civilian factories"
+		desc = "Italy receives 4 civilian factories"
 	}
 	option = {
 		name = ita8
 		text = "ROn-8"
-		desc = "Italy receives 8 Civilian factories"
+		desc = "Italy receives 8 civilian factories"
 	}
 	option = {
 		name = ita12
 		text = "ROn-12"
-		desc = "Italy receives 12 Civilian factories"
+		desc = "Italy receives 12 civilian factories"
 	}
 }
 
@@ -456,17 +408,17 @@ fra_boost = {
 	option = {
 		name = fra4
 		text = "ROn-4"
-		desc = "France receives 4 Civilian factories"
+		desc = "France receives 4 civilian factories"
 	}
 	option = {
 		name = fra8
 		text = "ROn-8"
-		desc = "France receives 8 Civilian factories"
+		desc = "France receives 8 civilian factories"
 	}
 	option = {
 		name = fra12
 		text = "ROn-12"
-		desc = "France receives 12 Civilian factories"
+		desc = "France receives 12 civilian factories"
 	}
 }
 
@@ -482,12 +434,12 @@ usa_boost = {
 	option = {
 		name = usa4
 		text = "ROn-4"
-		desc = "USA receives 4 Civilian factories"
+		desc = "USA receives 4 civilian factories"
 	}
 	option = {
 		name = usa8
 		text = "ROn-8"
-		desc = "USA receives 8 Civilian factories"
+		desc = "USA receives 8 civilian factories"
 	}
 }
 
@@ -498,59 +450,38 @@ strat_bombing = {
 	default = {
 		name = allowed
 		text = "GAllowed"
-		desc = "Strategic Bombers allowed and German Eco Unnerfed"
+		desc = "Strategic Bombers allowed"
 	}
 	option = {
 		name = banned
 		text = "RBanned"
-		desc = "Strategic Bombers banned and German Eco Nerfed"
-	}
-	option = {
-		name = banned_no_eco_nerf
-		text = "YBanned and German Eco Unnerfed"
-		desc = "Strategic Bombers banned and German Eco Unnerfed"
+		desc = "Strategic Bombers banned and German economy nerfed"
 	}
 }
 
 spanish_production = {
-	name = "Spanish Production"
-	group = "LFU Rules"
+	name = "Simulate Spanish Production"
+	group = "LFU Country Status"
 	icon = "GFX_decision_generic_industry"
 	option = {
 		name = ger_mech
-		text = "GGerman Lend Lease for Mech"
-		desc = "It progressively gets better as time passes"
+		text = "RGermany Lend Leased Mech"
+		desc = "Mech LL sent to Germany"
 	}
 	option = {
 		name = bul_mech
-		text = "BGerman-Bulgarian Lend Lease for Mech"
-		desc = "It progressively gets better as more time passes, sent to Bulgaria"
+		text = "BBulgaria Lend Leased Mech"
+		desc = "Mech LL sent to Bulgaria"
 	}
 	option = {
 		name = mixer
-		text = "4Germany can choose either BUL or GER"
-		desc = "It progressively gets better as time passes, Germany can choose between itself and Bulgaria"
+		text = "4Germany Chooses"
+		desc = "Germany can choose who gets the Mech LL"
 	}
 	default = {
 		name = off
-		text = "RGermany doesn't get a button for Mech Lend Lease"
-		desc = "No DDAY wall"
-	}
-}
-
-finish_production = {
-	name = "Finnish Production"
-	group = "LFU Rules"
-	icon = "GFX_decision_generic_industry"
-	option = {
-		name = ger_gun
-		text = "GGerman Lend Lease for Guns"
-		desc = "The gun amount progressively increases as time passes"
-	}
-	default = {
-		name = off
-		text = "RNo German Lend Lease for Guns"
-		desc = "Use if Finland has a player on it"
+		text = "GOff"
+		desc = "Use this if Spain has a player"
 	}
 }
 
@@ -561,7 +492,7 @@ tradebacks = {
 	default = {
 		name = off
 		text = "GOff"
-		desc = "No tradeback idea (Recommmended)"
+		desc = "R(Recommmended)"
 	}
 	option = {
 		name = on
