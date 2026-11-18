@@ -509,7 +509,93 @@ on_actions = {
                         }
                     }
                 }
-            } 
+            }
+			if = {
+				limit = {
+					has_global_flag = fall_of_france
+				}
+				if = {
+					limit = { 
+						has_game_rule = { 
+							rule = africa_hp 
+							option = 50
+						} 
+					}
+					every_country = {
+						limit = {	
+							is_ai = no
+							has_war = yes
+							NOT = { 
+								has_idea = mod_hp50
+							}
+							NOT = {
+								original_tag = JAP
+								original_tag = MAN 
+							}
+						}
+						add_ideas = mod_hp50
+					}
+				}
+				else_if = {
+					limit = { 
+						has_game_rule = { 
+							rule = africa_hp 
+							option = 25 
+						} 
+					}
+					every_country = {
+						limit = {	
+							is_ai = no
+							has_war = yes
+							NOT = { 
+								has_idea = mod_hp25
+							}
+							NOT = {
+								original_tag = JAP
+								original_tag = MAN 
+							}
+						}
+						add_ideas = mod_hp25
+					}
+				}
+			} 
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+				}
+				if = {
+					limit = { has_game_rule = { rule = africa_hp option = 50 } }
+					every_country = {
+						limit = {	
+							is_ai = no
+							has_war = yes
+							NOT = {
+								original_tag = JAP
+								original_tag = MAN 
+							}
+						}
+						add_ideas = mod_hp50
+					}
+				}
+				else_if = {
+					limit = { has_game_rule = { rule = africa_hp option = 25 } }
+					every_country = {
+						limit = {	
+							is_ai = no
+							has_war = yes
+							NOT = {
+								original_tag = JAP
+								original_tag = MAN 
+							}
+						}
+						add_ideas = mod_hp25
+					}
+				}
+			}
 		}
 	}
 }

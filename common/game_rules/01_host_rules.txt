@@ -245,6 +245,27 @@ ethiopia_hold = {
 	}
 }
 
+africa_hp = {
+	name = "Africa Increased HP"
+	group = "LFU Rules"
+	icon = "GFX_decision_generic_orginization_of_african_unity"
+	default = {
+		name = 50
+		text = "50%"
+		desc = "Increase HP by 50% during the Africa War"
+	}
+	option = {
+		name = 25
+		text = "25%"
+		desc = "Increase HP by 25% during the Africa War"
+	}
+	option = {
+		name = off
+		text = "Off"
+		desc = "Don't increase HP during the Africa War"
+	}
+}
+
 railway_gun= {
 	name = "Railway Gun"
 	group = "LFU Rules"
@@ -521,3 +542,4 @@ tradebacks = {
 		desc = "The axis has a tradeback idea that gives -100% missing resource penalty"
 	}
 }
+

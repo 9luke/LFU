@@ -54,5 +54,49 @@ ideas = {
 
 			}
 		}
+		mod_hp50 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+			modifier = {
+				army_strength_factor = 0.5
+			}
+			cancel = {
+				OR = {
+					GER = {
+						has_war_with = SOV
+					}
+					is_ai = yes
+					has_war = no
+				}
+			}
+		}
+		mod_hp25 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_infantry_equipment_manufacturer_2
+			modifier = {
+				army_strength_factor = 0.25
+			}
+			cancel = {
+				OR = {
+					GER = {
+						has_war_with = SOV
+					}
+					is_ai = yes
+					has_war = no
+				}
+			}
+		}
 	}
 }
