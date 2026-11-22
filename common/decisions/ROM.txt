@@ -7,36 +7,11 @@ ROM_change_sides = {
 		icon = decision_generic_nationalism
 
 		allowed = {
-			original_tag = ROM
+			always = no
 		}
 
 		available = {
-			is_faction_leader = no
-			has_capitulated = no
-			any_enemy_country = {
-				is_faction_leader = yes
-				OR = {
-					has_government = democratic
-					original_tag = ENG
-					original_tag = USA
-				}
-			}
-			OR = {
-				has_country_leader = {
-					character = ROM_king_michael
-					ruling_only = yes
-				}
-				has_government = neutrality
-				has_government = democratic
-			}
-			NOT = {
-				FACTION_LEADER  = {
-					has_government = democratic
-				}
-			}
-			hidden_trigger = {
-				NOT = { has_country_flag = romania_has_flipped_sides } #Romania shouldn't be able to keep switching sides all the time
-			}
+			always = no
 		}
 		
 		visible = {
