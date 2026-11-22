@@ -695,29 +695,6 @@ defined_text = {
         localization_key = "Allowed"
     }
 }
-
-defined_text = {
-    name = GetUrbanAssaultVechileStatus
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = urban_assault_vechile
-                option = off
-            }
-        }
-        localization_key = "Banned"
-    }
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = urban_assault_vechile
-                option = on
-            }
-        }
-        localization_key = "Allowed"
-    }
-}
-
 defined_text = {
     name = GetRailwayGunStatus
     text = {
@@ -733,50 +710,6 @@ defined_text = {
         trigger = {
             has_game_rule = {
                 rule = railway_gun
-                option = on
-            }
-        }
-        localization_key = "Allowed"
-    }
-}
-
-defined_text = {
-    name = GetSuperHeavyRailwayGunStatus
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = super_heavy_railway_gun
-                option = off
-            }
-        }
-        localization_key = "Banned"
-    }
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = super_heavy_railway_gun
-                option = on
-            }
-        }
-        localization_key = "Allowed"
-    }
-}
-
-defined_text = {
-    name = GetMultiChargeLargeCaliberGunStatus
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = multi_charge_large_caliber_gun
-                option = off
-            }
-        }
-        localization_key = "Banned"
-    }
-    text = {
-        trigger = {
-            has_game_rule = {
-                rule = multi_charge_large_caliber_gun
                 option = on
             }
         }
