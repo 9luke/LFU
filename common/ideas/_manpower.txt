@@ -328,6 +328,7 @@ ideas = {
 					has_government = communism
 					original_tag = HUN # ZHM let them always go extensive since spawn in divs removed
 					original_tag = FIN
+					original_tag = ROM # ZHM let them always go extensive because cope
 					if = {
 						limit = {
 							PHI_SEA = yes
@@ -385,6 +386,21 @@ ideas = {
 					}
 					else = {
 						hidden_trigger = { always = no }  #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
+					}
+					if = {
+						limit = {
+							original_tag = ROM
+							has_dlc = "To The Bitter End"
+							NOT = {
+								has_completed_focus = ROM_rile_up_the_farmers
+								has_completed_focus = ROM_the_general_election
+								has_completed_focus = ROM_agitate_the_masses
+							}
+						}
+						has_completed_focus = ROM_limited_intervention
+					}
+					else = {
+						hidden_trigger = { always = no } #NEED TO HAVE AN ALWAYS AS AN END STATEMENT IF URE USING AN IF ELSE IN AN OR STATEMENT OTHERWISE THE EVALUATION BREAKS!!
 					}
 				}
 				has_war_support > 0.2

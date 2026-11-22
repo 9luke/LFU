@@ -773,5 +773,26 @@ guiTypes = {
             format = center
             maxwidth = 110
         }
+
+        iconType = {
+            name = "tactical_withdrawal_rule_icon_changed"
+            spriteType = "GFX_decision_generic_army_support"
+            position = { x = @GAMERULE_ICONS_X y = 1020 }
+        }
+        instantTextBoxType = {
+            name = "tactical_withdrawal_rule_name_text_changed"
+            position = { x = @GAMERULE_NAMES_X y = 1025 }
+            font = "hoi_18mbs"
+            text = "Tactical Withdrawal Status"
+            maxWidth = 180
+        }
+        instantTextBoxType = {
+            name = "tactical_withdrawal_rule_status_changed"
+            position = { x = @STATUS_TEXT_X y = 1025 }
+            font = "hoi_18mbs"
+            text = "[GetTacticalWithdrawalRuleStatus]"
+            format = center
+            maxwidth = 110
+        }
     }
 }
