@@ -1092,8 +1092,8 @@ ideas = {
 				NOT = {
 					OR = { 
 						has_game_rule = { 
-							rule = tactical_withdrawal_rule
-							option = all_arms_at_defense_army_spirit_option
+							rule = all_arms_at_defense_army_spirit
+							option = banned
 						}
 						has_game_rule = { 
 							rule = tactical_withdrawal_rule

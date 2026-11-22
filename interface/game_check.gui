@@ -738,7 +738,7 @@ guiTypes = {
             name = "africa_hp_name_text_changed"
             position = { x = @GAMERULE_NAMES_X y = 955 }
             font = "hoi_18mbs"
-            text = "Africa HP"
+            text = "Africa Additional HP"
             maxWidth = 180
         }
         instantTextBoxType = {
@@ -791,6 +791,27 @@ guiTypes = {
             position = { x = @STATUS_TEXT_X y = 1025 }
             font = "hoi_18mbs"
             text = "[GetTacticalWithdrawalRuleStatus]"
+            format = center
+            maxwidth = 110
+        }
+
+        iconType = {
+            name = "all_arms_at_defense_army_spirit_icon_changed"
+            spriteType = "GFX_decision_generic_army_support"
+            position = { x = @GAMERULE_ICONS_X y = 1050 }
+        }
+        instantTextBoxType = {
+            name = "all_arms_at_defense_army_name_text_changed"
+            position = { x = @GAMERULE_NAMES_X y = 1055 }
+            font = "hoi_18mbs"
+            text = "Anti-Tank Defense Spirit"
+            maxWidth = 180
+        }
+        instantTextBoxType = {
+            name = "all_arms_at_defense_army_name_status_changed"
+            position = { x = @STATUS_TEXT_X y = 1055 }
+            font = "hoi_18mbs"
+            text = "[GetAnti-TankDefenseArmySpiritStatus]"
             format = center
             maxwidth = 110
         }

@@ -30,18 +30,29 @@ tactical_withdrawal_rule = {
 	icon = "GFX_decision_generic_army_support"
 	default = { 
 		name = On
-		text = "On"
+		text = "Allowed"
 		desc = "No changes to Tactical Withdrawal"
 	}
 	option = { 
-		name = all_arms_at_defense_army_spirit_option
-		text = "On but 100% tactic chance army spirit banned"
-		desc= "Tactical Withdrawl is allowed but "All-Arms Anti-Tank Defense" army spirit is banned"
+		name = banned
+		text = "Banned"
+		desc= "Tactical Withdrawal will be banned"
+	}
+}
+
+all_arms_at_defense_army_spirit = { 
+	name = "Anti-Tank Defense Army Spirit"
+	group = "LFU Rules"
+	icon = "GFX_decision_generic_army_support"
+	default = { 
+		name = On
+		text = "Allowed"
+		desc = ""
 	}
 	option = { 
 		name = banned
-		text = "Off"
-		desc= "Tactical Withdrawal will be banned"
+		text = "Banned"
+		desc= ""
 	}
 }
 
@@ -267,7 +278,7 @@ ethiopia_hold = {
 }
 
 africa_hp = {
-	name = "Africa Increased HP"
+	name = "Africa Additional HP"
 	group = "LFU Rules"
 	icon = "GFX_decision_generic_orginization_of_african_unity"
 	default = {

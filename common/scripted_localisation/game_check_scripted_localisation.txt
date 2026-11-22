@@ -374,21 +374,34 @@ defined_text = {
                 option = On
             }
         }
-        localization_key = "On"
+        localization_key = "Allowed"
     }
     text = {
         trigger = {
             has_game_rule = {
                 rule = tactical_withdrawal_rule
-                option = all_arms_at_defense_army_spirit_option
+                option = banned
             }
         }
-        localization_key = "All Arms AT Defense Army banned"
+        localization_key = "Banned"
+    }
+}
+
+defined_text = {
+    name = GetAnti-TankDefenseArmySpiritStatus
+    text = {
+        trigger = {
+            has_game_rule = {
+                rule = all_arms_at_defense_army_spirit
+                option = On
+            }
+        }
+        localization_key = "Allowed"
     }
     text = {
         trigger = {
             has_game_rule = {
-                rule = tactical_withdrawal_rule
+                rule = all_arms_at_defense_army_spirit
                 option = banned
             }
         }
