@@ -37,7 +37,7 @@ operations = {
 					type = fighter_equipment_2
 					amount = 250
 					producer = ENG
-                    design_team = ENG_supermarine_mio
+                    design_team = mio:ENG_supermarine_mio
 				}	
 			}
 			else_if = { 
@@ -49,7 +49,7 @@ operations = {
 					type = fighter_equipment_2
 					amount = 500
 					producer = ENG
-                    design_team = ENG_supermarine_mio
+                    design_team = mio:ENG_supermarine_mio
 				}	
 			}
 			else_if = { 
@@ -60,7 +60,7 @@ operations = {
 					type = fighter_equipment_2
 					amount = 1000
 					producer = ENG
-                    design_team = ENG_supermarine_mio
+                    design_team = mio:ENG_supermarine_mio
 				}	
 			}
 			
@@ -99,7 +99,7 @@ operations = {
 					type = fighter_equipment_2
 					amount = 250
 					producer = ENG
-                    design_team = ENG_supermarine_mio
+                    design_team = mio:ENG_supermarine_mio
 				}	
 			}
 			else_if = { 
@@ -111,7 +111,7 @@ operations = {
 					type = fighter_equipment_2
 					amount = 500
 					producer = ENG
-                    design_team = ENG_supermarine_mio
+                    design_team = mio:ENG_supermarine_mio
 				}	
 			}
 			else_if = { 
@@ -123,10 +123,165 @@ operations = {
 					type = fighter_equipment_2
 					amount = 1000
 					producer = ENG
-                    design_team = ENG_supermarine_mio
+                    design_team = mio:ENG_supermarine_mio
 				}	
 			}
 			activate_mission = no_asia_uk_LL
 		}			
     }
+#annex decisions
+	annex_hungary = {
+		name = "Annex Hungary"
+		fire_only_once = yes
+		cost = 0
+
+		available = {
+			HUN = { is_ai = yes }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		allowed = { tag = ROM }
+		targets = { HUN }
+
+		complete_effect = {
+			HUN = {
+				transfer_units_fraction = {
+					target = ROM
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			ROM = {
+				annex_country = {
+					target = HUN
+					transfer_troops = yes
+				}
+				if = {
+					limit = { NOT = { has_idea = zhm_command_power } }
+					add_ideas = zhm_command_power
+				}
+				set_cosmetic_tag = HUN_ROM_KINGDOM
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					is_controlled_by = ROM
+				}
+				add_core_of = ROM
+				remove_core_of = HUN
+			}
+		}
+	}
+
+	annex_romania = {
+		name = "Annex Romania"
+		fire_only_once = yes
+		cost = 0
+
+		available = {
+			ROM = { is_ai = yes }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		allowed = { tag = HUN }
+		targets = { ROM }
+
+		complete_effect = {
+			ROM = {
+				transfer_units_fraction = {
+					target = HUN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			HUN = {
+				annex_country = {
+					target = ROM
+					transfer_troops = yes
+				}
+				if = {
+					limit = { NOT = { has_idea = zhm_command_power } }
+					add_ideas = zhm_command_power
+				}
+				set_cosmetic_tag = HUN_ROM_KINGDOM
+			}
+			every_state = {
+				limit = {
+					is_core_of = ROM
+					is_controlled_by = HUN
+				}
+				add_core_of = HUN
+				remove_core_of = ROM
+			}
+		}
+	}
+
+	annex_saf = {
+		name = "Annex SAF"
+		fire_only_once = yes
+		cost = 0
+
+		available = {
+			SAF = { is_ai = yes }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		allowed = { tag = FRA }
+		targets = { SAF }
+
+		complete_effect = {
+			SAF = {
+				transfer_units_fraction = {
+					target = FRA
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			FRA = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+				if = {
+					limit = { NOT = { has_idea = zhm_command_power } }
+					add_ideas = zhm_command_power
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SAF
+					is_controlled_by = FRA
+				}
+				add_core_of = FRA
+				remove_core_of = SAF
+			}
+		}
+	}
 }	
