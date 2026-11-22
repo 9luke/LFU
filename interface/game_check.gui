@@ -783,7 +783,7 @@ guiTypes = {
             name = "tactical_withdrawal_rule_name_text_changed"
             position = { x = @GAMERULE_NAMES_X y = 1025 }
             font = "hoi_18mbs"
-            text = "Tactical Withdrawal Status"
+            text = "Tactical Withdrawal"
             maxWidth = 180
         }
         instantTextBoxType = {

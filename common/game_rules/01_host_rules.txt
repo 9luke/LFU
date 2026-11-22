@@ -25,23 +25,23 @@ cas_doctrines_status = {
 }
 
 tactical_withdrawal_rule = { 
-	name = "Tactical Withdrawal Status"
-	group = "HMM Rules"
+	name = "Tactical Withdrawal"
+	group = "LFU Rules"
 	icon = "GFX_decision_generic_army_support"
 	default = { 
 		name = On
 		text = "On"
-		desc = "No change to Tactical Withdrawal"
+		desc = "No changes to Tactical Withdrawal"
 	}
 	option = { 
 		name = all_arms_at_defense_army_spirit_option
-		text = "All Arms AT Defense Army banned"
-		desc= "All Arms AT Defense Army banned is unselectable(100% factor for rolling Tactical Withdrawal Tactic)"
+		text = "On but 100% tactic chance army spirit banned"
+		desc= "Tactical Withdrawl is allowed but "All-Arms Anti-Tank Defense" army spirit is banned"
 	}
 	option = { 
 		name = banned
-		text = "banned"
-		desc= "Tactical Withdrawal tactic will never Roll"
+		text = "Off"
+		desc= "Tactical Withdrawal will be banned"
 	}
 }
 
