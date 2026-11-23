@@ -208,6 +208,10 @@ on_actions = {
 						target = ROM
 						transfer_troops = yes
 					}
+					if = {
+						limit = { NOT = { has_idea = zhm_command_power } }
+						add_ideas = zhm_command_power
+					}
 					set_cosmetic_tag = HUN_ROM_KINGDOM
 				}
 			}

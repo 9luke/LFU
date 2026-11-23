@@ -137,6 +137,7 @@ operations = {
 
 		available = {
 			HUN = { is_ai = yes }
+			HUN = { exists = yes }
 		}
 
 		ai_will_do = {
@@ -189,6 +190,7 @@ operations = {
 
 		available = {
 			ROM = { is_ai = yes }
+			ROM = { exists = yes }
 		}
 
 		ai_will_do = {
@@ -241,6 +243,7 @@ operations = {
 
 		available = {
 			SAF = { is_ai = yes }
+			SAF = { exists = yes }
 		}
 
 		ai_will_do = {
