@@ -1,6 +1,6 @@
 cas_doctrines_status = {
 	name = "Ground Support Doctrines"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_air"
 	default = {
 		name = banned
@@ -26,7 +26,7 @@ cas_doctrines_status = {
 
 tactical_withdrawal_rule = { 
 	name = "Tactical Withdrawal"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_army_support"
 	default = { 
 		name = On
@@ -42,7 +42,7 @@ tactical_withdrawal_rule = {
 
 all_arms_at_defense_army_spirit = { 
 	name = "Anti-Tank Defense Army Spirit"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_army_support"
 	default = { 
 		name = On
@@ -58,7 +58,7 @@ all_arms_at_defense_army_spirit = {
 
 allied_pre_grind = { 
 	name = "Allies Pre-Grind"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_category_eng_imperial_conference"
 	default = { 
 		name = on
@@ -74,7 +74,7 @@ allied_pre_grind = {
 
 allies_ac_rule = {
 	name = "Allies AC Status"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_SWE_set_air_budget"
 	option = {
 		name = brazil_ac
@@ -95,7 +95,7 @@ allies_ac_rule = {
 
 axis_fuel_spirit = { 
 	name = "Axis Fuel Spirit"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_oil"
 	default = { 
 		name = on
@@ -111,7 +111,7 @@ axis_fuel_spirit = {
 
 italy_alt_hist = {
 	name = "Italy Alt-Hist Paths"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_ITA_claim_yugo_4"
 	default = {
 		name = on
@@ -127,7 +127,7 @@ italy_alt_hist = {
 
 soviet_research_slot = {
 	name = "Soviet 4th Research Slot"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_SOV_secure_the_administration"
 	option = {
 		name = on
@@ -144,7 +144,7 @@ soviet_research_slot = {
 
 soviet_collectivized_economy = {
 	name = "Soviet Collectivized Economy"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_SOV_secure_the_administration"
 	default = {
 		name = on
@@ -159,7 +159,7 @@ soviet_collectivized_economy = {
 }
 soviet_eradicate_western_fascism_rule = {
 	name = "Soviet Eradicate Western Fascism"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_SOV_secure_the_administration"
 	option = {
 		name = yes
@@ -175,7 +175,7 @@ soviet_eradicate_western_fascism_rule = {
 
 Germany_czech_manufacturers = {
 	name = "Czech MIOs"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_GER_flag"
 	option = {
 		name = allowed
@@ -212,7 +212,7 @@ Germany_czech_manufacturers = {
 
 Germany_Wirtschaftswunder = {
 	name = "German Prioritize Economic Growth"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_ger_mefo_bills"
 	option = {
 		name = Germany_no_wirtschaftswunder
@@ -229,7 +229,7 @@ Germany_Wirtschaftswunder = {
 
 Germany_Cancel_Mefo= {
 	name = "Cancel MEFO Bills"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_ger_mefo_bills"
 	default = {
 		name = Germany_no_cancel_MEFO_Bills
@@ -246,7 +246,7 @@ Germany_Cancel_Mefo= {
 
 Germany_Fate_of_yugo= {
 	name = "Fate of Yugoslavia"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_GER_flag"
 	default = {
 		name = Germany_no_fate_of_yugo
@@ -263,7 +263,7 @@ Germany_Fate_of_yugo= {
 
 ethiopia_hold = {
 	name = "Ethiopia Hold"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_orginization_of_african_unity"
 	default = {
 		name = banned
@@ -279,7 +279,7 @@ ethiopia_hold = {
 
 africa_hp = {
 	name = "Africa Additional HP"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_orginization_of_african_unity"
 	default = {
 		name = 50
@@ -300,7 +300,7 @@ africa_hp = {
 
 railway_gun= {
 	name = "Railway Gun"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_ignite_civil_war"
 	default = {
 		name = off
@@ -316,7 +316,7 @@ railway_gun= {
 
 max_submarine_tech= {
 	name = "Submarine 3 and 4"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_ignite_civil_war"
 	default = {
 		name = sub2
@@ -337,7 +337,7 @@ max_submarine_tech= {
 
 sov_boost = {
 	name = "Soviet Civ Boost"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -363,7 +363,7 @@ sov_boost = {
   
 ger_boost = {
 	name = "German Civ Boost"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -389,7 +389,7 @@ ger_boost = {
 
 jap_boost = {
 	name = "Japan Civ Boost"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -415,7 +415,7 @@ jap_boost = {
 
 eng_boost = {
 	name = "Britain Civ Boost"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -441,7 +441,7 @@ eng_boost = {
 
 ita_boost = {
 	name = "Italy Civ Boost"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -467,7 +467,7 @@ ita_boost = {
 
 fra_boost = {
 	name = "French Civ Boost"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -493,7 +493,7 @@ fra_boost = {
 
 usa_boost = {
 	name = "USA Civ Boost"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_merge_plant_materiel"
 	default = {
 		name = off
@@ -514,7 +514,7 @@ usa_boost = {
 
 strat_bombing = {
 	name = "Strategic Bombing"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_generic_air"
 	default = {
 		name = allowed
@@ -530,7 +530,7 @@ strat_bombing = {
 
 spanish_production = {
 	name = "Simulate Spanish Production"
-	group = "LFU Country Status"
+	group = "LHM Country Status"
 	icon = "GFX_decision_generic_industry"
 	option = {
 		name = ger_mech
@@ -556,7 +556,7 @@ spanish_production = {
 
 tradebacks = {
 	name = "No Tradebacks Idea"
-	group = "LFU Rules"
+	group = "LHM Rules"
 	icon = "GFX_decision_category_generic_trade"
 	default = {
 		name = off
