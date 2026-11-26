@@ -54,58 +54,5 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_super_heavy_artillery_medium"
 		texturefile = "gfx/interface/technologies/generic_super_heavy_artillery.dds"
-	}
-
-	#IHE
-	SpriteType = {
-		name = "GFX_howitzer_armament2_medium"
-		texturefile = "gfx/interface/equipmentdesigner/howitzer.dds"
-	}
-	SpriteType = {
-		name = "GFX_antitank_armament2_medium"
-		texturefile = "gfx/interface/equipmentdesigner/atweapons2.dds"
-	}
-	SpriteType = {
-		name = "GFX_tank_engineering_medium"
-		texturefile = "gfx/interface/equipmentdesigner/tank_equipment.dds"
-	}
-	SpriteType = {
-		name = "GFX_howitzer_armament_medium"
-		texturefile = "gfx/interface/equipmentdesigner/howitzers.dds"
-	}
-	SpriteType = {
-		name = "GFX_antitank_armament_medium"
-		texturefile = "gfx/interface/equipmentdesigner/atweapons.dds"
-	}
-	SpriteType = {
-        name = "GFX_tank_armament_medium"
-        texturefile = "gfx/interface/equipmentdesigner/newtankguns.dds"
-	} 
-	SpriteType = {
-        name = "GFX_antiair_armament_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tank_aa1.dds"
-	} 	
-	
-	SpriteType = {
-        name = "GFX_antiair_armament2_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tank_aa2.dds"
-	}
-	SpriteType = {
-        name = "GFX_antiair_armament3_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tank_aa3.dds"
-	}
-	SpriteType = {
-        name = "GFX_tank_radio_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tankradio1.dds"
-	} 	
-	
-	SpriteType = {
-        name = "GFX_tank_radio2_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tankradio2.dds"
-	} 	
-	
-	SpriteType = {
-        name = "GFX_tank_radio3_medium"
-        texturefile = "gfx/interface/equipmentdesigner/tankradio3.dds"
-	} 	 	 											
+	}											
 }

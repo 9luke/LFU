@@ -4,37 +4,38 @@ scripted_gui = {
     context_type = player_context
 
     visible = {
-        if = {
-            limit = {
-                is_ai = no
-                NOT = {
-                    has_country_flag = disabled_agency_alert_flag
-                }
-                NOT = {
-                    has_country_flag = disabled_agency_alert_flag_permanent
-                }
-            }
-            if = {
-                limit = {
-                    has_intelligence_agency = yes
-                }
-                if = {
-                    limit = {
-                        check_variable = { modifier@int_agency_upgrade_modifier = 0 }
-                    }
-                    intelligence_agency_alert = yes
-                }
-                else = {
-                    always = no
-                }
-            }
-            else = {
-                num_of_civilian_factories_available_for_projects > 4
-            }
-        }
-        else = {
-            always = no
-        }
+        # if = {
+        #     limit = {
+        #         is_ai = no
+        #         NOT = {
+        #             has_country_flag = disabled_agency_alert_flag
+        #         }
+        #         NOT = {
+        #             has_country_flag = disabled_agency_alert_flag_permanent
+        #         }
+        #     }
+        #     if = {
+        #         limit = {
+        #             has_intelligence_agency = yes
+        #         }
+        #         if = {
+        #             limit = {
+        #                 check_variable = { modifier@int_agency_upgrade_modifier = 0 }
+        #             }
+        #             intelligence_agency_alert = yes
+        #         }
+        #         else = {
+        #             always = no
+        #         }
+        #     }
+        #     else = {
+        #         num_of_civilian_factories_available_for_projects > 4
+        #     }
+        # }
+        # else = {
+        #     always = no
+        # }
+        always = no
     }
 
     effects = {

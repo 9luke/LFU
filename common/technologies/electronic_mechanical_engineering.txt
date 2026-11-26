@@ -1216,7 +1216,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_speed_factor = 0.1
+		research_speed_factor = 0.04
 		
 		#path = {
 		#	leads_to_tech = nuclear_reactor 

@@ -1191,13 +1191,6 @@ guiTypes = {
 				format = "UP"
 			}
 			# radio
-			gridboxtype = {
-				name = "tank_radio_tree"
-				position = { x = 750 y = -30 }
-				size = { width = 72 height = 650 }
-				slotsize = { width = 70 height = 70 }
-				format = "UP"
-			}
 		}
 
 		containerWindowType = {
@@ -1250,19 +1243,6 @@ guiTypes = {
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
 					text = "ARTILLERY_TITLE_ROCKET"
-					maxWidth = 210
-					maxHeight = 22
-					format = center
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "artillery_subtitle_howitzer"
-					position = { x = -20 y = 460 }
-					textureFile = ""
-					font = "hoi_33"
-					borderSize = {x = 0 y = 4}
-					text = "ARTILLERY_TITLE_HOWITZER"
 					maxWidth = 210
 					maxHeight = 22
 					format = center

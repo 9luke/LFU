@@ -285,7 +285,6 @@ on_actions = {
 				if = {
 					limit = {
 						HOL = { has_capitulated = yes }
-						LUX = { has_capitulated = yes }
 						DEN = { has_capitulated = yes }
 						NOR = { has_capitulated = yes }
 						POL = { has_capitulated = yes }
@@ -298,20 +297,6 @@ on_actions = {
 				if = {
 					limit = {
 						BEL = { has_capitulated = yes }
-						LUX = { has_capitulated = yes }
-						DEN = { has_capitulated = yes }
-						NOR = { has_capitulated = yes }
-						POL = { has_capitulated = yes }
-					}
-					allow_axis_grind = yes
-				}
-			}
-			else_if = {
-				limit = { tag = LUX }
-				if = {
-					limit = {
-						BEL = { has_capitulated = yes }
-						HOL = { has_capitulated = yes }
 						DEN = { has_capitulated = yes }
 						NOR = { has_capitulated = yes }
 						POL = { has_capitulated = yes }
@@ -325,7 +310,6 @@ on_actions = {
 					limit = {
 						BEL = { has_capitulated = yes }
 						HOL = { has_capitulated = yes }
-						LUX = { has_capitulated = yes }
 						NOR = { has_capitulated = yes }
 						POL = { has_capitulated = yes }
 					}
@@ -338,7 +322,6 @@ on_actions = {
 					limit = {
 						BEL = { has_capitulated = yes }
 						HOL = { has_capitulated = yes }
-						LUX = { has_capitulated = yes }
 						DEN = { has_capitulated = yes }
 						POL = { has_capitulated = yes }
 					}
@@ -351,7 +334,6 @@ on_actions = {
 					limit = {
 						BEL = { has_capitulated = yes }
 						HOL = { has_capitulated = yes }
-						LUX = { has_capitulated = yes }
 						DEN = { has_capitulated = yes }
 						NOR = { has_capitulated = yes }
 					}
@@ -613,16 +595,6 @@ on_actions = {
                 }
                 HOL = {
                     load_oob = "HOL_CHROM_SPAWN"
-                }
-            }
-            else_if = {
-                limit = {
-                    FROM = {
-                        tag = LUX
-                    }
-                }
-                LUX = {
-                    load_oob = "LUX_CHROM_SPAWN"
                 }
             }
             else_if = {

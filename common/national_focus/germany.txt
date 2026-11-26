@@ -11630,7 +11630,6 @@ focus_tree = {
 
 		will_lead_to_war_with = BEL
 		will_lead_to_war_with = HOL
-		will_lead_to_war_with = LUX
 		will_lead_to_war_with = FRA
 
 		bypass = {
@@ -11648,13 +11647,6 @@ focus_tree = {
 					has_war_with = ROOT
 				}
 			}
-			LUX = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
 		}
 
 		available = {
@@ -11662,7 +11654,6 @@ focus_tree = {
 			OR = {
 				NOT = { HOL = { is_in_faction_with = GER } }
 				NOT = { BEL = { is_in_faction_with = GER } }
-				NOT = { LUX = { is_in_faction_with = GER } }
 			}
 		}
 
@@ -11720,21 +11711,7 @@ focus_tree = {
 					expire = 0
 					generator = { 7 }
 				}
-		
 			
-			
-			
-				create_wargoal = {
-					type = take_state_focus
-					target = LUX
-					expire = 0
-					generator = { 8 }
-				}		
-				add_ai_strategy = { 
-					type = conquer
-					id = LUX
-					value = 100
-				}		
 			
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
@@ -12069,14 +12046,6 @@ focus_tree = {
 				FRA = { is_subject_of = ROOT }
 				all_country_with_original_tag = {
 					original_tag_to_check = FRA
-					exists = no
-				}
-			}
-			OR = {
-				LUX = { has_capitulated = yes }
-				LUX = { is_subject_of = ROOT }
-				all_country_with_original_tag = {
-					original_tag_to_check = LUX
 					exists = no
 				}
 			}
