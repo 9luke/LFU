@@ -1,6 +1,6 @@
 asia_status = {
 	name = "Asia Status"
-	group = "LHM Country Status"
+	group = "Pulistorical Country Status"
 	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
 		name = asia
@@ -15,7 +15,7 @@ asia_status = {
 }
 romania_hungary_status = {
 	name = "Merge Romania & Hungary"
-	group = "LHM Country Status"
+	group = "Pulistorical Country Status"
 	icon = "GFX_decision_ROM_claim_yugo_4"
 	default = {
 		name = off
@@ -30,7 +30,7 @@ romania_hungary_status = {
 }
 canada_status = {
 	name = "Disable Canada"
-	group = "LHM Country Status"
+	group = "Pulistorical Country Status"
 	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
 		name = off
@@ -45,7 +45,7 @@ canada_status = {
 }
 saf_status = {
 	name = "Disable SAF"
-	group = "LHM Country Status"
+	group = "Pulistorical Country Status"
 	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
 		name = off
@@ -60,7 +60,7 @@ saf_status = {
 }
 bul_status = {
 	name = "Disable Bulgaria"
-	group = "LHM Country Status"
+	group = "Pulistorical Country Status"
 	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
 		name = off
@@ -75,7 +75,7 @@ bul_status = {
 }
 ast_status = {
 	name = "Disable Australia"
-	group = "LHM Country Status"
+	group = "Pulistorical Country Status"
 	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
 		name = off
@@ -90,7 +90,7 @@ ast_status = {
 }
 bra_status = {
 	name = "Disable Brazil"
-	group = "LHM Country Status"
+	group = "Pulistorical Country Status"
 	icon = "GFX_decision_eng_trade_unions_support"
 	default = {
 		name = off
