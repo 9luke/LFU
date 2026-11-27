@@ -7,5 +7,3 @@ NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0
 NDefines.NGame.GAME_SPEED_SECONDS = { 1000.0, 0.25, 0.20, 0.10, 0.0 } 
 
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 999
-
-NDefines.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0 -- Intel advantage stats gone since no agency
