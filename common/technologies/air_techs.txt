@@ -8,10 +8,10 @@ technologies = {
 		
 		research_cost = 0.75
 		start_year = 1936
-		folder = {
-			name = air_techs_folder
-			position = { x = 1 y = 4 } 
-		}
+		#folder = {
+		#	name = air_techs_folder
+		#	position = { x = 1 y = 4 } 
+		#}
 		
 		categories = {
 			helicopter_tech

@@ -54,6 +54,7 @@ if = {
 		early_bomber = 1
 		CAS1 = 1
 		early_transport_plane = 1
+		scout_plane1 = 1
 	}
 IF = {
 	limit = {

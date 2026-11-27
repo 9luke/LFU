@@ -107,6 +107,13 @@ on_actions = {
 					}
 				}
 			}
+			every_country = {
+				set_technology = {
+					bba_early_helicopter = 1
+					motorbike = 1
+					popup = no
+				}
+			}
 			#game rules
 			every_country = {
 				limit = {

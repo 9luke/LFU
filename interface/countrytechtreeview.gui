@@ -2397,18 +2397,18 @@ guiTypes = {
 			}
 
 
-			instantTextBoxType = {
-				name = "airtech_year7"
-				position = { x = 1850 y = 750 }
-				textureFile = ""
-				font = "hoi_36header"
-				borderSize = {x = 0 y = 4}
-				text = "1936"
-				maxWidth = 170
-				maxHeight = 32
-				format = left
-				Orientation = "UPPER_LEFT"
-			}
+			#instantTextBoxType = {
+			#	name = "airtech_year7"
+			#	position = { x = 1850 y = 750 }
+			#	textureFile = ""
+			#	font = "hoi_36header"
+			#	borderSize = {x = 0 y = 4}
+			#	text = "1936"
+			#	maxWidth = 170
+			#	maxHeight = 32
+			#	format = left
+			#	Orientation = "UPPER_LEFT"
+			#}
 
 			containerWindowType = {
 				name = "airtech_year_left"

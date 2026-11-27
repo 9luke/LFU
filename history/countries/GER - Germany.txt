@@ -44,6 +44,7 @@ set_grand_doctrine = new_strategic_destruction
 		CAS1 = 1
 		naval_bomber1 = 1
 		early_transport_plane = 1
+		scout_plane1 = 1
 	}
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
