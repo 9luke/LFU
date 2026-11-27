@@ -71,6 +71,9 @@ ideas = {
 					GER = {
 						has_war_with = SOV
 					}
+					JAP = {
+						has_war_with = USA
+					}
 					is_ai = yes
 					has_war = no
 				}
@@ -92,6 +95,9 @@ ideas = {
 				OR = {
 					GER = {
 						has_war_with = SOV
+					}
+					JAP = {
+						has_war_with = USA
 					}
 					is_ai = yes
 					has_war = no
