@@ -436,6 +436,7 @@ on_actions = {
 			if = {
 				limit = {
 					date > 1936.4.1
+					NOT = { date > 1936.5.1 }
 				}
 				ITA = {
 					transfer_state = 934
@@ -714,4 +715,18 @@ on_actions = {
             }
 		}
 	}
+    on_declare_war = {
+        effect = {
+            if = {
+                limit = {
+                    tag = GER
+                    FROM = { tag = SOV }
+                }
+                add_collaboration = {
+                    target = SOV
+                    value = 0.35
+                }
+            }
+        }
+    }
 }
