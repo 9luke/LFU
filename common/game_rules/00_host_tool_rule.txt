@@ -1,6 +1,6 @@
 horst_host_country = {
 	name = "Select Country For Host Tool"
-	group = "LHM Rules"
+	group = "Pulistorical Rules"
 	icon = "GFX_volunteers"
 	# axis
 	default = {
