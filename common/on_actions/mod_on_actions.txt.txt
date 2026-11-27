@@ -605,18 +605,6 @@ on_actions = {
                 }
             }
             if = {
-                limit = { tag = BEL }
-
-                BEL = {
-                    every_core_state = {
-                        limit = {
-                            is_controlled_by = GER
-                        }
-                        set_compliance = 100
-                    }
-                }
-            }
-            if = {
                 limit = { tag = DEN }
 
                 DEN = {
@@ -636,7 +624,7 @@ on_actions = {
                         limit = {
                             is_controlled_by = GER
                         }
-                        set_compliance = 70
+                        set_compliance = 100
                     }
                 }
             }
