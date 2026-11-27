@@ -433,6 +433,16 @@ on_actions = {
 					set_technology = { super_heavy_artillery = 1 }
 				}
 			}
+			if = {
+				limit = {
+					date > 1936.4.1
+				}
+				ITA = {
+					transfer_state = 934
+					transfer_state = 805
+					transfer_state = 44
+				}
+			}
 		}
 	}
 	on_weekly = {
@@ -570,6 +580,150 @@ on_actions = {
 					}
 				}
 			}
+            if = {
+                limit = { tag = FRA }
+
+                FRA = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = GER
+                        }
+                        set_compliance = 100
+                    }
+                }
+            }
+            if = {
+                limit = { tag = POL }
+
+                POL = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = GER
+                        }
+                        set_compliance = 100
+                    }
+                }
+            }
+            if = {
+                limit = { tag = BEL }
+
+                BEL = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = GER
+                        }
+                        set_compliance = 100
+                    }
+                }
+            }
+            if = {
+                limit = { tag = DEN }
+
+                DEN = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = GER
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = HOL }
+
+                HOL = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = GER
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = NOR }
+
+                NOR = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = GER
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = YUG }
+
+                YUG = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = ITA
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = YUG }
+
+                YUG = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = BUL
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = GRE }
+
+                GRE = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = BUL
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = GRE }
+
+                GRE = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = ITA
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = CHI }
+
+                CHI = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = JAP
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
+            if = {
+                limit = { tag = CHI }
+
+                CHI = {
+                    every_core_state = {
+                        limit = {
+                            is_controlled_by = MAN
+                        }
+                        set_compliance = 70
+                    }
+                }
+            }
 		}
 	}
 }
