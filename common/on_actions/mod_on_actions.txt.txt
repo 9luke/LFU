@@ -319,6 +319,16 @@ on_actions = {
 					add_core_of = ITA
 					remove_core_of = BUL
 				}
+
+				BUL = {
+					every_state = {
+						limit = { is_claimed_by = BUL }
+						remove_claim_by = BUL
+					}
+				}
+
+				184 = { add_claim_by = ITA }
+				731 = { add_claim_by = ITA }
  
 				ITA = {
 					annex_country = {
@@ -579,6 +589,17 @@ on_actions = {
 						}
 						add_ideas = mod_hp25
 					}
+				}
+			}
+			if = {
+				limit = {
+					tag = GRE
+				}
+				every_state = {
+					limit = {
+						is_core_of = GRE
+					}
+					add_core_of = ITA
 				}
 			}
             if = {
